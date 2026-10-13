@@ -1,0 +1,40 @@
+{
+  "id": "quinecms-library",
+  "engine": ">=0.2.0",
+  "blocks": [
+    "src/blocks/archline-enquiry/v1",
+    "src/blocks/archline-enquiry-generic/v1",
+    "src/blocks/archline-faq/v1",
+    "src/blocks/archline-hero/v1",
+    "src/blocks/archline-image/v1",
+    "src/blocks/archline-insights/v1",
+    "src/blocks/archline-introduction/v1",
+    "src/blocks/archline-marquee/v1",
+    "src/blocks/archline-partners/v1",
+    "src/blocks/archline-process/v1",
+    "src/blocks/archline-project-gallery/v1",
+    "src/blocks/archline-project-hero/v1",
+    "src/blocks/archline-project-index/v1",
+    "src/blocks/archline-project-story/v1",
+    "src/blocks/archline-projects/v1",
+    "src/blocks/archline-services/v1",
+    "src/blocks/archline-stats/v1",
+    "src/blocks/archline-testimonials/v1",
+    "src/blocks/intr-contact/v1",
+    "src/blocks/intr-features/v1",
+    "src/blocks/intr-gallery/v1",
+    "src/blocks/intr-hero/v1",
+    "src/blocks/intr-introduction/v1",
+    "src/blocks/intr-partners/v1",
+    "src/blocks/intr-process/v1",
+    "src/blocks/intr-project-index/v1",
+    "src/blocks/intr-projects/v1",
+    "src/blocks/intr-services/v1",
+    "src/blocks/intr-story/v1"
+  ],
+  "layouts": [
+    "src/site-layouts/archline/v1",
+    "src/site-layouts/intr/v1"
+  ],
+  "public": "public"
+}

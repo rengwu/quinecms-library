@@ -1,0 +1,25 @@
+{
+  "name": "quinecms-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": [
+    "src",
+    "public",
+    "quinecms.library.json"
+  ],
+  "peerDependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "quinecms": "^0.2.0"
+  },
+  "devDependencies": {
+    "quinecms": "git+https://github.com/rengwu/quinecms.git#5612c38a7f9ccc4c29a44f1f167a57acbc65cf43",
+    "vitest": "5.0.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "scripts": {
+    "test": "node scripts/prepare-tests.mjs && vitest run"
+  }
+}

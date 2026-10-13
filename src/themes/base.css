@@ -1,0 +1,6 @@
+/* The library owns this baseline; admin controls stay outside its scope. */
+body[data-layout-surface] { margin: 0; }
+:where(.archline-scope, .intr-scope),
+:where(.archline-scope, .intr-scope) * { box-sizing: border-box; }
+:where(.archline-scope, .intr-scope) :is(button, input, textarea, select) { font: inherit; }
+:where(.archline-scope, .intr-scope) a { color: inherit; }

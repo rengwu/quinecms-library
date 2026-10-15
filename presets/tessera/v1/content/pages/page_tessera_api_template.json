@@ -1,0 +1,36 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_api_template",
+  "kind": "generic",
+  "title": "API article",
+  "layoutId": "layout_tessera_api",
+  "blocks": [
+    {
+      "id": "page_tessera_api_template_block_1",
+      "type": "tessera-article-generic",
+      "version": 1,
+      "props": {
+        "title": "Introduction",
+        "category": "",
+        "summary": "",
+        "metadata": "",
+        "image": null,
+        "body": "",
+        "examples": "",
+        "nextLabel": "",
+        "nextURL": ""
+      },
+      "bindings": {
+        "title": "title",
+        "category": "category",
+        "summary": "summary",
+        "metadata": "metadata",
+        "image": "image",
+        "body": "body",
+        "examples": "examples",
+        "nextLabel": "nextLabel",
+        "nextURL": "nextURL"
+      }
+    }
+  ]
+}

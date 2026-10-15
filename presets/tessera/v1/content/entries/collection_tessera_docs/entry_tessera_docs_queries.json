@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_queries",
+  "collectionId": "collection_tessera_docs",
+  "slug": "queries",
+  "values": {
+    "title": "Queries",
+    "category": "Database",
+    "summary": "Read and write typed data with the generated client: filters, sorting, pagination and mutations.",
+    "metadata": "",
+    "image": null,
+    "body": "## Reading rows\n\nTypeScript\n\n```\nconst recent = await db.tasks\n  .where({ done: false })\n  .orderBy(\"createdAt\", \"desc\")\n  .limit(20)\n  .all()\n```\n\n### Filters\n\nPass an object for equality, or use operators like `gt`, `in` and `like` for everything else.\n\nTypeScript\n\n```\nimport { gt, like } from \"tessera\"\n \nawait db.projects.where({ seats: gt(10), name: like(\"Acme%\") }).all()\n```\n\n## Pagination\n\nUse cursor pagination for lists that grow. `page()` returns the rows and a `nextCursor` you pass to the next call.\n\nTypeScript\n\n```\nconst { rows, nextCursor } = await db.tasks.page({ size: 50 })\nconst next = await db.tasks.page({ size: 50, after: nextCursor })\n```\n\n## Writing rows\n\n```\nconst task = await db.tasks.insert({ title: \"Ship docs\", projectId })\n```\n\nRules run on every query\n\nQueries from the browser are checked against your row-level rules, so the same code is safe on the client and the server.\n\n[\n\nPrevious\n\nPermissions\n\n](/docs/permissions)",
+    "examples": "",
+    "nextLabel": "Relations",
+    "nextURL": "/docs/relations"
+  }
+}

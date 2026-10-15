@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_docs",
+  "kind": "static",
+  "title": "Introduction",
+  "layoutId": "layout_tessera_docs",
+  "blocks": [
+    {
+      "id": "page_tessera_docs_block_1",
+      "type": "tessera-article",
+      "version": 1,
+      "props": {
+        "title": "Introduction",
+        "category": "Getting started",
+        "summary": "What Tessera is, how the pieces fit together, and where to go next.",
+        "metadata": "",
+        "image": null,
+        "body": "## What is Tessera\n\nTessera is a backend platform for TypeScript teams. You describe your data once, as a typed schema, and Tessera turns it into a Postgres database, a typed API, authentication rules and realtime updates.\n\nThere is no separate API layer to maintain. When the schema changes, the migration, the generated client and the API change with it, so your frontend and backend never drift apart.\n\n## How it fits together\n\nPiece\n\nWhat it does\n\n**Schema**\n\nTables, columns and relations written in TypeScript in `schema.ts`.\n\n**Environments**\n\nIsolated copies of your project: production, staging and preview branches.\n\n**Client**\n\nA generated, fully typed client for queries, mutations and subscriptions.\n\n**Rules**\n\nRow-level access rules that run inside the database, not in your app.\n\n**Functions**\n\nServer code that runs on triggers, schedules or HTTP requests.\n\n## Who it’s for\n\n- Product teams who want a real Postgres database without writing an API by hand.\n\n- Frontend engineers who want end-to-end types from the database to the component.\n\n- Teams moving off Firebase or a hand-rolled Express backend.\n\nNew here?\n\nThe Quickstart takes about ten minutes and ends with a live, typed endpoint.\n\n## Start here\n\n- [Quickstart](/docs/quickstart): create a project and run your first query.\n\n- [Schema](/docs/schema): learn how tables, columns and relations are defined.\n\n- [Environments](/docs/environments): understand production, staging and preview branches.\n\n- [API Reference](/api-reference): call Tessera over HTTP from any language.",
+        "examples": "",
+        "nextLabel": "Quickstart",
+        "nextURL": "/docs/quickstart"
+      }
+    }
+  ],
+  "path": "/docs"
+}

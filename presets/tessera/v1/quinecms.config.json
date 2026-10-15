@@ -1,0 +1,9 @@
+{
+  "libraries": [
+    "quinecms-library"
+  ],
+  "initialLayout": {
+    "id": "tessera",
+    "version": 1
+  }
+}

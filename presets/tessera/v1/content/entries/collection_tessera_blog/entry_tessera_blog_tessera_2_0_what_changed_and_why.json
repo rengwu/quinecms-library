@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_tessera_2_0_what_changed_and_why",
+  "collectionId": "collection_tessera_blog",
+  "slug": "tessera-2-0-what-changed-and-why",
+  "values": {
+    "title": "Tessera 2.0: what changed and why",
+    "category": "Product",
+    "summary": "A tour of the release.",
+    "metadata": "Alex Rivera · Jul 14, 2026 · 6 min read",
+    "image": null,
+    "body": "## What changed\n\nTessera 2.0 adds typed realtime queries, faster cold starts, and a redesigned setup wizard in the CLI.\n\n## Upgrading\n\nMost projects upgrade with a single command. Read the migration notes if you use the auth session format from before 1.7.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 5
+  }
+}

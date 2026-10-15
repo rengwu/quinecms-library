@@ -1,0 +1,98 @@
+{
+  "type": "tessera-faq",
+  "version": 1,
+  "label": "Tessera · FAQ",
+  "theme": "Tessera",
+  "description": "Editable faq section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "never",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "question",
+          "label": "Question",
+          "type": "text"
+        },
+        {
+          "key": "answer",
+          "label": "Answer",
+          "type": "text",
+          "multiline": true
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "",
+    "heading": "Questions, answered",
+    "description": "Can’t find what you need? Talk to us and we’ll get back to you within one business day.",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "question": "What counts as a request?",
+        "answer": "Any call to your Tessera API, including realtime messages, counted per month."
+      },
+      {
+        "_rowId": "row-2",
+        "question": "Can I switch plans?",
+        "answer": "Yes. Upgrades apply immediately, and downgrades take effect at the start of your next billing cycle."
+      },
+      {
+        "_rowId": "row-3",
+        "question": "What happens if I exceed my limits?",
+        "answer": "We notify you first. Pro and Team scale with usage-based overages, while Free pauses non-critical writes."
+      },
+      {
+        "_rowId": "row-4",
+        "question": "Do you offer discounts?",
+        "answer": "Yes, for open source projects, students, and early-stage startups. Contact us and we will set it up."
+      },
+      {
+        "_rowId": "row-5",
+        "question": "Where is my data stored?",
+        "answer": "In the region you choose when you create a project. The available regions are listed in the docs."
+      },
+      {
+        "_rowId": "row-6",
+        "question": "Can I self-host Tessera?",
+        "answer": "Not today. You can export your data at any time in standard Postgres format."
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

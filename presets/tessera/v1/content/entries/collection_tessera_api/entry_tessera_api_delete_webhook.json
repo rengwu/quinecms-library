@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_delete_webhook",
+  "collectionId": "collection_tessera_api",
+  "slug": "delete-webhook",
+  "values": {
+    "title": "Delete webhook",
+    "category": "Webhooks",
+    "summary": "Stop deliveries and delete a webhook.",
+    "metadata": "",
+    "image": null,
+    "body": "DELETE\n\n/v1/webhooks/{webhook_id}\n\nDeletes the webhook. Deliveries already in flight still complete.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**webhook_id string required**\n\nThe webhook to delete.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo webhook exists with this ID in the environment.\n\n[\n\nPrevious\n\nList webhooks\n\n](/api-reference/list-webhooks)",
+    "examples": "\n\n```\ncurl --request DELETE \\\n  --url https://api.tessera.dev/v1/webhooks/wh_3pd8 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n// 204 No Content: the response has no body.\n```\n\n",
+    "nextLabel": "",
+    "nextURL": ""
+  }
+}

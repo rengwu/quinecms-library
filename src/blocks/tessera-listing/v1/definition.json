@@ -1,0 +1,149 @@
+{
+  "type": "tessera-listing",
+  "version": 1,
+  "label": "Tessera · Listing",
+  "theme": "Tessera",
+  "description": "Editable listing section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "collection",
+      "label": "Collection",
+      "type": "collection"
+    },
+    {
+      "key": "variant",
+      "label": "Variant",
+      "type": "select",
+      "options": [
+        {
+          "value": "blog",
+          "label": "Blog"
+        },
+        {
+          "value": "customers",
+          "label": "Customers"
+        }
+      ]
+    },
+    {
+      "key": "limit",
+      "label": "Limit",
+      "type": "number"
+    },
+    {
+      "key": "titleField",
+      "label": "Title field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text"
+        ]
+      }
+    },
+    {
+      "key": "summaryField",
+      "label": "Summary field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text"
+        ]
+      }
+    },
+    {
+      "key": "imageField",
+      "label": "Image field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "media"
+        ]
+      }
+    },
+    {
+      "key": "categoryField",
+      "label": "Category field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text",
+          "select"
+        ]
+      }
+    },
+    {
+      "key": "metadataField",
+      "label": "Metadata field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text"
+        ]
+      }
+    },
+    {
+      "key": "orderField",
+      "label": "Order field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "number"
+        ]
+      }
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "",
+    "heading": "",
+    "description": "",
+    "collection": null,
+    "variant": "blog",
+    "limit": 0,
+    "titleField": null,
+    "summaryField": null,
+    "imageField": null,
+    "categoryField": null,
+    "metadataField": null,
+    "orderField": null
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

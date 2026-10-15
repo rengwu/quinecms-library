@@ -1,0 +1,34 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_changelog",
+  "kind": "static",
+  "title": "Changelog",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_changelog_block_1",
+      "type": "tessera-heading",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Changelog",
+        "description": "New features, fixes, and improvements."
+      }
+    },
+    {
+      "id": "page_tessera_changelog_block_2",
+      "type": "tessera-changelog",
+      "version": 1,
+      "props": {
+        "collection": "collection_tessera_releases",
+        "titleField": "title",
+        "dateField": "date",
+        "categoryField": "category",
+        "versionField": "version",
+        "bodyField": "body"
+      }
+    }
+  ],
+  "path": "/changelog"
+}

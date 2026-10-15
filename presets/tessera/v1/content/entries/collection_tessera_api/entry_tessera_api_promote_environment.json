@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_promote_environment",
+  "collectionId": "collection_tessera_api",
+  "slug": "promote-environment",
+  "values": {
+    "title": "Promote environment",
+    "category": "Environments",
+    "summary": "Apply an environment's schema and functions to another environment.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/environments/{environment_id}/promote\n\nPlans and applies the migration from the source environment to the target, then deploys its functions. Returns the migration that ran.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**environment_id string required**\n\nThe source environment.\n\n### Request body\n\n**target string required**\n\nTarget environment name, for example production.\n\n**dry_run boolean optional**\n\nReturn the plan without applying it.\n\n### Response fields\n\n**migration_id string required**\n\nID of the applied migration.\n\n**changes string[] required**\n\nHuman-readable list of schema changes.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**403 forbidden**\n\nThe key doesn't have the scope needed for this endpoint.\n\n**409 migration_conflict**\n\nThe target changed since the plan was made. Plan again.\n\n[\n\nPrevious\n\nCreate preview branch\n\n](/api-reference/create-preview-branch)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/environments/env_stg1/promote \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"target\":\"production\"}'\n```\n\n\n\n\n\n```\n{\n  \"migration_id\": \"mig_0019\",\n  \"changes\": [\n    \"add column projects.archived\",\n    \"create index tasks.by_project\"\n  ]\n}\n```\n\n",
+    "nextLabel": "List rows",
+    "nextURL": "/api-reference/list-rows"
+  }
+}

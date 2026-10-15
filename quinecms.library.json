@@ -1,6 +1,6 @@
 {
   "id": "quinecms-library",
-  "engine": ">=0.2.0",
+  "engine": ">=0.3.0",
   "blocks": [
     "src/blocks/archline-enquiry/v1",
     "src/blocks/archline-enquiry-generic/v1",
@@ -30,11 +30,28 @@
     "src/blocks/intr-project-index/v1",
     "src/blocks/intr-projects/v1",
     "src/blocks/intr-services/v1",
-    "src/blocks/intr-story/v1"
+    "src/blocks/intr-story/v1",
+    "src/blocks/tessera-hero/v1",
+    "src/blocks/tessera-heading/v1",
+    "src/blocks/tessera-logos/v1",
+    "src/blocks/tessera-walkthrough/v1",
+    "src/blocks/tessera-testimonials/v1",
+    "src/blocks/tessera-features/v1",
+    "src/blocks/tessera-cta/v1",
+    "src/blocks/tessera-product-feature/v1",
+    "src/blocks/tessera-pricing/v1",
+    "src/blocks/tessera-comparison/v1",
+    "src/blocks/tessera-faq/v1",
+    "src/blocks/tessera-article/v1",
+    "src/blocks/tessera-article-generic/v1",
+    "src/blocks/tessera-listing/v1",
+    "src/blocks/tessera-updates/v1",
+    "src/blocks/tessera-changelog/v1"
   ],
   "layouts": [
     "src/site-layouts/archline/v1",
-    "src/site-layouts/intr/v1"
+    "src/site-layouts/intr/v1",
+    "src/site-layouts/tessera/v1"
   ],
   "public": "public"
 }

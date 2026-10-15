@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_observability",
+  "collectionId": "collection_tessera_docs",
+  "slug": "observability",
+  "values": {
+    "title": "Observability",
+    "category": "Deploy",
+    "summary": "Logs, metrics and slow-query insights for every environment.",
+    "metadata": "",
+    "image": null,
+    "body": "## Logs\n\nTerminal\n\n```\nnpx tessera logs --env production --follow\nnpx tessera logs --function welcome-email --since 1h\n```\n\n## Metrics\n\nMetric\n\nWhat it tells you\n\nRequest rate\n\nAPI calls per second, by endpoint.\n\np95 latency\n\nHow long the slowest 5% of requests take.\n\nError rate\n\nShare of requests returning 4xx or 5xx.\n\nRows scanned\n\nEarly warning for missing indexes.\n\n## Exporting\n\nSend logs and metrics to Datadog, Grafana or any OpenTelemetry collector from **Project settings → Observability**.\n\n[\n\nPrevious\n\nPreview branches\n\n](/docs/preview-branches)",
+    "examples": "",
+    "nextLabel": "Limits",
+    "nextURL": "/docs/limits"
+  }
+}

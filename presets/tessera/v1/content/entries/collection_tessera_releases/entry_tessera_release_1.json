@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_1",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-9-2",
+  "values": {
+    "title": "Migration lock timeout",
+    "version": "1.9.2",
+    "date": "2026-08-26",
+    "category": "Fix",
+    "body": "Long migrations on large tables no longer fail with a lock timeout.\n\n## What changed\n\n- The migration lock is now renewed while a step is running.\n\n- `tessera migrate apply` reports which step holds the lock if another run is in progress.\n\n- Added `--lock-timeout` for teams that want a stricter limit."
+  }
+}

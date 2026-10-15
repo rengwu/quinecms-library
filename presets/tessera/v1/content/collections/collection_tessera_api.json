@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "id": "collection_tessera_api",
+  "name": "Tessera API reference",
+  "mode": "many",
+  "path": "/api-reference",
+  "genericPageId": "page_tessera_api_template",
+  "titleField": "title",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "required": true
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "type": "text"
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "metadata",
+      "label": "Metadata",
+      "type": "text"
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "body",
+      "label": "Body",
+      "type": "richtext"
+    },
+    {
+      "key": "examples",
+      "label": "Examples",
+      "type": "richtext"
+    },
+    {
+      "key": "nextLabel",
+      "label": "Nextlabel",
+      "type": "text"
+    },
+    {
+      "key": "nextURL",
+      "label": "Next url",
+      "type": "url"
+    }
+  ]
+}

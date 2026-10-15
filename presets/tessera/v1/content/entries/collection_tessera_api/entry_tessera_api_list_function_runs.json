@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_list_function_runs",
+  "collectionId": "collection_tessera_api",
+  "slug": "list-function-runs",
+  "values": {
+    "title": "List function runs",
+    "category": "Functions",
+    "summary": "List recent runs of a function with status and timing.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/functions/{name}/runs\n\nReturns runs from the last 7 days, newest first.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**name string required**\n\nThe function name.\n\n### Query parameters\n\n**status string optional**\n\nsucceeded, failed or running.\n\n**limit integer optional**\n\n1–100. Defaults to 20.\n\n### Response fields\n\n**data Run[] required**\n\nRuns with id, status, started_at and duration_ms.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo function exists with this ID in the environment.\n\n[\n\nPrevious\n\nInvoke function\n\n](/api-reference/invoke-function)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/functions/welcome-email/runs?status=failed \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"data\": [\n    {\n      \"id\": \"run_5kq9\",\n      \"status\": \"failed\",\n      \"started_at\": \"2026-09-28T07:00:02Z\",\n      \"duration_ms\": 30000,\n      \"error\": \"timeout\"\n    }\n  ]\n}\n```\n\n",
+    "nextLabel": "Create webhook",
+    "nextURL": "/api-reference/create-webhook"
+  }
+}

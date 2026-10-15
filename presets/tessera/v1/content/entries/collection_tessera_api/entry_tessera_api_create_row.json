@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_create_row",
+  "collectionId": "collection_tessera_api",
+  "slug": "create-row",
+  "values": {
+    "title": "Create row",
+    "category": "Rows",
+    "summary": "Insert a row. Values are validated against the schema.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/rows/{table}\n\nInserts one row and returns it with defaults applied. Send an array to insert up to 500 rows in one request.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**table string required**\n\nTable name.\n\n### Request body\n\n**…columns object required**\n\nColumn values. Required columns without defaults must be present.\n\n### Response fields\n\n**id string required**\n\nPrimary key of the new row.\n\n**… any required**\n\nThe inserted row with defaults.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**403 forbidden**\n\nThe key doesn't have the scope needed for this endpoint.\n\n**422 validation_failed**\n\nOne or more fields are invalid. See error.fields for details.\n\n[\n\nPrevious\n\nRetrieve row\n\n](/api-reference/retrieve-row)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/rows/tasks \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"title\":\"Write changelog\",\"project_id\":\"prj_8f2k1\"}'\n```\n\n\n\n\n\n```\n{\n  \"id\": \"tsk_2b\",\n  \"title\": \"Write changelog\",\n  \"done\": false,\n  \"project_id\": \"prj_8f2k1\",\n  \"created_at\": \"2026-09-28T08:30:00Z\"\n}\n```\n\n",
+    "nextLabel": "Update row",
+    "nextURL": "/api-reference/update-row"
+  }
+}

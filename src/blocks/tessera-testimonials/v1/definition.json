@@ -1,0 +1,195 @@
+{
+  "type": "tessera-testimonials",
+  "version": 1,
+  "label": "Tessera · Testimonials",
+  "theme": "Tessera",
+  "description": "Editable testimonials section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "never",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    },
+    {
+      "key": "variant",
+      "label": "Variant",
+      "type": "select",
+      "options": [
+        {
+          "value": "stories",
+          "label": "Stories"
+        },
+        {
+          "value": "community",
+          "label": "Community"
+        }
+      ]
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "key": "quote",
+          "label": "Quote",
+          "type": "text",
+          "multiline": true
+        },
+        {
+          "key": "name",
+          "label": "Name",
+          "type": "text"
+        },
+        {
+          "key": "role",
+          "label": "Role",
+          "type": "text"
+        },
+        {
+          "key": "metric",
+          "label": "Metric",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        },
+        {
+          "key": "image",
+          "label": "Image",
+          "type": "media"
+        },
+        {
+          "key": "wordmark",
+          "label": "Wordmark style",
+          "type": "select",
+          "options": [
+            {
+              "value": "sans",
+              "label": "Sans"
+            },
+            {
+              "value": "serif",
+              "label": "Italic serif"
+            },
+            {
+              "value": "mono",
+              "label": "Monospace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "emphasis",
+      "label": "Italic phrase",
+      "type": "text"
+    },
+    {
+      "key": "caption",
+      "label": "Caption",
+      "type": "text"
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "Customers",
+    "heading": "Trusted by teams\nshipping real products",
+    "description": "From fintech dashboards to one-person SaaS, teams build their backends on Tessera. Hear from a few of them.",
+    "actionLabel": "Read customer stories →",
+    "actionURL": "/customers",
+    "variant": "stories",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "title": "Northwind Labs",
+        "quote": "“We deleted about 6,000 lines of glue code the week we moved to Tessera. Backend setup went from three weeks to two days, and features ship three times faster because the types follow the schema.”",
+        "name": "Priya Raman",
+        "role": "CTO at Northwind Labs",
+        "metric": "",
+        "url": "",
+        "image": {
+          "mediaId": "media_tessera_6a2a1bbd9ba0",
+          "alt": "Priya Raman"
+        },
+        "wordmark": "sans"
+      },
+      {
+        "_rowId": "row-2",
+        "title": "Loop & Co.",
+        "quote": "“Preview environments per pull request changed how we review backend work. We shipped realtime editing without running a socket layer, and median sync sits at 40 ms.”",
+        "name": "Marcus Lee",
+        "role": "Staff Engineer at Loop & Co",
+        "metric": "",
+        "url": "",
+        "image": {
+          "mediaId": "media_tessera_aa78aad02d6b",
+          "alt": "Marcus Lee"
+        },
+        "wordmark": "serif"
+      },
+      {
+        "_rowId": "row-3",
+        "title": "fieldnote",
+        "quote": "“Types that go from the database all the way to the component. That alone sold us. One developer, one schema, twelve thousand users, and a first-year infra bill of zero.”",
+        "name": "Jonas Berg",
+        "role": "Founder at Fieldnote",
+        "metric": "",
+        "url": "",
+        "image": {
+          "mediaId": "media_tessera_eddcc957a67b",
+          "alt": "Jonas Berg"
+        },
+        "wordmark": "mono"
+      }
+    ],
+    "emphasis": "shipping real products",
+    "caption": ""
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

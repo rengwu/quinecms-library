@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_6",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-7-0",
+  "values": {
+    "title": "CLI init wizard",
+    "version": "1.7.0",
+    "date": "2026-06-16",
+    "category": "Improvement",
+    "body": "`tessera init` now scaffolds a project for your framework instead of a blank folder.\n\n## Templates\n\n- Next.js, Remix, SvelteKit and plain Node are supported.\n\n- The wizard adds `.env` entries and a working `schema.ts`.\n\n- Run it inside an existing app to add Tessera without overwriting files."
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_customers_northwind_labs",
+  "collectionId": "collection_tessera_customers",
+  "slug": "northwind-labs",
+  "values": {
+    "title": "“We deleted about 6,000 lines of glue code the week we moved to Tessera.”",
+    "category": "Northwind Labs",
+    "summary": "87% · less boilerplate · 3x · faster feature delivery",
+    "metadata": "Priya Raman · CTO at Northwind Labs",
+    "image": {
+      "mediaId": "media_tessera_c73438c96152",
+      "alt": ""
+    },
+    "body": "## The challenge\n\nNorthwind Labs builds a fintech dashboard for finance teams. Every new feature meant another week of setup: tables, endpoints, permissions, and the types to hold them together.\n\n## Why Tessera\n\nThe team moved its schema into Tessera and let it generate the database, the API, and the clients. Row-level rules replaced a hand-written permissions layer, and preview branches made every backend change reviewable.\n\n## Results\n\nBackend setup dropped from three weeks to two days. About 6,000 lines of glue code were deleted, and the team now ships features three times faster.",
+    "examples": "",
+    "nextLabel": "← All stories",
+    "nextURL": "/customers",
+    "order": 0
+  }
+}

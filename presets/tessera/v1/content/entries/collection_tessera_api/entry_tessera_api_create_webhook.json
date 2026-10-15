@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_create_webhook",
+  "collectionId": "collection_tessera_api",
+  "slug": "create-webhook",
+  "values": {
+    "title": "Create webhook",
+    "category": "Webhooks",
+    "summary": "Send an HTTP request to your URL when rows change.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/webhooks\n\nCreates a webhook subscription. Each delivery is signed with the returned `secret` in the `Tessera-Signature` header.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Request body\n\n**url string required**\n\nHTTPS endpoint to deliver to.\n\n**events string[] required**\n\nEvents such as tasks.insert or *.delete.\n\n**description string optional**\n\nShown in the dashboard.\n\n### Response fields\n\n**id string required**\n\nWebhook ID.\n\n**secret string required**\n\nSigning secret. Shown only once.\n\n**events string[] required**\n\nSubscribed events.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**422 validation_failed**\n\nOne or more fields are invalid. See error.fields for details.\n\n[\n\nPrevious\n\nList function runs\n\n](/api-reference/list-function-runs)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/webhooks \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"url\":\"https://acme.dev/hooks/tessera\",\"events\":[\"tasks.insert\"]}'\n```\n\n\n\n\n\n```\n{\n  \"id\": \"wh_3pd8\",\n  \"url\": \"https://acme.dev/hooks/tessera\",\n  \"events\": [\n    \"tasks.insert\"\n  ],\n  \"secret\": \"whsec_Qm8…\"\n}\n```\n\n",
+    "nextLabel": "List webhooks",
+    "nextURL": "/api-reference/list-webhooks"
+  }
+}

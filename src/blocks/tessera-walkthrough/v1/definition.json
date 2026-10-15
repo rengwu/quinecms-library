@@ -1,0 +1,101 @@
+{
+  "type": "tessera-walkthrough",
+  "version": 1,
+  "label": "Tessera · Walkthrough",
+  "theme": "Tessera",
+  "description": "Editable walkthrough section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    },
+    {
+      "key": "steps",
+      "label": "Steps",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "multiline": true
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "How it works",
+    "heading": "One schema, four steps to a live backend",
+    "description": "Define it once. Tessera builds the database, the API, and the types, and keeps them in sync while you ship.",
+    "actionLabel": "Read quickstart →",
+    "actionURL": "/docs/quickstart",
+    "steps": [
+      {
+        "_rowId": "row-1",
+        "title": "Schema",
+        "description": "Define tables, relations, and rules in TypeScript. One schema powers your database, API, and types."
+      },
+      {
+        "_rowId": "row-2",
+        "title": "Data",
+        "description": "Push, and Tessera plans a safe migration from the diff. Every branch gets its own copy of the data."
+      },
+      {
+        "_rowId": "row-3",
+        "title": "Query",
+        "description": "Query with a typed builder. Change a column and the compiler shows you what breaks."
+      },
+      {
+        "_rowId": "row-4",
+        "title": "Live",
+        "description": "Subscribe to any query. Presence and broadcast are built in, with no sockets to manage."
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

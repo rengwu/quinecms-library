@@ -1,0 +1,290 @@
+{
+  "id": "tessera",
+  "version": 1,
+  "label": "Tessera",
+  "description": "Serif-led developer platform design with marketing, documentation and API layout modes.",
+  "activation": "load",
+  "defaults": {
+    "contentMaxWidth": 1200,
+    "pageGutter": 48,
+    "title": "Tessera",
+    "description": "Define your schema. Ship your backend.",
+    "brand": "Tessera",
+    "mode": "marketing",
+    "colorMode": "light",
+    "navigation": [
+      {
+        "_rowId": "row-1",
+        "label": "Product",
+        "url": "/product"
+      },
+      {
+        "_rowId": "row-2",
+        "label": "Docs",
+        "url": "/docs"
+      },
+      {
+        "_rowId": "row-3",
+        "label": "Pricing",
+        "url": "/pricing"
+      },
+      {
+        "_rowId": "row-4",
+        "label": "Customers",
+        "url": "/customers"
+      },
+      {
+        "_rowId": "row-5",
+        "label": "Changelog",
+        "url": "/changelog"
+      }
+    ],
+    "sidebar": [],
+    "actionLabel": "Start building",
+    "actionURL": "/docs/quickstart",
+    "signInURL": "",
+    "repositoryURL": "https://github.com",
+    "repositoryLabel": "12.4k",
+    "footerDescription": "Define your schema. Ship your backend.",
+    "footerLinks": [
+      {
+        "_rowId": "row-1",
+        "group": "Product",
+        "label": "Database",
+        "url": "/product#database"
+      },
+      {
+        "_rowId": "row-2",
+        "group": "Product",
+        "label": "Auth",
+        "url": "/product#auth"
+      },
+      {
+        "_rowId": "row-3",
+        "group": "Product",
+        "label": "Realtime",
+        "url": "/product#realtime"
+      },
+      {
+        "_rowId": "row-4",
+        "group": "Product",
+        "label": "Functions",
+        "url": "/product#functions"
+      },
+      {
+        "_rowId": "row-5",
+        "group": "Product",
+        "label": "Pricing",
+        "url": "/pricing"
+      },
+      {
+        "_rowId": "row-6",
+        "group": "Product",
+        "label": "Changelog",
+        "url": "/changelog"
+      },
+      {
+        "_rowId": "row-7",
+        "group": "Developers",
+        "label": "Docs",
+        "url": "/docs"
+      },
+      {
+        "_rowId": "row-8",
+        "group": "Developers",
+        "label": "Quickstart",
+        "url": "/docs/quickstart"
+      },
+      {
+        "_rowId": "row-9",
+        "group": "Developers",
+        "label": "API reference",
+        "url": "/api-reference"
+      },
+      {
+        "_rowId": "row-10",
+        "group": "Developers",
+        "label": "CLI",
+        "url": "/docs/installation"
+      },
+      {
+        "_rowId": "row-11",
+        "group": "Developers",
+        "label": "GitHub",
+        "url": "https://github.com"
+      },
+      {
+        "_rowId": "row-12",
+        "group": "Company",
+        "label": "Customers",
+        "url": "/customers"
+      },
+      {
+        "_rowId": "row-13",
+        "group": "Company",
+        "label": "Blog",
+        "url": "/blog"
+      },
+      {
+        "_rowId": "row-14",
+        "group": "Company",
+        "label": "Contact",
+        "url": "mailto:hello@tessera.dev"
+      }
+    ],
+    "copyright": "© 2026 Tessera, Inc."
+  },
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "brand",
+      "label": "Brand",
+      "type": "text"
+    },
+    {
+      "key": "mode",
+      "label": "Mode",
+      "type": "select",
+      "options": [
+        {
+          "value": "marketing",
+          "label": "Marketing"
+        },
+        {
+          "value": "docs",
+          "label": "Docs"
+        },
+        {
+          "value": "api",
+          "label": "Api"
+        }
+      ]
+    },
+    {
+      "key": "colorMode",
+      "label": "Colormode",
+      "type": "select",
+      "options": [
+        {
+          "value": "light",
+          "label": "Light"
+        },
+        {
+          "value": "dark",
+          "label": "Dark"
+        }
+      ]
+    },
+    {
+      "key": "navigation",
+      "label": "Navigation",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "sidebar",
+      "label": "Sidebar",
+      "type": "list",
+      "fields": [
+        {
+          "key": "group",
+          "label": "Group",
+          "type": "text"
+        },
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    },
+    {
+      "key": "signInURL",
+      "label": "Sign-in URL (optional)",
+      "type": "url"
+    },
+    {
+      "key": "repositoryURL",
+      "label": "Repository url",
+      "type": "url"
+    },
+    {
+      "key": "repositoryLabel",
+      "label": "Repositorylabel",
+      "type": "text"
+    },
+    {
+      "key": "footerDescription",
+      "label": "Footerdescription",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "footerLinks",
+      "label": "Footerlinks",
+      "type": "list",
+      "fields": [
+        {
+          "key": "group",
+          "label": "Group",
+          "type": "text"
+        },
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "copyright",
+      "label": "Copyright",
+      "type": "text"
+    }
+  ],
+  "component": "View.tsx",
+  "settingsComponent": "Settings.tsx",
+  "policy": "policy.ts",
+  "headComponent": "Head.tsx"
+}

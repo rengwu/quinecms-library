@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_subscriptions",
+  "collectionId": "collection_tessera_docs",
+  "slug": "subscriptions",
+  "values": {
+    "title": "Subscriptions",
+    "category": "Realtime",
+    "summary": "Subscribe to a query and receive updates as rows change.",
+    "metadata": "",
+    "image": null,
+    "body": "## Live queries\n\nAny query can become live. Call `.live()` and pass a callback; it runs once with the current rows and again whenever they change.\n\nTypeScript\n\n```\nconst stop = db.tasks\n  .where({ projectId, done: false })\n  .live((tasks) => render(tasks))\n \n// later\nstop()\n```\n\n## React\n\nTypeScript\n\n```\nimport { useLive } from \"tessera/react\"\n \nconst tasks = useLive(db.tasks.where({ projectId }))\n```\n\nRules apply to updates\n\nSubscribers only receive changes to rows their rules allow them to read.\n\n[\n\nPrevious\n\nRow-level rules\n\n](/docs/row-level-rules)",
+    "examples": "",
+    "nextLabel": "Presence",
+    "nextURL": "/docs/presence"
+  }
+}

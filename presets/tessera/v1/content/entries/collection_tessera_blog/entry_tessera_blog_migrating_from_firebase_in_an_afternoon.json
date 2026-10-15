@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_migrating_from_firebase_in_an_afternoon",
+  "collectionId": "collection_tessera_blog",
+  "slug": "migrating-from-firebase-in-an-afternoon",
+  "values": {
+    "title": "Migrating from Firebase in an afternoon",
+    "category": "Guides",
+    "summary": "A step-by-step walkthrough with a real app.",
+    "metadata": "Priya Nair · Jul 30, 2026 · 12 min read",
+    "image": null,
+    "body": "## Map your collections\n\nFirestore collections become tables, and documents become rows. Define the schema first, then import your data.\n\n## Move auth and cut over\n\nMigrate your users, rewrite queries with the typed client, and switch traffic once the preview branch passes your checks.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 4
+  }
+}

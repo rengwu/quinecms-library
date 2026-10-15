@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_update_row",
+  "collectionId": "collection_tessera_api",
+  "slug": "update-row",
+  "values": {
+    "title": "Update row",
+    "category": "Rows",
+    "summary": "Update some columns of a row.",
+    "metadata": "",
+    "image": null,
+    "body": "PATCH\n\n/v1/rows/{table}/{id}\n\nOnly the fields you send are changed. Returns the updated row.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**table string required**\n\nTable name.\n\n**id string required**\n\nPrimary key of the row.\n\n### Request body\n\n**…columns object required**\n\nColumns to change.\n\n### Response fields\n\n**id string required**\n\nPrimary key.\n\n**… any required**\n\nThe row after the update.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo row exists with this ID in the environment.\n\n**422 validation_failed**\n\nOne or more fields are invalid. See error.fields for details.\n\n[\n\nPrevious\n\nCreate row\n\n](/api-reference/create-row)",
+    "examples": "\n\n```\ncurl --request PATCH \\\n  --url https://api.tessera.dev/v1/rows/tasks/tsk_2b \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"done\":true}'\n```\n\n\n\n\n\n```\n{\n  \"id\": \"tsk_2b\",\n  \"title\": \"Write changelog\",\n  \"done\": true,\n  \"updated_at\": \"2026-09-28T09:12:00Z\"\n}\n```\n\n",
+    "nextLabel": "Delete row",
+    "nextURL": "/api-reference/delete-row"
+  }
+}

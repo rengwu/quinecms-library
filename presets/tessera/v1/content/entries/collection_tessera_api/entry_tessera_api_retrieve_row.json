@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_retrieve_row",
+  "collectionId": "collection_tessera_api",
+  "slug": "retrieve-row",
+  "values": {
+    "title": "Retrieve row",
+    "category": "Rows",
+    "summary": "Get a single row by primary key.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/rows/{table}/{id}\n\nReturns the row if it exists and the caller’s rules allow reading it.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**table string required**\n\nTable name.\n\n**id string required**\n\nPrimary key of the row.\n\n### Query parameters\n\n**with string optional**\n\nComma-separated relations to include, for example project.\n\n### Response fields\n\n**id string required**\n\nPrimary key.\n\n**… any required**\n\nEvery column the caller can read.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo row exists with this ID in the environment.\n\n[\n\nPrevious\n\nList rows\n\n](/api-reference/list-rows)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/rows/tasks/tsk_1a?with=project \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"id\": \"tsk_1a\",\n  \"title\": \"Ship docs\",\n  \"done\": false,\n  \"project\": {\n    \"id\": \"prj_8f2k1\",\n    \"name\": \"Acme\"\n  }\n}\n```\n\n",
+    "nextLabel": "Create row",
+    "nextURL": "/api-reference/create-row"
+  }
+}

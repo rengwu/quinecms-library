@@ -1,0 +1,204 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_product",
+  "kind": "static",
+  "title": "Product",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_product_block_1",
+      "type": "tessera-heading",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "One schema. Four building blocks.",
+        "description": "Database, auth, realtime, and functions share a single source of truth, so they never disagree."
+      }
+    },
+    {
+      "id": "page_tessera_product_block_2",
+      "type": "tessera-product-feature",
+      "version": 1,
+      "props": {
+        "anchor": "database",
+        "eyebrow": "Database ›",
+        "heading": "Postgres, with types that follow you.",
+        "description": "Tessera manages a real Postgres database and gives you a typed query builder on top. Migrations are planned from schema diffs, and every branch gets its own copy of the data.",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "Typed queries"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Schema branching"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Point-in-time recovery"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "Read replicas (Team)"
+          }
+        ],
+        "filename": "queries.ts",
+        "code": "const posts = await db.posts\n  .where({ published: true })\n  .orderBy(desc.createdAt)\n  .all()\n\n// posts: Post[]",
+        "actionLabel": "Read the docs →",
+        "actionURL": "/docs/queries",
+        "reverse": false
+      }
+    },
+    {
+      "id": "page_tessera_product_block_3",
+      "type": "tessera-product-feature",
+      "version": 1,
+      "props": {
+        "anchor": "auth",
+        "eyebrow": "Auth ›",
+        "heading": "Authentication and permissions in one place.",
+        "description": "Add sign-in in a few lines, then write access rules next to the data they protect. There is no separate policy language to learn.",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "Email, OAuth, and magic links"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Roles and row-level rules"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Session management"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "Audit logs (Team)"
+          }
+        ],
+        "filename": "rules.ts",
+        "code": "rules(posts, {\n  read: () => true,\n  write: ({ user, row }) =>\n    row.authorId === user.id,\n})",
+        "actionLabel": "Read the docs →",
+        "actionURL": "/docs/row-level-rules",
+        "reverse": true
+      }
+    },
+    {
+      "id": "page_tessera_product_block_4",
+      "type": "tessera-product-feature",
+      "version": 1,
+      "props": {
+        "anchor": "realtime",
+        "eyebrow": "Realtime ›",
+        "heading": "Subscribe to any query.",
+        "description": "Get live updates without managing sockets. Presence and broadcast channels cover multiplayer editing and chat.",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "Query subscriptions"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Presence"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Broadcast"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "Automatic reconnect"
+          }
+        ],
+        "filename": "live.ts",
+        "code": "const room = db.presence(doc)\n\nroom.subscribe((people) => {\n  showCursors(people)\n})",
+        "actionLabel": "Read the docs →",
+        "actionURL": "/docs/subscriptions",
+        "reverse": false
+      }
+    },
+    {
+      "id": "page_tessera_product_block_5",
+      "type": "tessera-product-feature",
+      "version": 1,
+      "props": {
+        "anchor": "functions",
+        "eyebrow": "Functions ›",
+        "heading": "Server code, without the servers.",
+        "description": "Write a function, attach a trigger, and deploy it with the rest of your project. Secrets and logs are managed for you.",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "HTTP, cron, and database triggers"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Managed secrets"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Live logs"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "Local emulation"
+          }
+        ],
+        "filename": "notify.ts",
+        "code": "export default fn(async (ctx) => {\n  const { id } = ctx.input\n  const post = await db.posts.get(id)\n  return notify(post.authorId)\n})",
+        "actionLabel": "Read the docs →",
+        "actionURL": "/docs/writing-functions",
+        "reverse": true
+      }
+    },
+    {
+      "id": "page_tessera_product_block_6",
+      "type": "tessera-features",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Also in the box",
+        "description": "Everything you need to build, test, and ship.",
+        "actionLabel": "Explore the platform →",
+        "actionURL": "/product",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "title": "Generated clients",
+            "symbol": "〈〉",
+            "description": "TypeScript, Python, and Go clients are generated from your schema, so the types are always current.",
+            "url": "/docs/installation"
+          },
+          {
+            "_rowId": "row-2",
+            "title": "CLI",
+            "symbol": "⌘",
+            "description": "Run a local environment, apply migrations, and ship to production from one command.",
+            "url": "/docs/installation"
+          }
+        ],
+        "panels": []
+      }
+    },
+    {
+      "id": "page_tessera_product_block_7",
+      "type": "tessera-cta",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Ship your\nfirst endpoint\nin ten minutes.",
+        "description": "",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Talk to us",
+        "secondaryURL": "mailto:hello@tessera.dev",
+        "emphasis": "minutes"
+      }
+    }
+  ],
+  "path": "/product"
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_7",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-6-1",
+  "values": {
+    "title": "Presence flicker",
+    "version": "1.6.1",
+    "date": "2026-06-02",
+    "category": "Fix",
+    "body": "Fixed duplicate presence events after a client reconnects.\n\n## What changed\n\n- A reconnecting client now resumes its previous presence session instead of opening a second one.\n\n- Stale sessions are cleaned up after five seconds."
+  }
+}

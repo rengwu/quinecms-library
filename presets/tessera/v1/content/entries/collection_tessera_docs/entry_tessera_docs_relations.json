@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_relations",
+  "collectionId": "collection_tessera_docs",
+  "slug": "relations",
+  "values": {
+    "title": "Relations",
+    "category": "Database",
+    "summary": "Model one-to-many and many-to-many relations and load them in a single query.",
+    "metadata": "",
+    "image": null,
+    "body": "## One-to-many\n\nA column with `references()` creates a one-to-many relation. The client exposes it in both directions.\n\nTypeScript\n\n```\nconst project = await db.projects.find(id, {\n  with: { tasks: { where: { done: false } } },\n})\n// project.tasks: Task[]\n```\n\n## Many-to-many\n\nDefine a join table with two references. Tessera recognises the pattern and adds a `through` helper.\n\nschema.ts\n\n```\nexport const memberships = table(\"memberships\", {\n  userId: uuid().references(() => users.id),\n  projectId: uuid().references(() => projects.id),\n}).primaryKey(\"userId\", \"projectId\")\n```\n\n## Loading strategy\n\nNested `with` clauses compile to a single SQL query using lateral joins, so loading relations never causes N+1 requests.\n\nSelect less\n\nCombine `with` and `select` to fetch only the columns a view needs.\n\n[\n\nPrevious\n\nQueries\n\n](/docs/queries)",
+    "examples": "",
+    "nextLabel": "Indexes",
+    "nextURL": "/docs/indexes"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_api_reference",
+  "kind": "static",
+  "title": "Introduction",
+  "layoutId": "layout_tessera_api",
+  "blocks": [
+    {
+      "id": "page_tessera_api_reference_block_1",
+      "type": "tessera-article",
+      "version": 1,
+      "props": {
+        "title": "API Reference",
+        "category": "Overview",
+        "summary": "The Tessera REST API gives you programmatic access to projects, environments, rows, functions and webhooks.",
+        "metadata": "",
+        "image": null,
+        "body": "## Base URL\n\nAll endpoints live under a single versioned base URL. Every request must use HTTPS.\n\nBase URL\n\n```\nhttps://api.tessera.dev/v1\n```\n\n## Authentication\n\nAuthenticate with a bearer token in the `Authorization` header. Use a server key from your project settings, or a user access token from `Create token`.\n\nHeader\n\n```\nAuthorization: Bearer $TESSERA_KEY\n```\n\nKeep server keys private\n\nServer keys bypass row-level rules. Never ship them to a browser or mobile app.\n\n## Errors\n\nErrors return a JSON body with a machine-readable `code` and a human-readable `message`.\n\nStatus\n\nMeaning\n\n`400`\n\nThe request is malformed or a grant is invalid.\n\n`401`\n\nThe token is missing, expired or revoked.\n\n`403`\n\nThe key lacks the scope for this endpoint.\n\n`404`\n\nThe resource doesn’t exist in this environment.\n\n`422`\n\nValidation failed. See `error.fields`.\n\n`429`\n\nRate limited. Retry after `Retry-After` seconds.\n\n## Rate limits\n\nEach key can make 100 requests per second. Every response includes `X-RateLimit-Remaining`; when you hit the limit, wait for the number of seconds in `Retry-After`.\n\n## Pagination\n\nList endpoints return up to 20 items and a `next_cursor`. Pass it as `cursor` to fetch the next page; it’s `null` on the last page.\n\n## Versioning\n\nThe version is part of the URL (`/v1`). Additive changes, like new fields or endpoints, ship without a version bump, so ignore fields you don’t recognise.",
+        "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/rows/tasks?limit=2 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"data\": [\n    {\n      \"id\": \"tsk_1a\",\n      \"title\": \"Ship docs\",\n      \"done\": false\n    },\n    {\n      \"id\": \"tsk_2b\",\n      \"title\": \"Write changelog\",\n      \"done\": true\n    }\n  ],\n  \"next_cursor\": \"c_eyJpZCI6InRza18yYiJ9\"\n}\n```\n\n",
+        "nextLabel": "Create token",
+        "nextURL": "/api-reference/create-token"
+      }
+    }
+  ],
+  "path": "/api-reference"
+}

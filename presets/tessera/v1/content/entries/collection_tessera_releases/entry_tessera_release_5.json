@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_5",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-7-3",
+  "values": {
+    "title": "Auth session format",
+    "version": "1.7.3",
+    "date": "2026-06-30",
+    "category": "Breaking",
+    "body": "Session tokens now use the v2 format. Existing sessions keep working until they expire, and new sessions are issued in the new format.\n\n## Migration notes\n\n- Custom code that decodes tokens should read the `sub` and `exp` claims from the new payload.\n\n- The public key set is available at the same JWKS endpoint.\n\n- Set `sessionFormat: \"v1\"` in `tessera.config.ts` to delay the switch by one release."
+  }
+}

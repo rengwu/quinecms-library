@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_quickstart",
+  "collectionId": "collection_tessera_docs",
+  "slug": "quickstart",
+  "values": {
+    "title": "Quickstart",
+    "category": "Getting started",
+    "summary": "Create a project, define a table and run your first typed query in about ten minutes.",
+    "metadata": "",
+    "image": null,
+    "body": "## Before you start\n\nYou need Node.js 20 or later and a Tessera account. The CLI works on macOS, Linux and Windows (WSL).\n\n## Build your first endpoint\n\n1\n\nCreate a project\n\nRun the create command. It scaffolds `schema.ts`, a `.env` file and a generated client folder.\n\nTerminal\n\n```\nnpm create tessera@latest my-app\ncd my-app\n```\n\n2\n\nDefine a table\n\nOpen `schema.ts` and add a table. Columns are typed, and you can mark them as required, unique or give them a default.\n\nschema.ts\n\n```\nimport { table, uuid, text, boolean, timestamp } from \"tessera\"\n \nexport const todos = table(\"todos\", {\n  id: uuid().primaryKey(),\n  title: text().notNull(),\n  done: boolean().default(false),\n  createdAt: timestamp().defaultNow(),\n})\n```\n\n3\n\nPush the schema\n\nTessera plans the migration, shows you the SQL and applies it to your development environment.\n\nTerminal\n\n```\nnpx tessera push\n```\n\n4\n\nQuery it\n\nImport the generated client and read your first rows. The result is fully typed.\n\napp.ts\n\n```\nimport { db } from \"./tessera\"\n \nconst open = await db.todos.where({ done: false }).all()\n// open: Todo[]\n```\n\nDevelopment data\n\nYour development environment starts empty. Use `npx tessera seed` to load sample rows from `seed.ts`.\n\n## What you built\n\nYou now have a Postgres table, a migration history and a typed client. The same schema also powers the REST API, so `GET /v1/rows/todos` works straight away.",
+    "examples": "",
+    "nextLabel": "Installation",
+    "nextURL": "/docs/installation"
+  }
+}

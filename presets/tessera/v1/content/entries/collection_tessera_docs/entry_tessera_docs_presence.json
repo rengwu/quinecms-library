@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_presence",
+  "collectionId": "collection_tessera_docs",
+  "slug": "presence",
+  "values": {
+    "title": "Presence",
+    "category": "Realtime",
+    "summary": "Show who's online and what they're doing with shared, ephemeral state.",
+    "metadata": "",
+    "image": null,
+    "body": "## Joining a channel\n\nTypeScript\n\n```\nconst room = realtime.channel(`project:${projectId}`)\n \nroom.presence.track({ name: user.name, cursor: null })\nroom.presence.onChange((people) => showAvatars(people))\n```\n\n## Broadcast\n\nSend short-lived events, like cursor positions or typing indicators, that don’t need to be stored.\n\nTypeScript\n\n```\nroom.broadcast(\"cursor\", { x, y })\nroom.on(\"cursor\", ({ x, y }, from) => moveCursor(from, x, y))\n```\n\nThrottle cursors\n\nBroadcast cursor positions at most every 50ms to stay well under channel limits.\n\n[\n\nPrevious\n\nSubscriptions\n\n](/docs/subscriptions)",
+    "examples": "",
+    "nextLabel": "Writing functions",
+    "nextURL": "/docs/writing-functions"
+  }
+}

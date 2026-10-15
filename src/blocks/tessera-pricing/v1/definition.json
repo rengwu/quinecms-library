@@ -1,0 +1,126 @@
+{
+  "type": "tessera-pricing",
+  "version": 1,
+  "label": "Tessera · Pricing",
+  "theme": "Tessera",
+  "description": "Editable pricing section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "plans",
+      "label": "Plans",
+      "type": "list",
+      "fields": [
+        {
+          "key": "name",
+          "label": "Name",
+          "type": "text"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text"
+        },
+        {
+          "key": "monthly",
+          "label": "Monthly",
+          "type": "text"
+        },
+        {
+          "key": "annual",
+          "label": "Annual",
+          "type": "text"
+        },
+        {
+          "key": "period",
+          "label": "Period",
+          "type": "text"
+        },
+        {
+          "key": "features",
+          "label": "Features",
+          "type": "text",
+          "multiline": true
+        },
+        {
+          "key": "actionLabel",
+          "label": "Actionlabel",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        },
+        {
+          "key": "featured",
+          "label": "Featured",
+          "type": "toggle"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "plans": [
+      {
+        "_rowId": "row-1",
+        "name": "Free",
+        "description": "For side projects",
+        "monthly": "$0",
+        "annual": "$0",
+        "period": "forever",
+        "features": "2 projects\n500 MB database\n50k requests/month\nCommunity support",
+        "actionLabel": "Start building",
+        "url": "/docs/quickstart",
+        "featured": false
+      },
+      {
+        "_rowId": "row-2",
+        "name": "Pro",
+        "description": "For production apps",
+        "monthly": "$25",
+        "annual": "$20",
+        "period": "per month, per project",
+        "features": "8 GB database\n5M requests/month\nDaily backups\nEmail support",
+        "actionLabel": "Start with Pro",
+        "url": "/docs/quickstart",
+        "featured": true
+      },
+      {
+        "_rowId": "row-3",
+        "name": "Team",
+        "description": "For growing teams",
+        "monthly": "$199",
+        "annual": "$159",
+        "period": "per month",
+        "features": "Everything in Pro\nSSO and audit logs\n99.9% uptime SLA\nPriority support",
+        "actionLabel": "Start with Team",
+        "url": "/docs/quickstart",
+        "featured": false
+      },
+      {
+        "_rowId": "row-4",
+        "name": "Enterprise",
+        "description": "For scale & security",
+        "monthly": "Custom",
+        "annual": "Custom",
+        "period": "let’s talk",
+        "features": "Everything in Team\nDedicated infra\nSOC 2 report\nCustom SLA",
+        "actionLabel": "Contact sales",
+        "url": "mailto:hello@tessera.dev",
+        "featured": false
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

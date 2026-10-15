@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_create_project",
+  "collectionId": "collection_tessera_api",
+  "slug": "create-project",
+  "values": {
+    "title": "Create project",
+    "category": "Projects",
+    "summary": "Create a project with development and production environments.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/projects\n\nCreates a project, provisions its database in the chosen region and returns the new project with its environments.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Request body\n\n**name string required**\n\nDisplay name, 1–64 characters.\n\n**region string optional**\n\nus-east-1, eu-west-1 or ap-southeast-1. Defaults to us-east-1.\n\n**plan string optional**\n\nfree, pro or team. Defaults to free.\n\n### Response fields\n\n**id string required**\n\nProject ID, prefixed prj_.\n\n**name string required**\n\nDisplay name.\n\n**region string required**\n\nDatabase region.\n\n**environments Environment[] required**\n\ndevelopment and production.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**403 forbidden**\n\nThe key doesn't have the scope needed for this endpoint.\n\n**422 validation_failed**\n\nOne or more fields are invalid. See error.fields for details.\n\n[\n\nPrevious\n\nList projects\n\n](/api-reference/list-projects)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/projects \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"name\":\"Acme\",\"region\":\"eu-west-1\"}'\n```\n\n\n\n\n\n```\n{\n  \"id\": \"prj_8f2k1\",\n  \"name\": \"Acme\",\n  \"region\": \"eu-west-1\",\n  \"environments\": [\n    {\n      \"id\": \"env_dev1\",\n      \"name\": \"development\"\n    },\n    {\n      \"id\": \"env_prd1\",\n      \"name\": \"production\"\n    }\n  ]\n}\n```\n\n",
+    "nextLabel": "Retrieve project",
+    "nextURL": "/api-reference/retrieve-project"
+  }
+}

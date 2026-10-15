@@ -1,0 +1,21 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_customers_fieldnote",
+  "collectionId": "collection_tessera_customers",
+  "slug": "fieldnote",
+  "values": {
+    "title": "“Types that go from the database all the way to the component. That alone sold us.”",
+    "category": "Fieldnote",
+    "summary": "9 days · from idea to launch · $0 · first-year infra bill",
+    "metadata": "Jonas Berg · Founder at Fieldnote",
+    "image": {
+      "mediaId": "media_tessera_4ff518459d8b",
+      "alt": ""
+    },
+    "body": "## The challenge\n\nA single developer had to ship a complete product: database, auth, an API, and a typed client, while also building the product itself.\n\n## Why Tessera\n\nOne schema produced the whole backend, and the generated types followed the data all the way to the components.\n\n## Results\n\nFieldnote launched in nine days, now has 12,000 users, and has not paid an infrastructure bill in its first year.",
+    "examples": "",
+    "nextLabel": "← All stories",
+    "nextURL": "/customers",
+    "order": 2
+  }
+}

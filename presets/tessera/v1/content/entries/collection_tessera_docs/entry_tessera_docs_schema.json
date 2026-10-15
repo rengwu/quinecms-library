@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_schema",
+  "collectionId": "collection_tessera_docs",
+  "slug": "schema",
+  "values": {
+    "title": "Schema",
+    "category": "Core concepts",
+    "summary": "Define tables, columns and relations in TypeScript. The schema drives the database, the API and the client.",
+    "metadata": "",
+    "image": null,
+    "body": "## Tables and columns\n\nA table is a named collection of typed columns. Column builders map directly to Postgres types, and modifiers like `.notNull()` and `.unique()` become constraints.\n\nschema.ts\n\n```\nimport { table, uuid, text, integer, timestamp } from \"tessera\"\n \nexport const projects = table(\"projects\", {\n  id: uuid().primaryKey(),\n  name: text().notNull(),\n  slug: text().notNull().unique(),\n  seats: integer().default(5),\n  createdAt: timestamp().defaultNow(),\n})\n```\n\n## Column types\n\nBuilder\n\nPostgres type\n\nTypeScript type\n\n`uuid()`\n\nuuid\n\n`string`\n\n`text()`\n\ntext\n\n`string`\n\n`integer()`\n\ninteger\n\n`number`\n\n`boolean()`\n\nboolean\n\n`boolean`\n\n`timestamp()`\n\ntimestamptz\n\n`Date`\n\n`json<T>()`\n\njsonb\n\n`T`\n\n## Relations\n\nUse `references()` to link tables. Tessera creates the foreign key and adds typed helpers to the client for joins.\n\nschema.ts\n\n```\nexport const tasks = table(\"tasks\", {\n  id: uuid().primaryKey(),\n  projectId: uuid().references(() => projects.id, { onDelete: \"cascade\" }),\n  title: text().notNull(),\n})\n```\n\nRename safely\n\nRenaming a column in the schema is detected as a rename, not a drop and add, so existing data is kept.\n\n[\n\nPrevious\n\nProject structure\n\n](/docs/project-structure)",
+    "examples": "",
+    "nextLabel": "Environments",
+    "nextURL": "/docs/environments"
+  }
+}

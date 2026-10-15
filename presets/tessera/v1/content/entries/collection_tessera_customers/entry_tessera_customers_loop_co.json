@@ -1,0 +1,21 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_customers_loop_co",
+  "collectionId": "collection_tessera_customers",
+  "slug": "loop-co",
+  "values": {
+    "title": "“Preview environments per pull request changed how we review backend work.”",
+    "category": "Loop & Co",
+    "summary": "40 ms · median sync · 0 · dedicated infra hires",
+    "metadata": "Marcus Lee · Staff Engineer at Loop & Co",
+    "image": {
+      "mediaId": "media_tessera_7ef62105cd47",
+      "alt": ""
+    },
+    "body": "## The challenge\n\nLoop & Co needed live cursors and shared editing, but did not want to build, run, and scale a socket layer of its own.\n\n## Why Tessera\n\nQuery subscriptions and presence channels gave the team realtime without any new infrastructure. Every pull request also got its own preview environment to test against.\n\n## Results\n\nMedian sync time is 40 ms, and the team shipped multiplayer editing without hiring anyone for infrastructure.",
+    "examples": "",
+    "nextLabel": "← All stories",
+    "nextURL": "/customers",
+    "order": 1
+  }
+}

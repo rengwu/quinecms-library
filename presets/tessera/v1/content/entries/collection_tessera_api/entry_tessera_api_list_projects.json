@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_list_projects",
+  "collectionId": "collection_tessera_api",
+  "slug": "list-projects",
+  "values": {
+    "title": "List projects",
+    "category": "Projects",
+    "summary": "List the projects your token can access.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/projects\n\nReturns projects in reverse creation order, 20 at a time. Use `cursor` to page through more.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Query parameters\n\n**limit integer optional**\n\nBetween 1 and 100. Defaults to 20.\n\n**cursor string optional**\n\nThe next_cursor from a previous response.\n\n### Response fields\n\n**data Project[] required**\n\nThe projects on this page.\n\n**next_cursor string | null required**\n\nPass to cursor for the next page.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**429 rate_limited**\n\nToo many requests. Retry after the number of seconds in Retry-After.\n\n[\n\nPrevious\n\nRevoke session\n\n](/api-reference/revoke-session)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/projects?limit=20 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"data\": [\n    {\n      \"id\": \"prj_8f2k1\",\n      \"name\": \"Acme\",\n      \"region\": \"eu-west-1\",\n      \"created_at\": \"2026-03-02T09:14:00Z\"\n    }\n  ],\n  \"next_cursor\": null\n}\n```\n\n",
+    "nextLabel": "Create project",
+    "nextURL": "/api-reference/create-project"
+  }
+}

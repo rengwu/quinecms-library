@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_triggers_and_schedules",
+  "collectionId": "collection_tessera_docs",
+  "slug": "triggers-and-schedules",
+  "values": {
+    "title": "Triggers & schedules",
+    "category": "Functions",
+    "summary": "Run functions when rows change or on a schedule.",
+    "metadata": "",
+    "image": null,
+    "body": "## Database triggers\n\nAttach a function to inserts, updates or deletes on a table. The function receives the old and new row.\n\nfunctions/on-signup.ts\n\n```\nexport default fn.onInsert(users, async ({ row }) => {\n  await functions.invoke(\"welcome-email\", { userId: row.id })\n})\n```\n\n## Schedules\n\nfunctions/nightly-report.ts\n\n```\nexport default fn.schedule(\"0 6 * * *\", async ({ db }) => {\n  const overdue = await db.invoices.where({ status: \"overdue\" }).count()\n  await postToSlack(`${overdue} overdue invoices`)\n})\n```\n\nBeta\n\nTriggers and schedules are in beta. Delivery is at-least-once, so make handlers idempotent.\n\n[\n\nPrevious\n\nWriting functions\n\n](/docs/writing-functions)",
+    "examples": "",
+    "nextLabel": "Secrets",
+    "nextURL": "/docs/secrets"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_indexes",
+  "collectionId": "collection_tessera_docs",
+  "slug": "indexes",
+  "values": {
+    "title": "Indexes",
+    "category": "Database",
+    "summary": "Add indexes from the schema and find slow queries before your users do.",
+    "metadata": "",
+    "image": null,
+    "body": "## Declaring an index\n\nschema.ts\n\n```\nexport const tasks = table(\"tasks\", {\n  id: uuid().primaryKey(),\n  projectId: uuid(),\n  createdAt: timestamp(),\n}).index(\"by_project\", [\"projectId\", \"createdAt\"])\n```\n\nIndexes are created concurrently during migrations, so adding one never locks writes.\n\n## Finding missing indexes\n\nThe **Observability** tab lists queries that scanned more than 10,000 rows, along with a suggested index.\n\nTerminal\n\n```\nnpx tessera db advise --env production\n```\n\n## Index types\n\nType\n\nUse it for\n\n`btree` (default)\n\nEquality and range filters, sorting.\n\n`gin`\n\n`json` columns and full-text search.\n\n`unique`\n\nEnforcing uniqueness across one or more columns.\n\n[\n\nPrevious\n\nRelations\n\n](/docs/relations)",
+    "examples": "",
+    "nextLabel": "Transactions",
+    "nextURL": "/docs/transactions"
+  }
+}

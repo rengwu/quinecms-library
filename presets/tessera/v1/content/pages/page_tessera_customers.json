@@ -1,0 +1,100 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_customers",
+  "kind": "static",
+  "title": "Customers",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_customers_block_1",
+      "type": "tessera-heading",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Teams building on Tessera",
+        "description": "From first prototype to millions of requests."
+      }
+    },
+    {
+      "id": "page_tessera_customers_block_2",
+      "type": "tessera-listing",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "",
+        "description": "",
+        "collection": "collection_tessera_customers",
+        "variant": "customers",
+        "limit": 0,
+        "titleField": "title",
+        "summaryField": "summary",
+        "imageField": "image",
+        "categoryField": "category",
+        "metadataField": "metadata",
+        "orderField": "order"
+      }
+    },
+    {
+      "id": "page_tessera_customers_block_3",
+      "type": "tessera-logos",
+      "version": 1,
+      "props": {
+        "heading": "Teams shipping on Tessera",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "Northwind Labs"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Loop & Co"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Fieldnote"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "HALCYON"
+          },
+          {
+            "_rowId": "row-5",
+            "label": "kiln"
+          },
+          {
+            "_rowId": "row-6",
+            "label": "Marrow"
+          },
+          {
+            "_rowId": "row-7",
+            "label": "oatmeal"
+          },
+          {
+            "_rowId": "row-8",
+            "label": "BASALT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_customers_block_4",
+      "type": "tessera-cta",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Ship your\nfirst endpoint\nin ten minutes.",
+        "description": "",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Talk to us",
+        "secondaryURL": "mailto:hello@tessera.dev",
+        "emphasis": "minutes"
+      }
+    }
+  ],
+  "path": "/customers"
+}

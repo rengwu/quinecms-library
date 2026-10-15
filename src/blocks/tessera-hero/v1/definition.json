@@ -1,0 +1,84 @@
+{
+  "type": "tessera-hero",
+  "version": 1,
+  "label": "Tessera · Hero",
+  "theme": "Tessera",
+  "description": "Editable hero section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "emphasis",
+      "label": "Emphasis",
+      "type": "text"
+    },
+    {
+      "key": "command",
+      "label": "Command",
+      "type": "text"
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    },
+    {
+      "key": "secondaryLabel",
+      "label": "Secondarylabel",
+      "type": "text"
+    },
+    {
+      "key": "secondaryURL",
+      "label": "Secondary url",
+      "type": "url"
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "",
+    "heading": "Define your schema.",
+    "description": "Tessera turns a typed schema into a database, API, auth, and realtime. No glue code, no drift.",
+    "emphasis": "Ship your backend.",
+    "command": "npm create tessera@latest",
+    "actionLabel": "Start building",
+    "actionURL": "/docs/quickstart",
+    "secondaryLabel": "Read the docs",
+    "secondaryURL": "/docs"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_delete_project",
+  "collectionId": "collection_tessera_api",
+  "slug": "delete-project",
+  "values": {
+    "title": "Delete project",
+    "category": "Projects",
+    "summary": "Permanently delete a project and all its environments.",
+    "metadata": "",
+    "image": null,
+    "body": "DELETE\n\n/v1/projects/{project_id}\n\nDeletes the project, every environment, database and function. This can’t be undone. Only owners can delete projects.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**project_id string required**\n\nThe project to delete.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**403 forbidden**\n\nThe key doesn't have the scope needed for this endpoint.\n\n**404 not_found**\n\nNo project exists with this ID in the environment.\n\n[\n\nPrevious\n\nRetrieve project\n\n](/api-reference/retrieve-project)",
+    "examples": "\n\n```\ncurl --request DELETE \\\n  --url https://api.tessera.dev/v1/projects/prj_8f2k1 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n// 204 No Content: the response has no body.\n```\n\n",
+    "nextLabel": "List environments",
+    "nextURL": "/api-reference/list-environments"
+  }
+}

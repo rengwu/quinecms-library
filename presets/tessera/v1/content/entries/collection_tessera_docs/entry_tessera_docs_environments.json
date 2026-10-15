@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_environments",
+  "collectionId": "collection_tessera_docs",
+  "slug": "environments",
+  "values": {
+    "title": "Environments",
+    "category": "Core concepts",
+    "summary": "Production, staging and preview branches: isolated copies of your database, keys and functions.",
+    "metadata": "",
+    "image": null,
+    "body": "## What an environment is\n\nAn environment is a fully isolated copy of your project, with its own database, API keys, secrets and function deployments. Every project starts with `development` and `production`.\n\n## Default environments\n\nEnvironment\n\nUsed for\n\nData\n\n`development`\n\nLocal work and `tessera push`\n\nSeed data, safe to reset\n\n`staging`\n\nPre-release checks and QA\n\nCopy of production, anonymised\n\n`production`\n\nYour live app\n\nReal customer data\n\n## Switching environments\n\n```\nnpx tessera env list\nnpx tessera env use staging\n```\n\nProduction is protected\n\nSchema changes reach production only through a reviewed migration. `tessera push` never targets production directly.\n\n[\n\nPrevious\n\nSchema\n\n](/docs/schema)",
+    "examples": "",
+    "nextLabel": "Migrations",
+    "nextURL": "/docs/migrations"
+  }
+}

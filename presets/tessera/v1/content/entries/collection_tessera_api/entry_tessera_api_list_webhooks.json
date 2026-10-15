@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_list_webhooks",
+  "collectionId": "collection_tessera_api",
+  "slug": "list-webhooks",
+  "values": {
+    "title": "List webhooks",
+    "category": "Webhooks",
+    "summary": "List webhook subscriptions and their recent delivery health.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/webhooks\n\nReturns every webhook in the environment with the success rate of its last 100 deliveries.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Response fields\n\n**data Webhook[] required**\n\nWebhooks with id, url, events and success_rate.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n[\n\nPrevious\n\nCreate webhook\n\n](/api-reference/create-webhook)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/webhooks \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"data\": [\n    {\n      \"id\": \"wh_3pd8\",\n      \"url\": \"https://acme.dev/hooks/tessera\",\n      \"events\": [\n        \"tasks.insert\"\n      ],\n      \"success_rate\": 0.99\n    }\n  ]\n}\n```\n\n",
+    "nextLabel": "Delete webhook",
+    "nextURL": "/api-reference/delete-webhook"
+  }
+}

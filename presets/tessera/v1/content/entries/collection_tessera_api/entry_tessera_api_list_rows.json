@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_list_rows",
+  "collectionId": "collection_tessera_api",
+  "slug": "list-rows",
+  "values": {
+    "title": "List rows",
+    "category": "Rows",
+    "summary": "List rows in a table with filters, sorting and pagination.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/rows/{table}\n\nReturns rows the caller is allowed to read under the table’s row-level rules.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**table string required**\n\nTable name from your schema, for example tasks.\n\n### Query parameters\n\n**where string optional**\n\nJSON filter, for example {\"done\":false}.\n\n**order string optional**\n\nColumn and direction, for example created_at.desc.\n\n**limit integer optional**\n\n1–100. Defaults to 20.\n\n**cursor string optional**\n\nThe next_cursor from a previous response.\n\n### Response fields\n\n**data Row[] required**\n\nRows on this page.\n\n**next_cursor string | null required**\n\nCursor for the next page.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo table exists with this ID in the environment.\n\n**429 rate_limited**\n\nToo many requests. Retry after the number of seconds in Retry-After.\n\n[\n\nPrevious\n\nPromote environment\n\n](/api-reference/promote-environment)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/rows/tasks?where=%7B%22done%22%3Afalse%7D&limit=20 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"data\": [\n    {\n      \"id\": \"tsk_1a\",\n      \"title\": \"Ship docs\",\n      \"done\": false,\n      \"created_at\": \"2026-09-21T10:02:00Z\"\n    }\n  ],\n  \"next_cursor\": \"c_eyJpZCI6InRza18xYSJ9\"\n}\n```\n\n",
+    "nextLabel": "Retrieve row",
+    "nextURL": "/api-reference/retrieve-row"
+  }
+}

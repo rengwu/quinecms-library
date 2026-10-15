@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_4",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-8-0",
+  "values": {
+    "title": "Python SDK",
+    "version": "1.8.0",
+    "date": "2026-07-14",
+    "category": "Feature",
+    "body": "A first-class, typed client for Python. It mirrors the TypeScript client so examples translate one to one.\n\n## Highlights\n\n- Install with `pip install tessera`.\n\n- Generated types from your schema through `tessera generate --lang python`.\n\n- Async and sync clients, with the same query builder as TypeScript."
+  }
+}

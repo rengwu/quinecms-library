@@ -1,0 +1,690 @@
+{
+  "formatVersion": 1,
+  "id": "site_tessera",
+  "globals": {},
+  "layouts": [
+    {
+      "id": "layout_tessera",
+      "name": "Tessera · Marketing",
+      "active": true,
+      "design": {
+        "id": "tessera",
+        "version": 1,
+        "settings": {
+          "contentMaxWidth": 1200,
+          "pageGutter": 48,
+          "title": "Tessera",
+          "description": "Define your schema. Ship your backend.",
+          "brand": "Tessera",
+          "mode": "marketing",
+          "colorMode": "light",
+          "navigation": [
+            {
+              "_rowId": "row-1",
+              "label": "Product",
+              "url": "/product"
+            },
+            {
+              "_rowId": "row-2",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-3",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-4",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-5",
+              "label": "Changelog",
+              "url": "/changelog"
+            }
+          ],
+          "sidebar": [],
+          "actionLabel": "Start building",
+          "actionURL": "/docs/quickstart",
+          "signInURL": "",
+          "repositoryURL": "https://github.com",
+          "repositoryLabel": "12.4k",
+          "footerDescription": "Define your schema. Ship your backend.",
+          "footerLinks": [
+            {
+              "_rowId": "row-1",
+              "group": "Product",
+              "label": "Database",
+              "url": "/product#database"
+            },
+            {
+              "_rowId": "row-2",
+              "group": "Product",
+              "label": "Auth",
+              "url": "/product#auth"
+            },
+            {
+              "_rowId": "row-3",
+              "group": "Product",
+              "label": "Realtime",
+              "url": "/product#realtime"
+            },
+            {
+              "_rowId": "row-4",
+              "group": "Product",
+              "label": "Functions",
+              "url": "/product#functions"
+            },
+            {
+              "_rowId": "row-5",
+              "group": "Product",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-6",
+              "group": "Product",
+              "label": "Changelog",
+              "url": "/changelog"
+            },
+            {
+              "_rowId": "row-7",
+              "group": "Developers",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-8",
+              "group": "Developers",
+              "label": "Quickstart",
+              "url": "/docs/quickstart"
+            },
+            {
+              "_rowId": "row-9",
+              "group": "Developers",
+              "label": "API reference",
+              "url": "/api-reference"
+            },
+            {
+              "_rowId": "row-10",
+              "group": "Developers",
+              "label": "CLI",
+              "url": "/docs/installation"
+            },
+            {
+              "_rowId": "row-11",
+              "group": "Developers",
+              "label": "GitHub",
+              "url": "https://github.com"
+            },
+            {
+              "_rowId": "row-12",
+              "group": "Company",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-13",
+              "group": "Company",
+              "label": "Blog",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row-14",
+              "group": "Company",
+              "label": "Contact",
+              "url": "mailto:hello@tessera.dev"
+            }
+          ],
+          "copyright": "© 2026 Tessera, Inc."
+        }
+      }
+    },
+    {
+      "id": "layout_tessera_docs",
+      "name": "Tessera · Documentation",
+      "active": true,
+      "design": {
+        "id": "tessera",
+        "version": 1,
+        "settings": {
+          "contentMaxWidth": 1200,
+          "pageGutter": 48,
+          "title": "Tessera",
+          "description": "Define your schema. Ship your backend.",
+          "brand": "Tessera",
+          "mode": "docs",
+          "colorMode": "light",
+          "navigation": [
+            {
+              "_rowId": "row-1",
+              "label": "Product",
+              "url": "/product"
+            },
+            {
+              "_rowId": "row-2",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-3",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-4",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-5",
+              "label": "Changelog",
+              "url": "/changelog"
+            }
+          ],
+          "sidebar": [
+            {
+              "_rowId": "row-1",
+              "label": "Introduction",
+              "url": "/docs",
+              "group": "Getting started"
+            },
+            {
+              "_rowId": "row-2",
+              "label": "Quickstart",
+              "url": "/docs/quickstart",
+              "group": "Getting started"
+            },
+            {
+              "_rowId": "row-3",
+              "label": "Installation",
+              "url": "/docs/installation",
+              "group": "Getting started"
+            },
+            {
+              "_rowId": "row-4",
+              "label": "Project structure",
+              "url": "/docs/project-structure",
+              "group": "Getting started"
+            },
+            {
+              "_rowId": "row-5",
+              "label": "Schema",
+              "url": "/docs/schema",
+              "group": "Core concepts"
+            },
+            {
+              "_rowId": "row-6",
+              "label": "Environments",
+              "url": "/docs/environments",
+              "group": "Core concepts"
+            },
+            {
+              "_rowId": "row-7",
+              "label": "Migrations",
+              "url": "/docs/migrations",
+              "group": "Core concepts"
+            },
+            {
+              "_rowId": "row-8",
+              "label": "Permissions",
+              "url": "/docs/permissions",
+              "group": "Core concepts"
+            },
+            {
+              "_rowId": "row-9",
+              "label": "Queries",
+              "url": "/docs/queries",
+              "group": "Database"
+            },
+            {
+              "_rowId": "row-10",
+              "label": "Relations",
+              "url": "/docs/relations",
+              "group": "Database"
+            },
+            {
+              "_rowId": "row-11",
+              "label": "Indexes",
+              "url": "/docs/indexes",
+              "group": "Database"
+            },
+            {
+              "_rowId": "row-12",
+              "label": "Transactions",
+              "url": "/docs/transactions",
+              "group": "Database"
+            },
+            {
+              "_rowId": "row-13",
+              "label": "Providers",
+              "url": "/docs/providers",
+              "group": "Auth"
+            },
+            {
+              "_rowId": "row-14",
+              "label": "Sessions",
+              "url": "/docs/sessions",
+              "group": "Auth"
+            },
+            {
+              "_rowId": "row-15",
+              "label": "Row-level rules",
+              "url": "/docs/row-level-rules",
+              "group": "Auth"
+            },
+            {
+              "_rowId": "row-16",
+              "label": "Subscriptions",
+              "url": "/docs/subscriptions",
+              "group": "Realtime"
+            },
+            {
+              "_rowId": "row-17",
+              "label": "Presence",
+              "url": "/docs/presence",
+              "group": "Realtime"
+            },
+            {
+              "_rowId": "row-18",
+              "label": "Writing functions",
+              "url": "/docs/writing-functions",
+              "group": "Functions"
+            },
+            {
+              "_rowId": "row-19",
+              "label": "Triggers & schedules",
+              "url": "/docs/triggers-and-schedules",
+              "group": "Functions"
+            },
+            {
+              "_rowId": "row-20",
+              "label": "Secrets",
+              "url": "/docs/secrets",
+              "group": "Functions"
+            },
+            {
+              "_rowId": "row-21",
+              "label": "Preview branches",
+              "url": "/docs/preview-branches",
+              "group": "Deploy"
+            },
+            {
+              "_rowId": "row-22",
+              "label": "Observability",
+              "url": "/docs/observability",
+              "group": "Deploy"
+            },
+            {
+              "_rowId": "row-23",
+              "label": "Limits",
+              "url": "/docs/limits",
+              "group": "Deploy"
+            }
+          ],
+          "actionLabel": "Start building",
+          "actionURL": "/docs/quickstart",
+          "signInURL": "",
+          "repositoryURL": "https://github.com",
+          "repositoryLabel": "12.4k",
+          "footerDescription": "Define your schema. Ship your backend.",
+          "footerLinks": [
+            {
+              "_rowId": "row-1",
+              "group": "Product",
+              "label": "Database",
+              "url": "/product#database"
+            },
+            {
+              "_rowId": "row-2",
+              "group": "Product",
+              "label": "Auth",
+              "url": "/product#auth"
+            },
+            {
+              "_rowId": "row-3",
+              "group": "Product",
+              "label": "Realtime",
+              "url": "/product#realtime"
+            },
+            {
+              "_rowId": "row-4",
+              "group": "Product",
+              "label": "Functions",
+              "url": "/product#functions"
+            },
+            {
+              "_rowId": "row-5",
+              "group": "Product",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-6",
+              "group": "Product",
+              "label": "Changelog",
+              "url": "/changelog"
+            },
+            {
+              "_rowId": "row-7",
+              "group": "Developers",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-8",
+              "group": "Developers",
+              "label": "Quickstart",
+              "url": "/docs/quickstart"
+            },
+            {
+              "_rowId": "row-9",
+              "group": "Developers",
+              "label": "API reference",
+              "url": "/api-reference"
+            },
+            {
+              "_rowId": "row-10",
+              "group": "Developers",
+              "label": "CLI",
+              "url": "/docs/installation"
+            },
+            {
+              "_rowId": "row-11",
+              "group": "Developers",
+              "label": "GitHub",
+              "url": "https://github.com"
+            },
+            {
+              "_rowId": "row-12",
+              "group": "Company",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-13",
+              "group": "Company",
+              "label": "Blog",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row-14",
+              "group": "Company",
+              "label": "Contact",
+              "url": "mailto:hello@tessera.dev"
+            }
+          ],
+          "copyright": "© 2026 Tessera, Inc."
+        }
+      }
+    },
+    {
+      "id": "layout_tessera_api",
+      "name": "Tessera · API reference",
+      "active": true,
+      "design": {
+        "id": "tessera",
+        "version": 1,
+        "settings": {
+          "contentMaxWidth": 1200,
+          "pageGutter": 48,
+          "title": "Tessera",
+          "description": "Define your schema. Ship your backend.",
+          "brand": "Tessera",
+          "mode": "api",
+          "colorMode": "light",
+          "navigation": [
+            {
+              "_rowId": "row-1",
+              "label": "Product",
+              "url": "/product"
+            },
+            {
+              "_rowId": "row-2",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-3",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-4",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-5",
+              "label": "Changelog",
+              "url": "/changelog"
+            }
+          ],
+          "sidebar": [
+            {
+              "_rowId": "row-1",
+              "label": "Introduction",
+              "url": "/api-reference",
+              "group": "Overview"
+            },
+            {
+              "_rowId": "row-2",
+              "label": "Create token",
+              "url": "/api-reference/create-token",
+              "group": "Authentication"
+            },
+            {
+              "_rowId": "row-3",
+              "label": "Refresh token",
+              "url": "/api-reference/refresh-token",
+              "group": "Authentication"
+            },
+            {
+              "_rowId": "row-4",
+              "label": "Revoke session",
+              "url": "/api-reference/revoke-session",
+              "group": "Authentication"
+            },
+            {
+              "_rowId": "row-5",
+              "label": "List projects",
+              "url": "/api-reference/list-projects",
+              "group": "Projects"
+            },
+            {
+              "_rowId": "row-6",
+              "label": "Create project",
+              "url": "/api-reference/create-project",
+              "group": "Projects"
+            },
+            {
+              "_rowId": "row-7",
+              "label": "Retrieve project",
+              "url": "/api-reference/retrieve-project",
+              "group": "Projects"
+            },
+            {
+              "_rowId": "row-8",
+              "label": "Delete project",
+              "url": "/api-reference/delete-project",
+              "group": "Projects"
+            },
+            {
+              "_rowId": "row-9",
+              "label": "List environments",
+              "url": "/api-reference/list-environments",
+              "group": "Environments"
+            },
+            {
+              "_rowId": "row-10",
+              "label": "Create preview branch",
+              "url": "/api-reference/create-preview-branch",
+              "group": "Environments"
+            },
+            {
+              "_rowId": "row-11",
+              "label": "Promote environment",
+              "url": "/api-reference/promote-environment",
+              "group": "Environments"
+            },
+            {
+              "_rowId": "row-12",
+              "label": "List rows",
+              "url": "/api-reference/list-rows",
+              "group": "Rows"
+            },
+            {
+              "_rowId": "row-13",
+              "label": "Retrieve row",
+              "url": "/api-reference/retrieve-row",
+              "group": "Rows"
+            },
+            {
+              "_rowId": "row-14",
+              "label": "Create row",
+              "url": "/api-reference/create-row",
+              "group": "Rows"
+            },
+            {
+              "_rowId": "row-15",
+              "label": "Update row",
+              "url": "/api-reference/update-row",
+              "group": "Rows"
+            },
+            {
+              "_rowId": "row-16",
+              "label": "Delete row",
+              "url": "/api-reference/delete-row",
+              "group": "Rows"
+            },
+            {
+              "_rowId": "row-17",
+              "label": "Invoke function",
+              "url": "/api-reference/invoke-function",
+              "group": "Functions"
+            },
+            {
+              "_rowId": "row-18",
+              "label": "List function runs",
+              "url": "/api-reference/list-function-runs",
+              "group": "Functions"
+            },
+            {
+              "_rowId": "row-19",
+              "label": "Create webhook",
+              "url": "/api-reference/create-webhook",
+              "group": "Webhooks"
+            },
+            {
+              "_rowId": "row-20",
+              "label": "List webhooks",
+              "url": "/api-reference/list-webhooks",
+              "group": "Webhooks"
+            },
+            {
+              "_rowId": "row-21",
+              "label": "Delete webhook",
+              "url": "/api-reference/delete-webhook",
+              "group": "Webhooks"
+            }
+          ],
+          "actionLabel": "Start building",
+          "actionURL": "/docs/quickstart",
+          "signInURL": "",
+          "repositoryURL": "https://github.com",
+          "repositoryLabel": "12.4k",
+          "footerDescription": "Define your schema. Ship your backend.",
+          "footerLinks": [
+            {
+              "_rowId": "row-1",
+              "group": "Product",
+              "label": "Database",
+              "url": "/product#database"
+            },
+            {
+              "_rowId": "row-2",
+              "group": "Product",
+              "label": "Auth",
+              "url": "/product#auth"
+            },
+            {
+              "_rowId": "row-3",
+              "group": "Product",
+              "label": "Realtime",
+              "url": "/product#realtime"
+            },
+            {
+              "_rowId": "row-4",
+              "group": "Product",
+              "label": "Functions",
+              "url": "/product#functions"
+            },
+            {
+              "_rowId": "row-5",
+              "group": "Product",
+              "label": "Pricing",
+              "url": "/pricing"
+            },
+            {
+              "_rowId": "row-6",
+              "group": "Product",
+              "label": "Changelog",
+              "url": "/changelog"
+            },
+            {
+              "_rowId": "row-7",
+              "group": "Developers",
+              "label": "Docs",
+              "url": "/docs"
+            },
+            {
+              "_rowId": "row-8",
+              "group": "Developers",
+              "label": "Quickstart",
+              "url": "/docs/quickstart"
+            },
+            {
+              "_rowId": "row-9",
+              "group": "Developers",
+              "label": "API reference",
+              "url": "/api-reference"
+            },
+            {
+              "_rowId": "row-10",
+              "group": "Developers",
+              "label": "CLI",
+              "url": "/docs/installation"
+            },
+            {
+              "_rowId": "row-11",
+              "group": "Developers",
+              "label": "GitHub",
+              "url": "https://github.com"
+            },
+            {
+              "_rowId": "row-12",
+              "group": "Company",
+              "label": "Customers",
+              "url": "/customers"
+            },
+            {
+              "_rowId": "row-13",
+              "group": "Company",
+              "label": "Blog",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row-14",
+              "group": "Company",
+              "label": "Contact",
+              "url": "mailto:hello@tessera.dev"
+            }
+          ],
+          "copyright": "© 2026 Tessera, Inc."
+        }
+      }
+    }
+  ]
+}

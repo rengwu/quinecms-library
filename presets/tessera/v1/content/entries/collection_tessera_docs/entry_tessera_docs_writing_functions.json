@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_writing_functions",
+  "collectionId": "collection_tessera_docs",
+  "slug": "writing-functions",
+  "values": {
+    "title": "Writing functions",
+    "category": "Functions",
+    "summary": "Run server code next to your data, with the same typed client and no servers to manage.",
+    "metadata": "",
+    "image": null,
+    "body": "## Your first function\n\nfunctions/welcome-email.ts\n\n```\nimport { fn } from \"tessera\"\n \nexport default fn(async ({ db, input }) => {\n  const user = await db.users.find(input.userId)\n  await sendEmail(user.email, \"Welcome to Acme\")\n  return { sent: true }\n})\n```\n\n## Deploying\n\nTerminal\n\n```\nnpx tessera functions deploy\n# ✓ welcome-email  deployed to development\n```\n\n## Calling a function\n\n```\nawait functions.invoke(\"welcome-email\", { userId })\n```\n\nRuntime\n\nFunctions run on Node.js 20 with a 30 second default timeout and 512 MB of memory.\n\n[\n\nPrevious\n\nPresence\n\n](/docs/presence)",
+    "examples": "",
+    "nextLabel": "Triggers & schedules",
+    "nextURL": "/docs/triggers-and-schedules"
+  }
+}

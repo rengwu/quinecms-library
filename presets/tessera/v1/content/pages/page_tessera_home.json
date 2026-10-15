@@ -1,0 +1,437 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_home",
+  "kind": "static",
+  "title": "Home",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_home_block_1",
+      "type": "tessera-hero",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Define your schema.",
+        "description": "Tessera turns a typed schema into a database, API, auth, and realtime. No glue code, no drift.",
+        "emphasis": "Ship your backend.",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Read the docs",
+        "secondaryURL": "/docs"
+      }
+    },
+    {
+      "id": "page_tessera_home_block_2",
+      "type": "tessera-logos",
+      "version": 1,
+      "props": {
+        "heading": "Teams shipping on Tessera",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "label": "Northwind Labs"
+          },
+          {
+            "_rowId": "row-2",
+            "label": "Loop & Co"
+          },
+          {
+            "_rowId": "row-3",
+            "label": "Fieldnote"
+          },
+          {
+            "_rowId": "row-4",
+            "label": "HALCYON"
+          },
+          {
+            "_rowId": "row-5",
+            "label": "kiln"
+          },
+          {
+            "_rowId": "row-6",
+            "label": "Marrow"
+          },
+          {
+            "_rowId": "row-7",
+            "label": "oatmeal"
+          },
+          {
+            "_rowId": "row-8",
+            "label": "BASALT"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_home_block_3",
+      "type": "tessera-walkthrough",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "How it works",
+        "heading": "One schema, four steps to a live backend",
+        "description": "Define it once. Tessera builds the database, the API, and the types, and keeps them in sync while you ship.",
+        "actionLabel": "Read quickstart →",
+        "actionURL": "/docs/quickstart",
+        "steps": [
+          {
+            "_rowId": "row-1",
+            "title": "Schema",
+            "description": "Define tables, relations, and rules in TypeScript. One schema powers your database, API, and types."
+          },
+          {
+            "_rowId": "row-2",
+            "title": "Data",
+            "description": "Push, and Tessera plans a safe migration from the diff. Every branch gets its own copy of the data."
+          },
+          {
+            "_rowId": "row-3",
+            "title": "Query",
+            "description": "Query with a typed builder. Change a column and the compiler shows you what breaks."
+          },
+          {
+            "_rowId": "row-4",
+            "title": "Live",
+            "description": "Subscribe to any query. Presence and broadcast are built in, with no sockets to manage."
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_home_block_4",
+      "type": "tessera-testimonials",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "Customers",
+        "heading": "Trusted by teams\nshipping real products",
+        "description": "From fintech dashboards to one-person SaaS, teams build their backends on Tessera. Hear from a few of them.",
+        "actionLabel": "Read customer stories →",
+        "actionURL": "/customers",
+        "variant": "stories",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "title": "Northwind Labs",
+            "quote": "“We deleted about 6,000 lines of glue code the week we moved to Tessera. Backend setup went from three weeks to two days, and features ship three times faster because the types follow the schema.”",
+            "name": "Priya Raman",
+            "role": "CTO at Northwind Labs",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_6a2a1bbd9ba0",
+              "alt": "Priya Raman"
+            },
+            "wordmark": "sans"
+          },
+          {
+            "_rowId": "row-2",
+            "title": "Loop & Co.",
+            "quote": "“Preview environments per pull request changed how we review backend work. We shipped realtime editing without running a socket layer, and median sync sits at 40 ms.”",
+            "name": "Marcus Lee",
+            "role": "Staff Engineer at Loop & Co",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_aa78aad02d6b",
+              "alt": "Marcus Lee"
+            },
+            "wordmark": "serif"
+          },
+          {
+            "_rowId": "row-3",
+            "title": "fieldnote",
+            "quote": "“Types that go from the database all the way to the component. That alone sold us. One developer, one schema, twelve thousand users, and a first-year infra bill of zero.”",
+            "name": "Jonas Berg",
+            "role": "Founder at Fieldnote",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_eddcc957a67b",
+              "alt": "Jonas Berg"
+            },
+            "wordmark": "mono"
+          }
+        ],
+        "emphasis": "shipping real products",
+        "caption": ""
+      }
+    },
+    {
+      "id": "tessera-community",
+      "type": "tessera-testimonials",
+      "version": 1,
+      "props": {
+        "anchor": "community",
+        "eyebrow": "",
+        "heading": "…and loved by developers",
+        "description": "",
+        "actionLabel": "",
+        "actionURL": "",
+        "variant": "community",
+        "items": [
+          {
+            "name": "Maya Chen",
+            "role": "@mayacodes",
+            "quote": "Wrote a schema, ran tessera push, and had a typed API before my coffee cooled. @tessera is kind of unfair.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_4d6e8e4a4062",
+              "alt": "Maya Chen"
+            },
+            "_rowId": "developer-0",
+            "wordmark": "sans"
+          },
+          {
+            "name": "David Okafor",
+            "role": "@d_okafor",
+            "quote": "Database branches per PR is the feature I didn’t know I needed. Reviewing migrations is boring now, in a good way.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_6910b586ea78",
+              "alt": "David Okafor"
+            },
+            "_rowId": "developer-1",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Jin Park",
+            "role": "@jpark_dev",
+            "quote": "Renamed a column and the compiler pointed at all 14 places that broke. That’s the whole pitch for @tessera.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": null,
+            "_rowId": "developer-2",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Lin Zhou",
+            "role": "@lin_builds",
+            "quote": "Moved our realtime feed off a hand-rolled socket server. Deleted about 2k lines and nobody noticed except the on-call rotation.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_d38494b2a7e3",
+              "alt": "Lin Zhou"
+            },
+            "_rowId": "developer-3",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Sam Ortiz",
+            "role": "@sam_ships",
+            "quote": "The generated Python client matches the TypeScript one exactly. Our data team stopped asking me for endpoints.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_1ca8fc471c08",
+              "alt": "Sam Ortiz"
+            },
+            "_rowId": "developer-4",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Ada Novak",
+            "role": "@ada_writes",
+            "quote": "Row-level rules right next to the table definition. Why wasn’t it always like this?",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_10d85fffaef2",
+              "alt": "Ada Novak"
+            },
+            "_rowId": "developer-5",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Nora Eriksen",
+            "role": "@nora_eng",
+            "quote": "The @tessera migration planner caught a destructive change I would have shipped on a Friday.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": {
+              "mediaId": "media_tessera_207a8c454539",
+              "alt": "Nora Eriksen"
+            },
+            "_rowId": "developer-6",
+            "wordmark": "sans"
+          },
+          {
+            "name": "Kwame Mensah",
+            "role": "@kwame_dev",
+            "quote": "38 ms median for subscriptions from Frankfurt. I checked twice.",
+            "title": "",
+            "metric": "",
+            "url": "",
+            "image": null,
+            "_rowId": "developer-7",
+            "wordmark": "sans"
+          }
+        ],
+        "emphasis": "",
+        "caption": "Join 12,000 developers on Discord →"
+      }
+    },
+    {
+      "id": "page_tessera_home_block_5",
+      "type": "tessera-features",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Four building blocks.\nOne source of truth.",
+        "description": "Database, auth, realtime, and functions share a single schema, so they never disagree.",
+        "actionLabel": "Explore the platform →",
+        "actionURL": "/product",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "title": "Database",
+            "description": "Postgres, with types that follow you. Every branch gets its own copy of the data.",
+            "symbol": "▦",
+            "url": "/product#database"
+          },
+          {
+            "_rowId": "row-2",
+            "title": "Auth",
+            "description": "Email, OAuth, or magic links, with access rules next to the data they protect.",
+            "symbol": "◈",
+            "url": "/product#auth"
+          },
+          {
+            "_rowId": "row-3",
+            "title": "Realtime",
+            "description": "Every query can be a subscription, with presence and broadcast built in.",
+            "symbol": "⌁",
+            "url": "/product#realtime"
+          },
+          {
+            "_rowId": "row-4",
+            "title": "Functions",
+            "description": "Server code without the servers. Attach a trigger and it runs close to your data.",
+            "symbol": "ƒ",
+            "url": "/product#functions"
+          }
+        ],
+        "panels": [
+          {
+            "_rowId": "panel-1",
+            "label": "Schema layer",
+            "description": "Define tables, relations, and rules in TypeScript. One schema powers your database, your API, and your types.",
+            "leftLabel": "schema.ts",
+            "leftCode": "const posts = table({\n  id: uuid().primaryKey(),\n  title: text().notNull(),\n})",
+            "rightLabel": "Generated",
+            "rightCode": "✓ Postgres table: posts\n✓ REST and realtime API\n✓ Type: Post\n✓ Migration 0042"
+          },
+          {
+            "_rowId": "panel-2",
+            "label": "Generated API",
+            "description": "Every table gets a typed REST and realtime API, generated and versioned together with your schema.",
+            "leftLabel": "Request",
+            "leftCode": "GET /v1/tables/posts/rows\n  ?limit=2",
+            "rightLabel": "Response",
+            "rightCode": "{\n  rows: [Post, Post],\n  nextCursor: null\n}"
+          },
+          {
+            "_rowId": "panel-3",
+            "label": "Type catalog",
+            "description": "Browse every table, column, and relation in one place, with owners, descriptions, and usage.",
+            "leftLabel": "Tables",
+            "leftCode": "posts       7 columns\nusers       5 columns\ncomments    4 columns",
+            "rightLabel": "posts",
+            "rightCode": "id         uuid\ntitle      text\ncreatedAt  timestamp\nauthorId   uuid → users"
+          },
+          {
+            "_rowId": "panel-4",
+            "label": "Define in code",
+            "description": "Keep your schema in your repository. Review changes in pull requests and get a preview environment for each branch.",
+            "leftLabel": "Pull request 128",
+            "leftCode": "+ const posts = table({\n+   views: int().default(0),\n  })",
+            "rightLabel": "Preview branch",
+            "rightCode": "✓ Branch pr-128 created\n✓ Migration applied\n✓ Types regenerated"
+          },
+          {
+            "_rowId": "panel-5",
+            "label": "Manage in app",
+            "description": "Inspect data, review queries, and manage every environment from the dashboard when you prefer a UI.",
+            "leftLabel": "Environments",
+            "leftCode": "production   healthy\nstaging      healthy\npr-128       building",
+            "rightLabel": "Activity",
+            "rightCode": "12:04  Migration 0042 applied\n11:58  Rule updated on posts\n11:41  Branch pr-128 created"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_home_block_6_releases",
+      "type": "tessera-updates",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "What’s new",
+        "description": "",
+        "collection": "collection_tessera_releases",
+        "actionLabel": "All releases →",
+        "actionURL": "/changelog",
+        "titleField": "title",
+        "summaryField": null,
+        "categoryField": "category",
+        "metadataField": null,
+        "dateField": "date",
+        "versionField": "version",
+        "orderField": null
+      }
+    },
+    {
+      "id": "page_tessera_home_block_6_blog",
+      "type": "tessera-updates",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "From the blog",
+        "description": "",
+        "collection": "collection_tessera_blog",
+        "actionLabel": "Read the blog →",
+        "actionURL": "/blog",
+        "titleField": "title",
+        "summaryField": "summary",
+        "categoryField": "category",
+        "metadataField": "metadata",
+        "dateField": null,
+        "versionField": null,
+        "orderField": "order"
+      }
+    },
+    {
+      "id": "page_tessera_home_block_7",
+      "type": "tessera-cta",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Ship your\nfirst endpoint\nin ten minutes.",
+        "description": "",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Talk to us",
+        "secondaryURL": "mailto:hello@tessera.dev",
+        "emphasis": "minutes"
+      }
+    }
+  ],
+  "path": "/"
+}

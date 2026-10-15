@@ -1,0 +1,175 @@
+{
+  "type": "tessera-comparison",
+  "version": 1,
+  "label": "Tessera · Comparison",
+  "theme": "Tessera",
+  "description": "Editable comparison section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "never",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "feature",
+          "label": "Feature",
+          "type": "text"
+        },
+        {
+          "key": "free",
+          "label": "Free",
+          "type": "text"
+        },
+        {
+          "key": "pro",
+          "label": "Pro",
+          "type": "text"
+        },
+        {
+          "key": "team",
+          "label": "Team",
+          "type": "text"
+        },
+        {
+          "key": "enterprise",
+          "label": "Enterprise",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "heading": "Compare every plan",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "feature": "Usage",
+        "free": "",
+        "pro": "",
+        "team": "",
+        "enterprise": ""
+      },
+      {
+        "_rowId": "row-2",
+        "feature": "Projects",
+        "free": "2",
+        "pro": "Unlimited",
+        "team": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "_rowId": "row-3",
+        "feature": "Database size",
+        "free": "500 MB",
+        "pro": "8 GB",
+        "team": "50 GB",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-4",
+        "feature": "Monthly requests",
+        "free": "50k",
+        "pro": "5M",
+        "team": "50M",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-5",
+        "feature": "Realtime connections",
+        "free": "100",
+        "pro": "5,000",
+        "team": "50,000",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-6",
+        "feature": "Function invocations",
+        "free": "100k",
+        "pro": "5M",
+        "team": "50M",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-7",
+        "feature": "Platform",
+        "free": "",
+        "pro": "",
+        "team": "",
+        "enterprise": ""
+      },
+      {
+        "_rowId": "row-8",
+        "feature": "Backups",
+        "free": "—",
+        "pro": "Daily",
+        "team": "Hourly",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-9",
+        "feature": "Database branching",
+        "free": "1 branch",
+        "pro": "5 branches",
+        "team": "Unlimited",
+        "enterprise": "Unlimited"
+      },
+      {
+        "_rowId": "row-10",
+        "feature": "Security and support",
+        "free": "",
+        "pro": "",
+        "team": "",
+        "enterprise": ""
+      },
+      {
+        "_rowId": "row-11",
+        "feature": "SSO",
+        "free": "—",
+        "pro": "—",
+        "team": "✓",
+        "enterprise": "✓"
+      },
+      {
+        "_rowId": "row-12",
+        "feature": "Audit logs",
+        "free": "—",
+        "pro": "—",
+        "team": "✓",
+        "enterprise": "✓"
+      },
+      {
+        "_rowId": "row-13",
+        "feature": "Uptime SLA",
+        "free": "—",
+        "pro": "—",
+        "team": "99.9%",
+        "enterprise": "Custom"
+      },
+      {
+        "_rowId": "row-14",
+        "feature": "Support",
+        "free": "Community",
+        "pro": "Email",
+        "team": "Priority",
+        "enterprise": "Dedicated"
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

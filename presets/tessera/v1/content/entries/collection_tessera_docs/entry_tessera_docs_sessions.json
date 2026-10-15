@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_sessions",
+  "collectionId": "collection_tessera_docs",
+  "slug": "sessions",
+  "values": {
+    "title": "Sessions",
+    "category": "Auth",
+    "summary": "How access and refresh tokens work, and how to end sessions safely.",
+    "metadata": "",
+    "image": null,
+    "body": "## Tokens\n\nSigning in returns a short-lived access token (15 minutes) and a long-lived refresh token (30 days). The SDK refreshes the access token for you.\n\n## Reading the session\n\n```\nconst session = await auth.session()\nsession?.expiresAt // Date\n```\n\n## Signing out\n\n`auth.signOut()` revokes the refresh token for the current device. Pass `{ everywhere: true }` to end every session for the user.\n\nRotate on sensitive changes\n\nRevoke all sessions when a user changes their password or email address.\n\n[\n\nPrevious\n\nProviders\n\n](/docs/providers)",
+    "examples": "",
+    "nextLabel": "Row-level rules",
+    "nextURL": "/docs/row-level-rules"
+  }
+}

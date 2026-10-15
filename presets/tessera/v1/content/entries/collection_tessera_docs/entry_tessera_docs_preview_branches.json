@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_preview_branches",
+  "collectionId": "collection_tessera_docs",
+  "slug": "preview-branches",
+  "values": {
+    "title": "Preview branches",
+    "category": "Deploy",
+    "summary": "A full copy of your backend for every pull request.",
+    "metadata": "",
+    "image": null,
+    "body": "## How branches work\n\nEach pull request gets its own environment with the branch’s schema applied, seed data loaded and functions deployed. It’s deleted when the PR closes.\n\n## Setting up CI\n\n1\n\nConnect the repository\n\nIn **Project settings → Git**, connect GitHub or GitLab.\n\n2\n\nAdd the action\n\nAdd the Tessera action to your workflow so every push updates the branch.\n\n.github/workflows/preview.yml\n\n```\n- uses: tessera/preview-action@v2\n  with:\n    project: prj_8f2k1\n    token: ${{ secrets.TESSERA_TOKEN }}\n```\n\n3\n\nUse the branch URL\n\nThe action outputs `api_url`. Pass it to your frontend preview deployment.\n\nData\n\nBranches start from seed data, never production data.\n\n[\n\nPrevious\n\nSecrets\n\n](/docs/secrets)",
+    "examples": "",
+    "nextLabel": "Observability",
+    "nextURL": "/docs/observability"
+  }
+}

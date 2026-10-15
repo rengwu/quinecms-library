@@ -1,0 +1,270 @@
+{
+  "url": "https://tessera-template.framer.website/",
+  "captured": "2026-10-16",
+  "routes": [
+    {
+      "path": "/docs",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/quickstart",
+      "kind": "docs"
+    },
+    {
+      "path": "/api-reference",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/create-preview-branch",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/create-project",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/create-row",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/create-token",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/create-webhook",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/delete-project",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/delete-row",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/delete-webhook",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/invoke-function",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/list-environments",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/list-function-runs",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/list-projects",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/list-rows",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/list-webhooks",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/promote-environment",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/refresh-token",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/retrieve-project",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/retrieve-row",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/revoke-session",
+      "kind": "api"
+    },
+    {
+      "path": "/api-reference/update-row",
+      "kind": "api"
+    },
+    {
+      "path": "/blog/how-branching-databases-work",
+      "kind": "blog"
+    },
+    {
+      "path": "/blog/introducing-typed-realtime-queries",
+      "kind": "blog"
+    },
+    {
+      "path": "/blog/migrating-from-firebase-in-an-afternoon",
+      "kind": "blog"
+    },
+    {
+      "path": "/blog/multi-tenant-apps-with-row-level-rules",
+      "kind": "blog"
+    },
+    {
+      "path": "/blog/tessera-2.0-what-changed-and-why",
+      "kind": "blog"
+    },
+    {
+      "path": "/blog/why-we-generate-types-from-schemas-not-the-other-way-around",
+      "kind": "blog"
+    },
+    {
+      "path": "/customers/fieldnote",
+      "kind": "customers"
+    },
+    {
+      "path": "/customers/loop-co",
+      "kind": "customers"
+    },
+    {
+      "path": "/customers/northwind-labs",
+      "kind": "customers"
+    },
+    {
+      "path": "/docs/environments",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/indexes",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/installation",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/limits",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/migrations",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/observability",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/permissions",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/presence",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/preview-branches",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/project-structure",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/providers",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/queries",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/relations",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/row-level-rules",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/schema",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/secrets",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/sessions",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/subscriptions",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/transactions",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/triggers-and-schedules",
+      "kind": "docs"
+    },
+    {
+      "path": "/docs/writing-functions",
+      "kind": "docs"
+    }
+  ],
+  "fonts": [
+    {
+      "family": "Newsreader",
+      "italic": false,
+      "file": "newsreader.woff2",
+      "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ACexEPjCggA.woff2"
+    },
+    {
+      "family": "Newsreader",
+      "italic": true,
+      "file": "newsreader-italic.woff2",
+      "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLP4obnf7fTXglsMwoT-ZFHDWwgECi.woff2"
+    },
+    {
+      "family": "Inter Variable",
+      "italic": false,
+      "file": "inter.woff2",
+      "source": "https://framerusercontent.com/assets/7lw0VWkeXrGYJT05oB3DsFy8BaY.woff2"
+    },
+    {
+      "family": "JetBrains Mono",
+      "italic": false,
+      "file": "jetbrains-mono.woff2",
+      "source": "https://framerusercontent.com/third-party-assets/fontshare/wf/TZ2PMVPWEVHUPJWOPNSWLOXAF6QPOEMZ/O4OZKA7ZLZGT4JOGT5IEKURK6U3RXYGM/EO5MKE3BUDOZN44BP4HDPXAJAC2BIMCD.woff2"
+    }
+  ],
+  "images": [
+    "https://framerusercontent.com/images/7wZGEGdP9WEgwqlj6AwDG9zQT0.png",
+    "https://framerusercontent.com/images/ndV268tOkrGQIe4sJ0ASm5LS0.jpg",
+    "https://framerusercontent.com/images/iaf6e5q90l7T3vK0QYcjFev1XF8.png",
+    "https://framerusercontent.com/images/i1H0xYxgISDiLWrbVKU0Y7UaJtY.png",
+    "https://framerusercontent.com/images/QcIHJP48jFa7vYqEcEaRTdcZV3I.png",
+    "https://framerusercontent.com/images/ujdrA2BSisLQnEoqLqKkhU1duY.png",
+    "https://framerusercontent.com/images/Z9mqtkRjI0pIn3rauRpL9NXpg.png",
+    "https://framerusercontent.com/images/fCJLRcD5OweZEp0logFTnpCdhcU.png",
+    "https://framerusercontent.com/images/zdwKQOud9kcJLr0vlG6JNLi1Zh4.svg",
+    "https://framerusercontent.com/images/o10EejhA97PpguJ4iSycEBQNnw.jpg",
+    "https://framerusercontent.com/images/sGlAREos3s82bEI7shEY6f2Y104.jpg",
+    "https://framerusercontent.com/images/c1mC3PvIp1QDv89jLFR8L8DkHA.jpg",
+    "https://framerusercontent.com/images/rP4QfPotz5hnEpMIq06Wp6DQ.jpg",
+    "https://framerusercontent.com/images/r2kOilEZcYhSlkmibKkXWjYb28.jpg",
+    "https://framerusercontent.com/images/VuyVildE3Bhq3bN518iVa9sjnYA.jpg",
+    "https://framerusercontent.com/images/4F3nJRrp9DyL4PQCXMDKlhEQKeU.jpg",
+    "https://framerusercontent.com/images/ZMZvW7sMbPiQBVCTEGpYKA6nj6k.jpg",
+    "https://framerusercontent.com/images/4sC1oXUUBGNqg9R9UryCfOTwY.jpg",
+    "https://framerusercontent.com/images/oGstFhmcspTab4V9bp7xLKPM8.jpg",
+    "https://framerusercontent.com/images/dtoFNxgKRADNB2t6j7Tm5DzwAN4.jpg"
+  ],
+  "knownSourceGaps": [
+    "/docs/commands-reference returns 404; CLI navigation uses /docs/installation.",
+    "Sign in, About, Status, Privacy and Terms have no destinations in the reference. Optional sign-in URL is empty."
+  ]
+}

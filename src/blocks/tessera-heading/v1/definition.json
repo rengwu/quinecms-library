@@ -1,0 +1,48 @@
+{
+  "type": "tessera-heading",
+  "version": 1,
+  "label": "Tessera · Heading",
+  "theme": "Tessera",
+  "description": "Editable heading section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "never",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "",
+    "heading": "One schema. Four building blocks.",
+    "description": "Database, auth, realtime, and functions share a single source of truth, so they never disagree."
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

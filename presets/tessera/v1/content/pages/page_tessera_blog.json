@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_blog",
+  "kind": "static",
+  "title": "Blog",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_blog_block_1",
+      "type": "tessera-heading",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "The Tessera blog",
+        "description": "Engineering notes, product updates, and practical guides."
+      }
+    },
+    {
+      "id": "page_tessera_blog_block_2",
+      "type": "tessera-listing",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "",
+        "description": "",
+        "collection": "collection_tessera_blog",
+        "variant": "blog",
+        "limit": 0,
+        "titleField": "title",
+        "summaryField": "summary",
+        "imageField": "image",
+        "categoryField": "category",
+        "metadataField": "metadata",
+        "orderField": "order"
+      }
+    },
+    {
+      "id": "page_tessera_blog_block_3",
+      "type": "tessera-cta",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Ship your\nfirst endpoint\nin ten minutes.",
+        "description": "",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Talk to us",
+        "secondaryURL": "mailto:hello@tessera.dev",
+        "emphasis": "minutes"
+      }
+    }
+  ],
+  "path": "/blog"
+}

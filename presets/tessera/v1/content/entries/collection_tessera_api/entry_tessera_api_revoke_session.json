@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_revoke_session",
+  "collectionId": "collection_tessera_api",
+  "slug": "revoke-session",
+  "values": {
+    "title": "Revoke session",
+    "category": "Authentication",
+    "summary": "End a session and revoke its refresh token.",
+    "metadata": "",
+    "image": null,
+    "body": "DELETE\n\n/v1/auth/sessions/{session_id}\n\nRevokes the refresh token for one session. Use `all` as the session ID to end every session for the current user.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**session_id string required**\n\nThe session to end, or all.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo session exists with this ID in the environment.\n\n[\n\nPrevious\n\nRefresh token\n\n](/api-reference/refresh-token)",
+    "examples": "\n\n```\ncurl --request DELETE \\\n  --url https://api.tessera.dev/v1/auth/sessions/ses_71fk2 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n// 204 No Content: the response has no body.\n```\n\n",
+    "nextLabel": "List projects",
+    "nextURL": "/api-reference/list-projects"
+  }
+}

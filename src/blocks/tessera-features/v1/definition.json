@@ -1,0 +1,206 @@
+{
+  "type": "tessera-features",
+  "version": 1,
+  "label": "Tessera · Features",
+  "theme": "Tessera",
+  "description": "Editable features section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "multiline": true
+        },
+        {
+          "key": "symbol",
+          "label": "Symbol",
+          "type": "text"
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "panels",
+      "label": "Interactive panels",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Tab label",
+          "type": "text"
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "multiline": true
+        },
+        {
+          "key": "leftLabel",
+          "label": "Left label",
+          "type": "text"
+        },
+        {
+          "key": "leftCode",
+          "label": "Left code",
+          "type": "text",
+          "multiline": true
+        },
+        {
+          "key": "rightLabel",
+          "label": "Right label",
+          "type": "text"
+        },
+        {
+          "key": "rightCode",
+          "label": "Right code",
+          "type": "text",
+          "multiline": true
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "anchor": "",
+    "eyebrow": "",
+    "heading": "Four building blocks.\nOne source of truth.",
+    "description": "Database, auth, realtime, and functions share a single schema, so they never disagree.",
+    "actionLabel": "Explore the platform →",
+    "actionURL": "/product",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "title": "Database",
+        "description": "Postgres, with types that follow you. Every branch gets its own copy of the data.",
+        "symbol": "▦",
+        "url": "/product#database"
+      },
+      {
+        "_rowId": "row-2",
+        "title": "Auth",
+        "description": "Email, OAuth, or magic links, with access rules next to the data they protect.",
+        "symbol": "◈",
+        "url": "/product#auth"
+      },
+      {
+        "_rowId": "row-3",
+        "title": "Realtime",
+        "description": "Every query can be a subscription, with presence and broadcast built in.",
+        "symbol": "⌁",
+        "url": "/product#realtime"
+      },
+      {
+        "_rowId": "row-4",
+        "title": "Functions",
+        "description": "Server code without the servers. Attach a trigger and it runs close to your data.",
+        "symbol": "ƒ",
+        "url": "/product#functions"
+      }
+    ],
+    "panels": [
+      {
+        "_rowId": "panel-1",
+        "label": "Schema layer",
+        "description": "Define tables, relations, and rules in TypeScript. One schema powers your database, your API, and your types.",
+        "leftLabel": "schema.ts",
+        "leftCode": "const posts = table({\n  id: uuid().primaryKey(),\n  title: text().notNull(),\n})",
+        "rightLabel": "Generated",
+        "rightCode": "✓ Postgres table: posts\n✓ REST and realtime API\n✓ Type: Post\n✓ Migration 0042"
+      },
+      {
+        "_rowId": "panel-2",
+        "label": "Generated API",
+        "description": "Every table gets a typed REST and realtime API, generated and versioned together with your schema.",
+        "leftLabel": "Request",
+        "leftCode": "GET /v1/tables/posts/rows\n  ?limit=2",
+        "rightLabel": "Response",
+        "rightCode": "{\n  rows: [Post, Post],\n  nextCursor: null\n}"
+      },
+      {
+        "_rowId": "panel-3",
+        "label": "Type catalog",
+        "description": "Browse every table, column, and relation in one place, with owners, descriptions, and usage.",
+        "leftLabel": "Tables",
+        "leftCode": "posts       7 columns\nusers       5 columns\ncomments    4 columns",
+        "rightLabel": "posts",
+        "rightCode": "id         uuid\ntitle      text\ncreatedAt  timestamp\nauthorId   uuid → users"
+      },
+      {
+        "_rowId": "panel-4",
+        "label": "Define in code",
+        "description": "Keep your schema in your repository. Review changes in pull requests and get a preview environment for each branch.",
+        "leftLabel": "Pull request 128",
+        "leftCode": "+ const posts = table({\n+   views: int().default(0),\n  })",
+        "rightLabel": "Preview branch",
+        "rightCode": "✓ Branch pr-128 created\n✓ Migration applied\n✓ Types regenerated"
+      },
+      {
+        "_rowId": "panel-5",
+        "label": "Manage in app",
+        "description": "Inspect data, review queries, and manage every environment from the dashboard when you prefer a UI.",
+        "leftLabel": "Environments",
+        "leftCode": "production   healthy\nstaging      healthy\npr-128       building",
+        "rightLabel": "Activity",
+        "rightCode": "12:04  Migration 0042 applied\n11:58  Rule updated on posts\n11:41  Branch pr-128 created"
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_refresh_token",
+  "collectionId": "collection_tessera_api",
+  "slug": "refresh-token",
+  "values": {
+    "title": "Refresh token",
+    "category": "Authentication",
+    "summary": "Exchange a refresh token for a new access token without signing in again.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/auth/refresh\n\nReturns a new access token and rotates the refresh token. The old refresh token stops working immediately.\n\n### Request body\n\n**refresh_token string required**\n\nThe refresh token from Create token or a previous refresh.\n\n**device_id string optional**\n\nOptional device identifier, used to scope the session.\n\n### Response fields\n\n**access_token string required**\n\nNew JWT valid for 15 minutes.\n\n**refresh_token string required**\n\nThe rotated refresh token. Store it and discard the old one.\n\n**expires_in integer required**\n\nSeconds until the access token expires.\n\n### Errors\n\n**401 invalid_refresh_token**\n\nThe refresh token is expired, revoked or already used.\n\n**429 rate_limited**\n\nToo many requests. Retry after the number of seconds in Retry-After.\n\n[\n\nPrevious\n\nCreate token\n\n](/api-reference/create-token)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/auth/refresh \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"refresh_token\":\"rt_9Xk2mP4qLw8\"}'\n```\n\n\n\n\n\n```\n{\n  \"access_token\": \"eyJhbGciOiJIUzI1NiIs…\",\n  \"refresh_token\": \"rt_4Hn7vB1sQz2\",\n  \"expires_in\": 900\n}\n```\n\n",
+    "nextLabel": "Revoke session",
+    "nextURL": "/api-reference/revoke-session"
+  }
+}

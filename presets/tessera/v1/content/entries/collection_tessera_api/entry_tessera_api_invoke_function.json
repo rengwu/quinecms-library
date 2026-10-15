@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_invoke_function",
+  "collectionId": "collection_tessera_api",
+  "slug": "invoke-function",
+  "values": {
+    "title": "Invoke function",
+    "category": "Functions",
+    "summary": "Run a deployed function and return its result.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/functions/{name}/invoke\n\nRuns the function synchronously. Set `async: true` to queue it and get a run ID back immediately.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**name string required**\n\nThe function name, for example welcome-email.\n\n### Request body\n\n**input object optional**\n\nPassed to the function as input.\n\n**async boolean optional**\n\nQueue the run instead of waiting for it.\n\n### Response fields\n\n**run_id string required**\n\nID of the run.\n\n**output any optional**\n\nThe function's return value, when not async.\n\n**duration_ms integer optional**\n\nExecution time.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo function exists with this ID in the environment.\n\n**504 function_timeout**\n\nThe function ran longer than its timeout.\n\n[\n\nPrevious\n\nDelete row\n\n](/api-reference/delete-row)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/functions/welcome-email/invoke \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"input\":{\"userId\":\"usr_42\"}}'\n```\n\n\n\n\n\n```\n{\n  \"run_id\": \"run_5kq9\",\n  \"output\": {\n    \"sent\": true\n  },\n  \"duration_ms\": 214\n}\n```\n\n",
+    "nextLabel": "List function runs",
+    "nextURL": "/api-reference/list-function-runs"
+  }
+}

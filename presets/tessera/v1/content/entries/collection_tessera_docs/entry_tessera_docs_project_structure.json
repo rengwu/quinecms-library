@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_project_structure",
+  "collectionId": "collection_tessera_docs",
+  "slug": "project-structure",
+  "values": {
+    "title": "Project structure",
+    "category": "Getting started",
+    "summary": "The files Tessera adds to your repo and what each one is for.",
+    "metadata": "",
+    "image": null,
+    "body": "## The default layout\n\nProject\n\n```\nmy-app/\n├─ schema.ts          # tables, relations, rules\n├─ seed.ts            # optional sample data\n├─ functions/         # server functions\n│  └─ welcome-email.ts\n├─ tessera/           # generated client (do not edit)\n├─ migrations/        # applied migration history\n└─ tessera.config.ts  # project settings\n```\n\n## Files you edit\n\n### schema.ts\n\nThe single source of truth for your data model. Every table, column, relation and rule lives here, so reviews of data changes happen in one file.\n\n### functions/\n\nEach file exports one function. The file name becomes the function name, for example `welcome-email`.\n\n### tessera.config.ts\n\nProject-level settings: regions, auth providers, preview branch behaviour and function runtimes.\n\n## Generated files\n\nThe `tessera/` folder is regenerated on every `tessera push` and `tessera generate`. Commit it so CI and teammates build without running the CLI.\n\nMigrations are history\n\nFiles in `migrations/` record what was applied to each environment. Don’t edit them by hand; create a new migration instead.\n\n[\n\nPrevious\n\nInstallation\n\n](/docs/installation)",
+    "examples": "",
+    "nextLabel": "Schema",
+    "nextURL": "/docs/schema"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_3",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-8-4",
+  "values": {
+    "title": "Faster cold starts",
+    "version": "1.8.4",
+    "date": "2026-07-29",
+    "category": "Improvement",
+    "body": "Functions now start up to 60% faster after a period of inactivity.\n\n## What changed\n\n- Dependencies are snapshotted at deploy time instead of resolved on first call.\n\n- The runtime keeps a small pool of warm workers per region.\n\n- Median cold start dropped from 480ms to 190ms in our benchmarks."
+  }
+}

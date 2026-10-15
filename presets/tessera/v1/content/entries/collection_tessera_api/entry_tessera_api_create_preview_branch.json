@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_create_preview_branch",
+  "collectionId": "collection_tessera_api",
+  "slug": "create-preview-branch",
+  "values": {
+    "title": "Create preview branch",
+    "category": "Environments",
+    "summary": "Create an isolated preview environment from a git branch.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/projects/{project_id}/branches\n\nCreates a branch environment, applies the schema from the given git ref, loads seed data and deploys functions.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**project_id string required**\n\nThe project ID.\n\n### Request body\n\n**name string required**\n\nBranch name, usually the git branch.\n\n**git_ref string required**\n\nCommit SHA or branch to build from.\n\n**copy_from string optional**\n\nEnvironment to inherit secrets from. Defaults to development.\n\n### Response fields\n\n**id string required**\n\nEnvironment ID.\n\n**api_url string required**\n\nBase URL for this branch.\n\n**status string required**\n\nprovisioning until ready.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**422 validation_failed**\n\nOne or more fields are invalid. See error.fields for details.\n\n**409 branch_exists**\n\nA branch with this name already exists.\n\n[\n\nPrevious\n\nList environments\n\n](/api-reference/list-environments)",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/projects/prj_8f2k1/branches \\\n  --header \"Authorization: Bearer $TESSERA_KEY\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"name\":\"feat-invoices\",\"git_ref\":\"a41c9e2\"}'\n```\n\n\n\n\n\n```\n{\n  \"id\": \"env_br_7s2\",\n  \"name\": \"feat-invoices\",\n  \"api_url\": \"https://feat-invoices--prj_8f2k1.tessera.dev\",\n  \"status\": \"provisioning\"\n}\n```\n\n",
+    "nextLabel": "Promote environment",
+    "nextURL": "/api-reference/promote-environment"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_2",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-1-9-0",
+  "values": {
+    "title": "Database branching",
+    "version": "1.9.0",
+    "date": "2026-08-12",
+    "category": "Feature",
+    "body": "Every pull request can now get its own isolated copy of your data, so you can test a schema change against real rows without touching shared environments.\n\n## Preview branches\n\n- Branches are created from any environment with `tessera branch create`.\n\n- Copies share storage until they diverge, so creation takes seconds.\n\n- Branches are deleted automatically when the pull request is closed.\n\n## Good to know\n\nBranch data counts toward your storage limit while the branch exists. See the **Preview branches** guide in the docs for setup with your CI."
+  }
+}

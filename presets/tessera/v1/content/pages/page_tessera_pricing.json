@@ -1,0 +1,260 @@
+{
+  "formatVersion": 1,
+  "id": "page_tessera_pricing",
+  "kind": "static",
+  "title": "Pricing",
+  "layoutId": "layout_tessera",
+  "blocks": [
+    {
+      "id": "page_tessera_pricing_block_1",
+      "type": "tessera-heading",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Simple pricing that scales with you",
+        "description": "Every plan includes the full platform. Limits and support are what change."
+      }
+    },
+    {
+      "id": "page_tessera_pricing_block_2",
+      "type": "tessera-pricing",
+      "version": 1,
+      "props": {
+        "plans": [
+          {
+            "_rowId": "row-1",
+            "name": "Free",
+            "description": "For side projects",
+            "monthly": "$0",
+            "annual": "$0",
+            "period": "forever",
+            "features": "2 projects\n500 MB database\n50k requests/month\nCommunity support",
+            "actionLabel": "Start building",
+            "url": "/docs/quickstart",
+            "featured": false
+          },
+          {
+            "_rowId": "row-2",
+            "name": "Pro",
+            "description": "For production apps",
+            "monthly": "$25",
+            "annual": "$20",
+            "period": "per month, per project",
+            "features": "8 GB database\n5M requests/month\nDaily backups\nEmail support",
+            "actionLabel": "Start with Pro",
+            "url": "/docs/quickstart",
+            "featured": true
+          },
+          {
+            "_rowId": "row-3",
+            "name": "Team",
+            "description": "For growing teams",
+            "monthly": "$199",
+            "annual": "$159",
+            "period": "per month",
+            "features": "Everything in Pro\nSSO and audit logs\n99.9% uptime SLA\nPriority support",
+            "actionLabel": "Start with Team",
+            "url": "/docs/quickstart",
+            "featured": false
+          },
+          {
+            "_rowId": "row-4",
+            "name": "Enterprise",
+            "description": "For scale & security",
+            "monthly": "Custom",
+            "annual": "Custom",
+            "period": "let’s talk",
+            "features": "Everything in Team\nDedicated infra\nSOC 2 report\nCustom SLA",
+            "actionLabel": "Contact sales",
+            "url": "mailto:hello@tessera.dev",
+            "featured": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_pricing_block_3",
+      "type": "tessera-comparison",
+      "version": 1,
+      "props": {
+        "heading": "Compare every plan",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "feature": "Usage",
+            "free": "",
+            "pro": "",
+            "team": "",
+            "enterprise": ""
+          },
+          {
+            "_rowId": "row-2",
+            "feature": "Projects",
+            "free": "2",
+            "pro": "Unlimited",
+            "team": "Unlimited",
+            "enterprise": "Unlimited"
+          },
+          {
+            "_rowId": "row-3",
+            "feature": "Database size",
+            "free": "500 MB",
+            "pro": "8 GB",
+            "team": "50 GB",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-4",
+            "feature": "Monthly requests",
+            "free": "50k",
+            "pro": "5M",
+            "team": "50M",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-5",
+            "feature": "Realtime connections",
+            "free": "100",
+            "pro": "5,000",
+            "team": "50,000",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-6",
+            "feature": "Function invocations",
+            "free": "100k",
+            "pro": "5M",
+            "team": "50M",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-7",
+            "feature": "Platform",
+            "free": "",
+            "pro": "",
+            "team": "",
+            "enterprise": ""
+          },
+          {
+            "_rowId": "row-8",
+            "feature": "Backups",
+            "free": "—",
+            "pro": "Daily",
+            "team": "Hourly",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-9",
+            "feature": "Database branching",
+            "free": "1 branch",
+            "pro": "5 branches",
+            "team": "Unlimited",
+            "enterprise": "Unlimited"
+          },
+          {
+            "_rowId": "row-10",
+            "feature": "Security and support",
+            "free": "",
+            "pro": "",
+            "team": "",
+            "enterprise": ""
+          },
+          {
+            "_rowId": "row-11",
+            "feature": "SSO",
+            "free": "—",
+            "pro": "—",
+            "team": "✓",
+            "enterprise": "✓"
+          },
+          {
+            "_rowId": "row-12",
+            "feature": "Audit logs",
+            "free": "—",
+            "pro": "—",
+            "team": "✓",
+            "enterprise": "✓"
+          },
+          {
+            "_rowId": "row-13",
+            "feature": "Uptime SLA",
+            "free": "—",
+            "pro": "—",
+            "team": "99.9%",
+            "enterprise": "Custom"
+          },
+          {
+            "_rowId": "row-14",
+            "feature": "Support",
+            "free": "Community",
+            "pro": "Email",
+            "team": "Priority",
+            "enterprise": "Dedicated"
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_pricing_block_4",
+      "type": "tessera-faq",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Questions, answered",
+        "description": "Can’t find what you need? Talk to us and we’ll get back to you within one business day.",
+        "items": [
+          {
+            "_rowId": "row-1",
+            "question": "What counts as a request?",
+            "answer": "Any call to your Tessera API, including realtime messages, counted per month."
+          },
+          {
+            "_rowId": "row-2",
+            "question": "Can I switch plans?",
+            "answer": "Yes. Upgrades apply immediately, and downgrades take effect at the start of your next billing cycle."
+          },
+          {
+            "_rowId": "row-3",
+            "question": "What happens if I exceed my limits?",
+            "answer": "We notify you first. Pro and Team scale with usage-based overages, while Free pauses non-critical writes."
+          },
+          {
+            "_rowId": "row-4",
+            "question": "Do you offer discounts?",
+            "answer": "Yes, for open source projects, students, and early-stage startups. Contact us and we will set it up."
+          },
+          {
+            "_rowId": "row-5",
+            "question": "Where is my data stored?",
+            "answer": "In the region you choose when you create a project. The available regions are listed in the docs."
+          },
+          {
+            "_rowId": "row-6",
+            "question": "Can I self-host Tessera?",
+            "answer": "Not today. You can export your data at any time in standard Postgres format."
+          }
+        ]
+      }
+    },
+    {
+      "id": "page_tessera_pricing_block_5",
+      "type": "tessera-cta",
+      "version": 1,
+      "props": {
+        "anchor": "",
+        "eyebrow": "",
+        "heading": "Ship your\nfirst endpoint\nin ten minutes.",
+        "description": "",
+        "command": "npm create tessera@latest",
+        "actionLabel": "Start building",
+        "actionURL": "/docs/quickstart",
+        "secondaryLabel": "Talk to us",
+        "secondaryURL": "mailto:hello@tessera.dev",
+        "emphasis": "minutes"
+      }
+    }
+  ],
+  "path": "/pricing"
+}

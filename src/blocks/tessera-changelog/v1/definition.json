@@ -1,0 +1,90 @@
+{
+  "type": "tessera-changelog",
+  "version": 1,
+  "label": "Tessera · Changelog",
+  "theme": "Tessera",
+  "description": "Editable changelog section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "collection",
+      "label": "Collection",
+      "type": "collection"
+    },
+    {
+      "key": "titleField",
+      "label": "Title field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text"
+        ]
+      }
+    },
+    {
+      "key": "dateField",
+      "label": "Date field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "date"
+        ]
+      }
+    },
+    {
+      "key": "categoryField",
+      "label": "Category field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text",
+          "select"
+        ]
+      }
+    },
+    {
+      "key": "versionField",
+      "label": "Version field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "text"
+        ]
+      }
+    },
+    {
+      "key": "bodyField",
+      "label": "Body field",
+      "type": "text",
+      "collectionField": {
+        "collectionKey": "collection",
+        "types": [
+          "richtext"
+        ]
+      }
+    }
+  ],
+  "defaults": {
+    "collection": null,
+    "titleField": null,
+    "dateField": null,
+    "categoryField": null,
+    "versionField": null,
+    "bodyField": null
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

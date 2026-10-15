@@ -1,0 +1,109 @@
+{
+  "type": "tessera-product-feature",
+  "version": 1,
+  "label": "Tessera · Product feature",
+  "theme": "Tessera",
+  "description": "Editable product feature section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "anchor",
+      "label": "Anchor",
+      "type": "text"
+    },
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text"
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "key": "filename",
+      "label": "Filename",
+      "type": "text"
+    },
+    {
+      "key": "code",
+      "label": "Code",
+      "type": "text",
+      "multiline": true
+    },
+    {
+      "key": "reverse",
+      "label": "Reverse",
+      "type": "toggle"
+    },
+    {
+      "key": "actionLabel",
+      "label": "Actionlabel",
+      "type": "text"
+    },
+    {
+      "key": "actionURL",
+      "label": "Action url",
+      "type": "url"
+    }
+  ],
+  "defaults": {
+    "anchor": "database",
+    "eyebrow": "Database ›",
+    "heading": "Postgres, with types that follow you.",
+    "description": "Tessera manages a real Postgres database and gives you a typed query builder on top. Migrations are planned from schema diffs, and every branch gets its own copy of the data.",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "label": "Typed queries"
+      },
+      {
+        "_rowId": "row-2",
+        "label": "Schema branching"
+      },
+      {
+        "_rowId": "row-3",
+        "label": "Point-in-time recovery"
+      },
+      {
+        "_rowId": "row-4",
+        "label": "Read replicas (Team)"
+      }
+    ],
+    "filename": "queries.ts",
+    "code": "const posts = await db.posts\n  .where({ published: true })\n  .orderBy(desc.createdAt)\n  .all()\n\n// posts: Post[]",
+    "actionLabel": "Read the docs →",
+    "actionURL": "/docs/queries",
+    "reverse": false
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

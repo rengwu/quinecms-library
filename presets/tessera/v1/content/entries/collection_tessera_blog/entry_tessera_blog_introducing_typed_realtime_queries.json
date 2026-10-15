@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_introducing_typed_realtime_queries",
+  "collectionId": "collection_tessera_blog",
+  "slug": "introducing-typed-realtime-queries",
+  "values": {
+    "title": "Introducing typed realtime queries",
+    "category": "Product",
+    "summary": "Subscribe to any query with full type inference.",
+    "metadata": "Priya Nair · Sep 8, 2026 · 5 min read",
+    "image": null,
+    "body": "## Live queries, with types\n\nUntil now, subscribing to changes meant hand-writing event payload types. In Tessera 2.0 you subscribe to any query, and the result is typed exactly like a normal read.\n\nPresence and broadcast channels use the same system, so multiplayer features stay type-safe.\n\n## Getting started\n\nCall subscribe on any query. Reconnects, ordering, and cleanup are handled for you.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 1
+  }
+}

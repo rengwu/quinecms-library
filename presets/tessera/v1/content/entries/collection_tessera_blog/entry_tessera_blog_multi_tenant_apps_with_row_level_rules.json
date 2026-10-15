@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_multi_tenant_apps_with_row_level_rules",
+  "collectionId": "collection_tessera_blog",
+  "slug": "multi-tenant-apps-with-row-level-rules",
+  "values": {
+    "title": "Multi-tenant apps with row-level rules",
+    "category": "Guides",
+    "summary": "A practical pattern for isolating customer data.",
+    "metadata": "Priya Nair · Aug 28, 2026 · 9 min read",
+    "image": null,
+    "body": "## Isolate data with rules\n\nThe simplest multi-tenant design keeps one set of tables and adds a tenant column. Row-level rules then guarantee that each request can only see the rows that belong to its own tenant.\n\n## A practical pattern\n\nAdd a tenant id to every table, write one shared rule, and test it on a preview branch before it reaches production.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 2
+  }
+}

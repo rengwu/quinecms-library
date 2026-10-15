@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_retrieve_project",
+  "collectionId": "collection_tessera_api",
+  "slug": "retrieve-project",
+  "values": {
+    "title": "Retrieve project",
+    "category": "Projects",
+    "summary": "Get a single project by ID.",
+    "metadata": "",
+    "image": null,
+    "body": "GET\n\n/v1/projects/{project_id}\n\nReturns the project, its environments and current usage for the billing period.\n\n### Authorizations\n\n**Authorization string required**\n\nBearer token. Use a server key or a user access token: Bearer <token>.\n\n### Path parameters\n\n**project_id string required**\n\nThe project ID, for example prj_8f2k1.\n\n### Response fields\n\n**id string required**\n\nProject ID.\n\n**name string required**\n\nDisplay name.\n\n**plan string required**\n\nCurrent plan.\n\n**usage object required**\n\nrequests, storage_mb and function_invocations this period.\n\n### Errors\n\n**401 unauthorized**\n\nThe token is missing, expired or revoked.\n\n**404 not_found**\n\nNo project exists with this ID in the environment.\n\n[\n\nPrevious\n\nCreate project\n\n](/api-reference/create-project)",
+    "examples": "\n\n```\ncurl --request GET \\\n  --url https://api.tessera.dev/v1/projects/prj_8f2k1 \\\n  --header \"Authorization: Bearer $TESSERA_KEY\"\n```\n\n\n\n\n\n```\n{\n  \"id\": \"prj_8f2k1\",\n  \"name\": \"Acme\",\n  \"plan\": \"pro\",\n  \"usage\": {\n    \"requests\": 1843201,\n    \"storage_mb\": 2204,\n    \"function_invocations\": 91233\n  }\n}\n```\n\n",
+    "nextLabel": "Delete project",
+    "nextURL": "/api-reference/delete-project"
+  }
+}

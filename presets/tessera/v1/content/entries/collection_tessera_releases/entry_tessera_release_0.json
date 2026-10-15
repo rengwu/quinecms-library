@@ -1,0 +1,13 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_release_0",
+  "collectionId": "collection_tessera_releases",
+  "slug": "release-2-0-0",
+  "values": {
+    "title": "Typed realtime queries",
+    "version": "2.0.0",
+    "date": "2026-09-08",
+    "category": "Feature",
+    "body": "Subscribe to any query and get updates that keep the full type of the result. The client infers the row shape from your schema, so a subscription is as safe to use as a one-off read.\n\n## Live queries\n\n- `db.tasks.subscribe()` returns a typed async iterator of rows.\n\n- Updates are diffed on the server, so only changed rows are sent.\n\n- Row-level rules run on every update, not just the first result.\n\n## Upgrading\n\nExisting `watch()` calls keep working. Switch to `subscribe()` when you want inferred types and automatic reconnects."
+  }
+}

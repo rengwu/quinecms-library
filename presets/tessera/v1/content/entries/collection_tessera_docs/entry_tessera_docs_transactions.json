@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_transactions",
+  "collectionId": "collection_tessera_docs",
+  "slug": "transactions",
+  "values": {
+    "title": "Transactions",
+    "category": "Database",
+    "summary": "Group writes so they succeed or fail together.",
+    "metadata": "",
+    "image": null,
+    "body": "## Running a transaction\n\nWrap related writes in `db.transaction()`. If any statement throws, every write in the block is rolled back.\n\nTypeScript\n\n```\nawait db.transaction(async (tx) => {\n  const invoice = await tx.invoices.insert({ customerId, total })\n  await tx.balances.update(customerId, { owed: sql`owed + ${total}` })\n})\n```\n\n## Isolation levels\n\nTransactions default to `read committed`. Pass `isolation: \"serializable\"` for workflows that must never interleave.\n\nKeep them short\n\nLong transactions hold locks. Avoid network calls inside the callback; do them before or after.\n\n## Retries\n\nSerialization failures are retried up to three times automatically. Make the callback safe to run more than once.\n\n[\n\nPrevious\n\nIndexes\n\n](/docs/indexes)",
+    "examples": "",
+    "nextLabel": "Providers",
+    "nextURL": "/docs/providers"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_how_branching_databases_work",
+  "collectionId": "collection_tessera_blog",
+  "slug": "how-branching-databases-work",
+  "values": {
+    "title": "How branching databases work",
+    "category": "Engineering",
+    "summary": "Copy-on-write, explained without the hand-waving.",
+    "metadata": "Alex Rivera · Aug 14, 2026 · 10 min read",
+    "image": null,
+    "body": "## Copy-on-write\n\nA branch does not copy your data. It records changes on top of a shared base, so creating one takes seconds no matter how large the database is.\n\n## Why branch per pull request\n\nEvery pull request gets an isolated database to test migrations against, so reviewers see the real effect of a change before it merges.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 3
+  }
+}

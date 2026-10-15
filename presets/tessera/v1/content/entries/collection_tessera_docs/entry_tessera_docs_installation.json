@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_installation",
+  "collectionId": "collection_tessera_docs",
+  "slug": "installation",
+  "values": {
+    "title": "Installation",
+    "category": "Getting started",
+    "summary": "Install the CLI and SDK, connect an existing app and configure your environment variables.",
+    "metadata": "",
+    "image": null,
+    "body": "## Install the CLI\n\nThe CLI manages schemas, migrations, environments and secrets. Install it as a dev dependency so every teammate uses the same version.\n\n```\nnpm install --save-dev tessera\n```\n\n## Add the SDK to an existing app\n\nIf you already have a TypeScript project, initialise Tessera inside it. The command adds `schema.ts` and a `tessera/` folder for the generated client.\n\nTerminal\n\n```\nnpx tessera init\nnpx tessera login\n```\n\n## Environment variables\n\nVariable\n\nDescription\n\n`TESSERA_PROJECT`\n\nYour project ID, for example `prj_8f2k1`.\n\n`TESSERA_ENV`\n\nThe environment to target. Defaults to `development`.\n\n`TESSERA_KEY`\n\nA server key. Never ship this to the browser.\n\nKeep server keys private\n\nBrowser code should use the public key from `TESSERA_PUBLIC_KEY`. Server keys bypass row-level rules.\n\n## Verify the setup\n\nTerminal\n\n```\nnpx tessera status\n# ✓ project  prj_8f2k1\n# ✓ env      development\n# ✓ schema   in sync\n```\n\n[\n\nPrevious\n\nQuickstart\n\n](/docs/quickstart)",
+    "examples": "",
+    "nextLabel": "Project structure",
+    "nextURL": "/docs/project-structure"
+  }
+}

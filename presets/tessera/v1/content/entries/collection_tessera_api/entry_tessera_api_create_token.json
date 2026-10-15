@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_api_create_token",
+  "collectionId": "collection_tessera_api",
+  "slug": "create-token",
+  "values": {
+    "title": "Create token",
+    "category": "Authentication",
+    "summary": "Exchange credentials for an access token and a refresh token.",
+    "metadata": "",
+    "image": null,
+    "body": "POST\n\n/v1/auth/token\n\nSigns a user in with email and password, or exchanges an OAuth code, and returns a short-lived access token together with a refresh token.\n\n### Request body\n\n**grant_type string required**\n\nOne of password or authorization_code.\n\n**email string optional**\n\nRequired when grant_type is password.\n\n**password string optional**\n\nRequired when grant_type is password.\n\n**code string optional**\n\nThe OAuth code, required for authorization_code.\n\n### Response fields\n\n**access_token string required**\n\nJWT valid for 15 minutes.\n\n**refresh_token string required**\n\nOpaque token valid for 30 days.\n\n**expires_in integer required**\n\nSeconds until the access token expires.\n\n**user object required**\n\nThe signed-in user: id, email, name.\n\n### Errors\n\n**400 invalid_grant**\n\nThe credentials or code are wrong.\n\n**429 rate_limited**\n\nToo many requests. Retry after the number of seconds in Retry-After.",
+    "examples": "\n\n```\ncurl --request POST \\\n  --url https://api.tessera.dev/v1/auth/token \\\n  --header \"Content-Type: application/json\" \\\n  --data '{\"grant_type\":\"password\",\"email\":\"ada@acme.dev\",\"password\":\"••••••••\"}'\n```\n\n\n\n\n\n```\n{\n  \"access_token\": \"eyJhbGciOiJIUzI1NiIs…\",\n  \"refresh_token\": \"rt_9Xk2mP4qLw8\",\n  \"expires_in\": 900,\n  \"user\": {\n    \"id\": \"usr_42\",\n    \"email\": \"ada@acme.dev\",\n    \"name\": \"Ada Park\"\n  }\n}\n```\n\n",
+    "nextLabel": "Refresh token",
+    "nextURL": "/api-reference/refresh-token"
+  }
+}

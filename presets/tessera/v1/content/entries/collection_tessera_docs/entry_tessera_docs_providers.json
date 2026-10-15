@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_providers",
+  "collectionId": "collection_tessera_docs",
+  "slug": "providers",
+  "values": {
+    "title": "Providers",
+    "category": "Auth",
+    "summary": "Sign users in with email links, passwords or OAuth providers like GitHub and Google.",
+    "metadata": "",
+    "image": null,
+    "body": "## Enabling providers\n\ntessera.config.ts\n\n```\nexport default defineConfig({\n  auth: {\n    providers: {\n      email: { magicLink: true },\n      github: { clientId: env(\"GITHUB_ID\"), clientSecret: env(\"GITHUB_SECRET\") },\n      google: { clientId: env(\"GOOGLE_ID\"), clientSecret: env(\"GOOGLE_SECRET\") },\n    },\n  },\n})\n```\n\n## Signing in\n\nTypeScript\n\n```\nawait auth.signIn(\"github\", { redirectTo: \"/dashboard\" })\n \nconst user = await auth.user()\n// user: { id, email, name } | null\n```\n\n## OAuth\n\nSet the callback URL in your provider’s console to `https://<project>.tessera.dev/auth/callback`. Preview branches get their own callback automatically.\n\nLinking accounts\n\nUsers who sign in with two providers using the same verified email are linked to one account.\n\n[\n\nPrevious\n\nTransactions\n\n](/docs/transactions)",
+    "examples": "",
+    "nextLabel": "Sessions",
+    "nextURL": "/docs/sessions"
+  }
+}

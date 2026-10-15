@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_permissions",
+  "collectionId": "collection_tessera_docs",
+  "slug": "permissions",
+  "values": {
+    "title": "Permissions",
+    "category": "Core concepts",
+    "summary": "Project roles and API key scopes that control who can change what.",
+    "metadata": "",
+    "image": null,
+    "body": "## Project roles\n\nRole\n\nCan do\n\n**Owner**\n\nEverything, including billing and deleting the project.\n\n**Admin**\n\nManage environments, keys, members and production migrations.\n\n**Developer**\n\nPush to development and preview branches, deploy functions.\n\n**Viewer**\n\nRead schema, logs and metrics. No writes.\n\n## API key scopes\n\nKeys are created per environment and carry scopes. Give each service the smallest scope it needs.\n\nTerminal\n\n```\nnpx tessera keys create --env production \\\n  --name billing-worker \\\n  --scope rows:read --scope rows:write\n```\n\nRules still apply\n\nScopes decide which endpoints a key can call. Row-level rules still decide which rows it can see.\n\n[\n\nPrevious\n\nMigrations\n\n](/docs/migrations)",
+    "examples": "",
+    "nextLabel": "Queries",
+    "nextURL": "/docs/queries"
+  }
+}

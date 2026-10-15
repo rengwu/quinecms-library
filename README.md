@@ -1,33 +1,48 @@
 # QuineCMS Library
 
-Archline and Intr layouts and blocks, installed as a pinned dependency by QuineCMS
-sites. This repository owns their implementations, settings controls, policy modules,
-scoped styles and local media/fonts. It does not include an engine or admin fork.
+Archline, Intr and Tessera layouts and blocks for independent QuineCMS sites.
+This repository owns their implementations, settings controls, policy modules,
+scoped styles and local assets. It contains no engine or admin fork.
 
-A consuming site declares the exact Git commit in package.json, commits the pnpm
-lockfile, and lists `quinecms-library` in its `quinecms.config.json` libraries array.
-The library manifest exposes 29 block versions and two layouts. All installed
-implementations appear in the site's catalogs; changing the active layout does not
-filter available blocks.
+The manifest exposes 45 block versions and three layout designs. Installed
+implementations appear in the site's catalogs. A site subscribes by listing
+`quinecms-library` in `quinecms.config.json` and installing compatible engine and
+library dependencies. Production dependencies use exact versions or Git commits
+and a committed lockfile. Upgrades are explicit and do not rewrite site content.
 
-Use exposed fields to configure designs. Deeper changes belong upstream in this
-repository; copying or patching installed library source is not a supported site
-workflow. Sites can author independent extensions with distinct identities.
+Configure designs through exposed fields. Source changes belong upstream here;
+do not patch installed or generated files. Original site extensions may use
+separate identities. See the
+[engine contract](https://github.com/rengwu/quinecms/blob/engine-separation/docs/wiki/features/site-engine.md).
 
-See the [engine contract](https://github.com/rengwu/quinecms/blob/engine-separation/docs/wiki/features/site-engine.md)
-and [Archline pilot](https://github.com/rengwu/quinecms-site-archline).
-Engine and library revisions are upgraded independently and manually. Verify the
-site's content, types, build and relevant browser journeys after an upgrade.
+## Tessera starter
 
-## Library development
+[Tessera's preset](presets/tessera/v1/README.md) includes an explicit starter copy
+of content and configuration, 16 block versions and local assets. It recreates
+59 public pages from the reference with marketing, documentation and API modes
+of one layout design. Library subscriptions never import this content implicitly.
+
+The 0.2.0 library requires engine 0.3.0's declared collection-field rendering
+(peer `^0.3.0`; manifest `>=0.3.0`). Use exact Git commit pins for installation; these source versions are not npm releases. The sibling dev site currently
+links both repositories for authoring. The independently pinned Archline pilot
+has not been upgraded or changed.
+
+## Development
 
 ```sh
 pnpm install --frozen-lockfile
 pnpm test
 ```
 
-Tests create an ignored `.quinecms/` fixture using the pinned engine, then validate
-fixture records, media, shared project edits, generic bindings and rendering. The
-fixture content and backups under `tests/` are not distributed to sites. Reference
-design work originated in the QuineCMS Archline/Intr recreation trials; this
-extraction preserves those implementations and assets.
+The development dependency pins the compatible engine commit. Tests assemble an ignored
+`.quinecms/` site from the installed engine and this library. Nine tests cover
+Archline, Intr and Tessera validation, shared edits, rendering, local assets and
+routes. Test fixtures/backups are not distributed; `presets/` is deliberately
+included in the package for explicit starter adoption.
+
+The dev site validates and typechecks with 255 files and no diagnostics. A
+disposable site with exact installed version declarations built all 59 public
+routes plus encrypted admin and passed `check-build`; its local links are test
+plumbing, not evidence of a remote pinned installation or hosting deployment.
+See the engine wiki's `verification/runs/2026-10-16-tessera.md` for browser checks,
+source fingerprints and limits.

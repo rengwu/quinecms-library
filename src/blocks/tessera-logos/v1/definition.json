@@ -1,0 +1,75 @@
+{
+  "type": "tessera-logos",
+  "version": 1,
+  "label": "Tessera · Logos",
+  "theme": "Tessera",
+  "description": "Editable logos section for the Tessera design.",
+  "tags": [
+    "software",
+    "marketing"
+  ],
+  "kind": "static",
+  "framework": "react",
+  "activation": "never",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text"
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "heading": "Teams shipping on Tessera",
+    "items": [
+      {
+        "_rowId": "row-1",
+        "label": "Northwind Labs"
+      },
+      {
+        "_rowId": "row-2",
+        "label": "Loop & Co"
+      },
+      {
+        "_rowId": "row-3",
+        "label": "Fieldnote"
+      },
+      {
+        "_rowId": "row-4",
+        "label": "HALCYON"
+      },
+      {
+        "_rowId": "row-5",
+        "label": "kiln"
+      },
+      {
+        "_rowId": "row-6",
+        "label": "Marrow"
+      },
+      {
+        "_rowId": "row-7",
+        "label": "oatmeal"
+      },
+      {
+        "_rowId": "row-8",
+        "label": "BASALT"
+      }
+    ]
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

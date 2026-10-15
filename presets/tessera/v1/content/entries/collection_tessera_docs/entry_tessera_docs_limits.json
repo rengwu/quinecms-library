@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_limits",
+  "collectionId": "collection_tessera_docs",
+  "slug": "limits",
+  "values": {
+    "title": "Limits",
+    "category": "Deploy",
+    "summary": "Plan limits for requests, storage, functions and realtime connections.",
+    "metadata": "",
+    "image": null,
+    "body": "## Plan limits\n\nFree\n\nPro\n\nTeam\n\nDatabase storage\n\n500 MB\n\n8 GB\n\n100 GB\n\nAPI requests / month\n\n1M\n\n25M\n\nUnlimited\n\nFunction invocations\n\n100k\n\n2M\n\n20M\n\nRealtime connections\n\n200\n\n5,000\n\n50,000\n\nPreview branches\n\n1\n\n10\n\nUnlimited\n\n## Rate limits\n\nThe REST API allows 100 requests per second per key. Responses include `X-RateLimit-Remaining` and `Retry-After` headers.\n\nNeed more?\n\nTeam plans can raise any limit. Contact support with your expected volume.\n\n[\n\nPrevious\n\nObservability\n\n](/docs/observability)",
+    "examples": "",
+    "nextLabel": "",
+    "nextURL": ""
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_migrations",
+  "collectionId": "collection_tessera_docs",
+  "slug": "migrations",
+  "values": {
+    "title": "Migrations",
+    "category": "Core concepts",
+    "summary": "How Tessera plans, reviews and applies schema changes without downtime.",
+    "metadata": "",
+    "image": null,
+    "body": "## Planning a migration\n\nWhen you change `schema.ts`, Tessera compares it with the target environment and plans the SQL needed to get there. You always see the plan before anything runs.\n\n```\nnpx tessera migrate plan --env staging\n```\n\n## Applying a migration\n\n- Open a pull request with your schema change.\n\n- CI runs `tessera migrate plan` and posts the plan as a comment.\n\n- After merge, run `tessera migrate apply --env production` or let the deploy hook do it.\n\n## Zero-downtime changes\n\nTessera splits risky changes into safe steps. Adding a `notNull` column, for example, is applied as add-nullable, backfill, then add the constraint.\n\nRolling back\n\nEvery migration has a generated down step. Run `tessera migrate rollback --to <id>` to revert to a known point.\n\n[\n\nPrevious\n\nEnvironments\n\n](/docs/environments)",
+    "examples": "",
+    "nextLabel": "Permissions",
+    "nextURL": "/docs/permissions"
+  }
+}

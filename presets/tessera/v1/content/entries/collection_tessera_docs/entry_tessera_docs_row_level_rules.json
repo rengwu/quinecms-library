@@ -1,0 +1,17 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_docs_row_level_rules",
+  "collectionId": "collection_tessera_docs",
+  "slug": "row-level-rules",
+  "values": {
+    "title": "Row-level rules",
+    "category": "Auth",
+    "summary": "Decide who can read and write each row, enforced inside the database.",
+    "metadata": "",
+    "image": null,
+    "body": "## Writing a rule\n\nRules are attached to tables in the schema. They compile to Postgres row-level security policies, so they apply to every client and every API call.\n\nschema.ts\n\n```\nexport const tasks = table(\"tasks\", { /* … */ })\n  .rule(\"read\", ({ user, row }) => row.ownerId.eq(user.id))\n  .rule(\"write\", ({ user, row }) => row.ownerId.eq(user.id))\n```\n\n## Team access\n\nschema.ts\n\n```\n.rule(\"read\", ({ user, row }) =>\n  exists(memberships.where({ userId: user.id, projectId: row.projectId }))\n)\n```\n\n## Testing rules\n\nUse `tessera rules test` to run a query as a given user and see which rows it returns.\n\nDeny by default\n\nTables with no rules are readable only by server keys. Add rules before exposing a table to the browser.\n\n[\n\nPrevious\n\nSessions\n\n](/docs/sessions)",
+    "examples": "",
+    "nextLabel": "Subscriptions",
+    "nextURL": "/docs/subscriptions"
+  }
+}

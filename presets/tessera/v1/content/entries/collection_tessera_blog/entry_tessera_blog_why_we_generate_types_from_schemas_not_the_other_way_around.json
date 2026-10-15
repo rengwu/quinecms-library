@@ -1,0 +1,18 @@
+{
+  "formatVersion": 1,
+  "id": "entry_tessera_blog_why_we_generate_types_from_schemas_not_the_other_way_around",
+  "collectionId": "collection_tessera_blog",
+  "slug": "why-we-generate-types-from-schemas-not-the-other-way-around",
+  "values": {
+    "title": "Why we generate types from schemas, not the other way around",
+    "category": "Engineering",
+    "summary": "The design decision behind Tessera’s type system.",
+    "metadata": "Alex Rivera · Sep 15, 2026 · 8 min read",
+    "image": null,
+    "body": "## Start from the data\n\nMost backends define types in code and hope the database agrees. Tessera reverses that: the schema is the single source of truth, and everything else, from the database to your client types, is derived from it.\n\nThat means a type can never drift from the table it describes. Change a column and the compiler shows you exactly what breaks.\n\n## Why it matters\n\nGenerated types remove a whole class of bugs, and they remove the boilerplate that keeps them in sync. You spend your time on the product instead of on glue.",
+    "examples": "",
+    "nextLabel": "← All posts",
+    "nextURL": "/blog",
+    "order": 0
+  }
+}

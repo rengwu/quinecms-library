@@ -16,7 +16,8 @@
     {
       "key": "anchor",
       "label": "Anchor",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "eyebrow",
@@ -64,7 +65,8 @@
         {
           "key": "symbol",
           "label": "Symbol",
-          "type": "text"
+          "type": "text",
+          "localized": false
         },
         {
           "key": "url",
@@ -98,7 +100,8 @@
           "key": "leftCode",
           "label": "Left code",
           "type": "text",
-          "multiline": true
+          "multiline": true,
+          "localized": false
         },
         {
           "key": "rightLabel",
@@ -109,7 +112,8 @@
           "key": "rightCode",
           "label": "Right code",
           "type": "text",
-          "multiline": true
+          "multiline": true,
+          "localized": false
         }
       ]
     }

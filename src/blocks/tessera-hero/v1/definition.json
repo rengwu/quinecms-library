@@ -16,7 +16,8 @@
     {
       "key": "anchor",
       "label": "Anchor",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "eyebrow",
@@ -42,7 +43,8 @@
     {
       "key": "command",
       "label": "Command",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "actionLabel",

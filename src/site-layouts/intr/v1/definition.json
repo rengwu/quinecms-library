@@ -105,7 +105,8 @@
     {
       "key": "email",
       "label": "Email label",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "emailURL",
@@ -115,7 +116,8 @@
     {
       "key": "phone",
       "label": "Phone label",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "phoneURL",

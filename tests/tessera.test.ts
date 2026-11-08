@@ -11,6 +11,7 @@ import {
 } from "quinecms/core/content";
 import { definitions } from "../.quinecms/site/.quinecms/workspace/src/generated/definitions";
 import { Article, Listing, Hero } from "../src/themes/tessera/v1/components";
+import { applyView, recordView, startCopy, localize, localized } from "quinecms/core/languages";
 async function fixture() {
   const files: Record<string, string> = {};
   async function walk(dir: string) {
@@ -26,6 +27,39 @@ async function fixture() {
   await walk("content");
   return parseFiles(files);
 }
+it("translates Tessera text by default and preserves technical values and English content", async () => {
+  const content = await fixture();
+  content.site.i18n = { enabled: true, main: "en", languages: ["zh"], missing: "fallback" };
+  const home = content.pages.find((p) => p.path === "/")!;
+  const main = structuredClone(home);
+  const started = startCopy(content, home, "zh", definitions);
+  const view = recordView(content, started, "zh", definitions);
+  const hero = view.blocks.find((b) => b.type === "tessera-hero")!;
+  expect(hero.props.heading).toBeNull();
+  expect(hero.props.command).toBe("npm create tessera@latest");
+  expect(hero.props.actionURL).toBe("/docs/quickstart");
+  view.title = "首页";
+  hero.props.heading = "定义你的架构。";
+  hero.props.description = "中文介绍";
+  hero.props.actionLabel = "开始构建";
+  const edited = applyView(content, started, "zh", view, definitions);
+  expect(edited.blocks).toEqual(started.blocks);
+  expect(edited.title).toBe(main.title);
+  expect(edited.copies!.zh.blocks![hero.id]).toMatchObject({ heading: "定义你的架构。", description: "中文介绍", actionLabel: "开始构建" });
+  content.pages = content.pages.map((p) => p.id === edited.id ? edited : p);
+  const chinese = localize(content, "zh", definitions);
+  expect(chinese.fallback.has(home.id)).toBe(false);
+  expect(chinese.content.pages.find((p) => p.id === home.id)!.blocks[0].props.heading).toBe("定义你的架构。");
+  expect(home).toEqual(main);
+  const layout = content.site.layouts![0];
+  const translatedLayout = recordView(content, startCopy(content, layout, "zh", definitions), "zh", definitions);
+  expect(translatedLayout.design.settings.footerDescription).toBeNull();
+  expect((translatedLayout.design.settings.navigation as any)[0]).toMatchObject({ label: null, url: "/product" });
+  expect(translatedLayout.design.settings.repositoryLabel).toBe(layout.design.settings.repositoryLabel);
+  for (const definition of definitions.filter((d) => d.type.startsWith("tessera-"))) {
+    for (const field of definition.fields.filter((f) => f.collectionField)) expect(localized(field)).toBe(false);
+  }
+});
 it("validates the distributed starter, all routes and local media through the engine", async () => {
   const content = await fixture();
   expect(validate(content, definitions)).toEqual([]);

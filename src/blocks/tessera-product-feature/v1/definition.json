@@ -16,7 +16,8 @@
     {
       "key": "anchor",
       "label": "Anchor",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "eyebrow",
@@ -49,13 +50,15 @@
     {
       "key": "filename",
       "label": "Filename",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "code",
       "label": "Code",
       "type": "text",
-      "multiline": true
+      "multiline": true,
+      "localized": false
     },
     {
       "key": "reverse",

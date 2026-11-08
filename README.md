@@ -15,6 +15,15 @@ do not patch installed or generated files. Original site extensions may use
 separate identities. See the
 [engine contract](https://github.com/rengwu/quinecms/blob/engine-separation/docs/wiki/features/site-engine.md).
 
+With the engine's default text localization, text and rich-text fields support
+language copies without a `localized: true` declaration. Technical text such as
+anchors, commands, code and contact addresses uses `localized: false`; collection
+field mappings are always shared. Existing explicit localization choices are
+retained. Upgrade engine and library together, then review existing language
+copies: newly translatable text starts blank while the original values stay in
+the main language. Subscribing to a library does not update site-owned collection
+schemas; the Tessera starter marks release version identifiers shared for new sites.
+
 ## Tessera starter
 
 [Tessera's preset](presets/tessera/v1/README.md) includes an explicit starter copy

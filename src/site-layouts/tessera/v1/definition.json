@@ -247,7 +247,8 @@
     {
       "key": "repositoryLabel",
       "label": "Repositorylabel",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "footerDescription",

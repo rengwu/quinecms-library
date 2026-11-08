@@ -13,7 +13,8 @@
     {
       "key": "anchor",
       "label": "Section anchor",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "brand",

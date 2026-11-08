@@ -31,12 +31,14 @@
         {
           "key": "monthly",
           "label": "Monthly",
-          "type": "text"
+          "type": "text",
+          "localized": false
         },
         {
           "key": "annual",
           "label": "Annual",
-          "type": "text"
+          "type": "text",
+          "localized": false
         },
         {
           "key": "period",

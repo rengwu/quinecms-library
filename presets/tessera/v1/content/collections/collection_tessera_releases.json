@@ -13,7 +13,8 @@
     {
       "key": "version",
       "label": "Version",
-      "type": "text"
+      "type": "text",
+      "localized": false
     },
     {
       "key": "date",

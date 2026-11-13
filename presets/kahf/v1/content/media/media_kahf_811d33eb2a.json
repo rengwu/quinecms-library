@@ -1,0 +1,14 @@
+{
+  "formatVersion": 1,
+  "id": "media_kahf_811d33eb2a",
+  "name": "image-2",
+  "original": {
+    "bytes": 23720,
+    "height": 380,
+    "key": "local/kahf/v1/811d33eb2a-image-2.jpg",
+    "mime": "image/jpeg",
+    "url": "/kahf/v1/811d33eb2a-image-2.jpg",
+    "width": 317
+  },
+  "variants": []
+}

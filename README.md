@@ -1,10 +1,10 @@
 # QuineCMS Library
 
-Archline, Intr and Tessera layouts and blocks for independent QuineCMS sites.
+Archline, Intr, Tessera and Kahf layouts and blocks for independent QuineCMS sites.
 This repository owns their implementations, settings controls, policy modules,
 scoped styles and local assets. It contains no engine or admin fork.
 
-The manifest exposes 45 block versions and three layout designs. Installed
+The manifest exposes 55 block versions and four layout designs. Installed
 implementations appear in the site's catalogs. A site subscribes by listing
 `quinecms-library` in `quinecms.config.json` and installing compatible engine and
 library dependencies. Production dependencies use exact versions or Git commits
@@ -43,10 +43,11 @@ pnpm install --frozen-lockfile
 pnpm test
 ```
 
-The development dependency pins the compatible engine commit. Tests assemble an ignored
-`.quinecms/` site from the installed engine and this library. Nine tests cover
-Archline, Intr and Tessera validation, shared edits, rendering, local assets and
-routes. Test fixtures/backups are not distributed; `presets/` is deliberately
+The development dependency currently links the sibling i18n engine checkout; its
+latest commit is not yet remotely installable. Tests assemble an ignored `.quinecms/`
+site from that installed engine and this library. Sixteen tests cover Archline, Intr,
+Tessera and Kahf validation, shared edits, rendering, local assets, language routes
+and local editor save/publish controls with a mocked Git provider. Test fixtures/backups are not distributed; `presets/` is deliberately
 included in the package for explicit starter adoption.
 
 The dev site validates and typechecks with 255 files and no diagnostics. A
@@ -55,3 +56,10 @@ routes plus encrypted admin and passed `check-build`; its local links are test
 plumbing, not evidence of a remote pinned installation or hosting deployment.
 See the engine wiki's `verification/runs/2026-10-16-tessera.md` for browser checks,
 source fingerprints and limits.
+
+## Kahf starter
+
+[Kahf’s preset](presets/kahf/v1/README.md) contains 13 logical routes, partial
+English/Indonesian copies and a complete local authoring proof. It requires the
+new i18n engine contract; the preset README records the tested SHA and local-link
+release limit. Run `node scripts/verify-kahf.mjs` for its disposable static build.

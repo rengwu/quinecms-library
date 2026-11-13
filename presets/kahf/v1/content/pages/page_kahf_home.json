@@ -1,0 +1,243 @@
+{
+  "blocks": [
+    {
+      "id": "kahf_block_8",
+      "props": {
+        "actionLabel": "Discover the Essentials",
+        "actionURL": "/shop",
+        "description": "Kahf elevates your daily routine. Blending care, confidence, and community in every moment.",
+        "eyebrow": "",
+        "heading": "Your everyday journey. Backed by expertise.",
+        "headingLevel": "h1",
+        "image": null,
+        "mobileImage": null,
+        "mobileVideo": {
+          "alt": "",
+          "mediaId": "media_kahf_e0b05faa9c"
+        },
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "secondaryLabel": "Learn More",
+        "secondaryURL": "/our-story",
+        "variant": "home",
+        "video": {
+          "alt": "",
+          "mediaId": "media_kahf_91b2cde107"
+        }
+      },
+      "type": "kahf-hero",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_9",
+      "props": {
+        "description": "Take your daily routine to the next level with expert-backed care—crafted to move with you.",
+        "eyebrow": "",
+        "heading": "Everyday Companions to Build Your Confidence",
+        "items": [
+          {
+            "_rowId": "row_1",
+            "description": "Clear, refreshed, and healthy-looking skin starts with the right routine.",
+            "image": {
+              "alt": "Face Care",
+              "mediaId": "media_kahf_5be3a699f9"
+            },
+            "title": "Face Care",
+            "url": "/shop"
+          },
+          {
+            "_rowId": "row_2",
+            "description": "Stay odor-free for 72 hours. Built for your hustle, powered by confidence.",
+            "image": {
+              "alt": "Body Care",
+              "mediaId": "media_kahf_95c99bf6dd"
+            },
+            "title": "Body Care",
+            "url": "/shop"
+          }
+        ],
+        "variant": "categories"
+      },
+      "type": "kahf-cards",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_10",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "backgroundField": "background",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_products",
+        "contentLanguageField": "",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "featured": true,
+        "filter": false,
+        "heading": "Popular Products",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "products"
+      },
+      "type": "kahf-listing",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_11",
+      "props": {
+        "actionLabel": "Discover Our Story",
+        "actionURL": "/our-story",
+        "background": null,
+        "description": "Every product starts with a purpose. Rooted in nature, shaped by science, and built for your journey. Discover Kahf Roots.",
+        "eyebrow": "",
+        "heading": "We’re more than your routine. We’re here to back your every move.",
+        "image": null,
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "variant": "dark",
+        "video": {
+          "alt": "",
+          "mediaId": "media_kahf_9b89af6610"
+        }
+      },
+      "type": "kahf-split",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_12",
+      "props": {
+        "actionLabel": "View All",
+        "actionURL": "/blog",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_articles",
+        "contentLanguageField": "contentLanguage",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": false,
+        "heading": "What's New on Kahf",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "articles"
+      },
+      "type": "kahf-listing",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_13",
+      "props": {
+        "actionLabel": "View All Products",
+        "actionURL": "/shop",
+        "background": {
+          "alt": "",
+          "mediaId": "media_kahf_c69b68bbe8"
+        },
+        "description": "Empower Your Routine with Proven Care. Explore Kahf's full range now",
+        "eyebrow": "",
+        "heading": "Ready to Elevate Your Routine?",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_42cbc766d8"
+        },
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "variant": "promotion",
+        "video": null
+      },
+      "type": "kahf-split",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_10": {
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Produk Populer",
+          "searchLabel": "Cari"
+        },
+        "kahf_block_11": {
+          "actionLabel": "Kenali Cerita Kami",
+          "actionURL": "/id/our-story",
+          "description": "Setiap produk dimulai dengan tujuan. Berakar pada alam, dibentuk oleh ilmu, dan dirancang untuk perjalananmu. Kenali akar Kahf.",
+          "heading": "Lebih dari rutinitas. Kami hadir untuk mendukung setiap langkahmu.",
+          "pauseLabel": "Jeda video",
+          "playLabel": "Putar video"
+        },
+        "kahf_block_12": {
+          "actionLabel": "Lihat Semua",
+          "actionURL": "/id/blog",
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Kabar Terbaru dari Kahf",
+          "searchLabel": "Cari"
+        },
+        "kahf_block_13": {
+          "actionLabel": "Lihat Semua Produk",
+          "actionURL": "/id/shop",
+          "description": "Dukung rutinitasmu dengan perawatan yang teruji. Jelajahi rangkaian Kahf sekarang.",
+          "heading": "Siap Tingkatkan Rutinitasmu?",
+          "pauseLabel": "Jeda video",
+          "playLabel": "Putar video"
+        },
+        "kahf_block_8": {
+          "actionLabel": "Temukan Kebutuhanmu",
+          "actionURL": "/id/shop",
+          "description": "Kahf meningkatkan rutinitas harianmu. Memadukan perawatan, kepercayaan diri, dan kebersamaan di setiap momen.",
+          "heading": "Perjalanan setiap harimu. Didukung keahlian.",
+          "pauseLabel": "Jeda video",
+          "playLabel": "Putar video",
+          "secondaryLabel": "Pelajari Lebih Lanjut",
+          "secondaryURL": "/id/our-story"
+        },
+        "kahf_block_9": {
+          "description": "Tingkatkan rutinitas harianmu dengan perawatan yang didukung keahlian—dirancang untuk menemani langkahmu.",
+          "heading": "Teman Sehari-hari untuk Membangun Kepercayaan Diri",
+          "items": {
+            "row_1": {
+              "description": "Kulit bersih, segar, dan tampak sehat dimulai dari rutinitas yang tepat.",
+              "image": {
+                "alt": "Perawatan Wajah"
+              },
+              "title": "Perawatan Wajah",
+              "url": "/id/shop"
+            },
+            "row_2": {
+              "description": "Bebas bau selama 72 jam. Dirancang untuk aktivitasmu, didukung kepercayaan diri.",
+              "image": {
+                "alt": "Perawatan Tubuh"
+              },
+              "title": "Perawatan Tubuh",
+              "url": "/id/shop"
+            }
+          }
+        }
+      },
+      "title": "Beranda"
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_home",
+  "kind": "static",
+  "layoutId": "layout_kahf",
+  "path": "/",
+  "title": "Home"
+}

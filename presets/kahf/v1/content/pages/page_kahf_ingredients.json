@@ -1,0 +1,82 @@
+{
+  "blocks": [
+    {
+      "id": "kahf_block_20",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "description": "Explore the ingredients behind our formulas, where they come from, what they do, and why we chose them.",
+        "eyebrow": "",
+        "heading": "Know What Goes On Your Skin",
+        "headingLevel": "h1",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_ca7f18e86b"
+        },
+        "mobileImage": null,
+        "mobileVideo": null,
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "secondaryLabel": "",
+        "secondaryURL": "",
+        "variant": "banner",
+        "video": null
+      },
+      "type": "kahf-hero",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_21",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_ingredients",
+        "contentLanguageField": "",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": true,
+        "heading": "Explore the Ingredients",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "ingredients"
+      },
+      "type": "kahf-listing",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_20": {
+          "description": "Jelajahi bahan di balik formula kami, asalnya, manfaatnya, dan alasan kami memilihnya.",
+          "heading": "Kenali Bahan untuk Kulitmu",
+          "pauseLabel": "Jeda video",
+          "playLabel": "Putar video"
+        },
+        "kahf_block_21": {
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Kenali Bahan-bahannya",
+          "searchLabel": "Cari"
+        }
+      },
+      "title": "Bahan-bahan"
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_ingredients",
+  "kind": "static",
+  "layoutId": "layout_kahf",
+  "path": "/ingredients-glossary",
+  "title": "Ingredients"
+}

@@ -1,0 +1,121 @@
+{
+  "type": "kahf-ingredient",
+  "version": 1,
+  "label": "Kahf · Ingredient detail",
+  "theme": "Kahf",
+  "kind": "generic",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "benefitsHeading",
+      "label": "Benefits heading",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "benefits",
+      "label": "Benefits",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "localized": true,
+          "multiline": true
+        },
+        {
+          "key": "image",
+          "label": "Image",
+          "type": "media"
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true
+        }
+      ]
+    },
+    {
+      "key": "faqHeading",
+      "label": "FAQ heading",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "questions",
+      "label": "Questions",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "answer",
+          "label": "Answer",
+          "type": "richtext",
+          "localized": true
+        }
+      ]
+    },
+    {
+      "key": "backLabel",
+      "label": "Back label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "backURL",
+      "label": "Back URL",
+      "type": "url",
+      "localized": true
+    }
+  ],
+  "defaults": {
+    "title": "Title",
+    "summary": "",
+    "image": null,
+    "benefitsHeading": "",
+    "benefits": [],
+    "faqHeading": "",
+    "questions": [],
+    "backLabel": "",
+    "backURL": ""
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

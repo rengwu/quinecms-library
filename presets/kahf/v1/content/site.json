@@ -1,0 +1,345 @@
+{
+  "formatVersion": 1,
+  "globals": {},
+  "i18n": {
+    "enabled": true,
+    "languages": [
+      "id"
+    ],
+    "main": "en",
+    "missing": "fallback"
+  },
+  "id": "site_kahf",
+  "layouts": [
+    {
+      "active": true,
+      "copies": {
+        "id": {
+          "announcement": "Perjalanan setiap harimu. Didukung keahlian.",
+          "announcementLabel": "Jelajahi Kahf",
+          "announcementURL": "/id/shop",
+          "closeLabel": "Tutup",
+          "concerns": {
+            "row_1": {
+              "label": "Kulit Berjerawat",
+              "url": "/id/skin-concern/acne-prone-skin"
+            },
+            "row_2": {
+              "label": "Kulit Berminyak",
+              "url": "/id/skin-concern/oily-skin"
+            }
+          },
+          "concernsLabel": "Masalah Kulit",
+          "contactLabel": "Hubungi Kami",
+          "copyright": "© Kahf 2026. Kahf is a part of Paragon Technology and Innovation.",
+          "description": "Perjalanan setiap harimu. Didukung keahlian.",
+          "email": "info@kahfeveryday.com",
+          "footerLinks": {
+            "row_1": {
+              "label": "Cerita Kami",
+              "url": "/id/our-story"
+            },
+            "row_2": {
+              "label": "Berita & Kabar Terbaru",
+              "url": "/id/blog"
+            },
+            "row_3": {
+              "label": "Bahan-bahan",
+              "url": "/id/ingredients-glossary"
+            }
+          },
+          "homeURL": "/id",
+          "menuLabel": "Menu",
+          "navigation": {
+            "row_1": {
+              "label": "Produk",
+              "url": "/id/shop"
+            },
+            "row_2": {
+              "label": "Cerita Kami",
+              "url": "/id/our-story"
+            },
+            "row_3": {
+              "label": "Berita & Kabar Terbaru",
+              "url": "/id/blog"
+            },
+            "row_4": {
+              "label": "Bahan-bahan",
+              "url": "/id/ingredients-glossary"
+            }
+          },
+          "phone": "+62 804 140 1123",
+          "searchLabel": "Cari",
+          "searchURL": "/id/search",
+          "skipLabel": "Langsung ke konten",
+          "socialLabel": "Media Sosial",
+          "socialLinks": {
+            "row_1": {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/kahfeveryday"
+            },
+            "row_2": {
+              "label": "YouTube",
+              "url": "https://www.youtube.com/@kahfeveryday"
+            }
+          },
+          "title": "Kahf"
+        }
+      },
+      "design": {
+        "id": "kahf",
+        "settings": {
+          "announcement": "Your everyday journey. Backed by expertise.",
+          "announcementLabel": "Explore Kahf",
+          "announcementURL": "/shop",
+          "closeLabel": "Close",
+          "concerns": [
+            {
+              "_rowId": "row_1",
+              "label": "Acne Prone Skin",
+              "url": "/skin-concern/acne-prone-skin"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "Oily Skin",
+              "url": "/skin-concern/oily-skin"
+            }
+          ],
+          "concernsLabel": "Skin Concerns",
+          "contactLabel": "Contact Us",
+          "copyright": "© Kahf 2026. Kahf is a part of Paragon Technology and Innovation.",
+          "description": "Your everyday journey. Backed by expertise.",
+          "email": "info@kahfeveryday.com",
+          "footerLinks": [
+            {
+              "_rowId": "row_1",
+              "label": "Our Story",
+              "url": "/our-story"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "News & Updates",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row_3",
+              "label": "Ingredients",
+              "url": "/ingredients-glossary"
+            }
+          ],
+          "homeURL": "/",
+          "menuLabel": "Menu",
+          "navigation": [
+            {
+              "_rowId": "row_1",
+              "label": "Shop",
+              "url": "/shop"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "Our Story",
+              "url": "/our-story"
+            },
+            {
+              "_rowId": "row_3",
+              "label": "News & Updates",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row_4",
+              "label": "Ingredients",
+              "url": "/ingredients-glossary"
+            }
+          ],
+          "overlayHeader": false,
+          "phone": "+62 804 140 1123",
+          "searchLabel": "Search",
+          "searchURL": "/search",
+          "skipLabel": "Skip to content",
+          "socialLabel": "Social Media",
+          "socialLinks": [
+            {
+              "_rowId": "row_1",
+              "label": "Instagram",
+              "url": "https://www.instagram.com/kahfeveryday"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "YouTube",
+              "url": "https://www.youtube.com/@kahfeveryday"
+            }
+          ],
+          "title": "Kahf"
+        },
+        "version": 1
+      },
+      "id": "layout_kahf",
+      "name": "Kahf"
+    },
+    {
+      "active": true,
+      "copies": {
+        "id": {
+          "announcement": "Perjalanan setiap harimu. Didukung keahlian.",
+          "announcementLabel": "Jelajahi Kahf",
+          "announcementURL": "/id/shop",
+          "closeLabel": "Tutup",
+          "concerns": {
+            "row_1": {
+              "label": "Kulit Berjerawat",
+              "url": "/id/skin-concern/acne-prone-skin"
+            },
+            "row_2": {
+              "label": "Kulit Berminyak",
+              "url": "/id/skin-concern/oily-skin"
+            }
+          },
+          "concernsLabel": "Masalah Kulit",
+          "contactLabel": "Hubungi Kami",
+          "copyright": "© Kahf 2026. Kahf is a part of Paragon Technology and Innovation.",
+          "description": "Perjalanan setiap harimu. Didukung keahlian.",
+          "email": "info@kahfeveryday.com",
+          "footerLinks": {
+            "row_1": {
+              "label": "Cerita Kami",
+              "url": "/id/our-story"
+            },
+            "row_2": {
+              "label": "Berita & Kabar Terbaru",
+              "url": "/id/blog"
+            },
+            "row_3": {
+              "label": "Bahan-bahan",
+              "url": "/id/ingredients-glossary"
+            }
+          },
+          "homeURL": "/id",
+          "menuLabel": "Menu",
+          "navigation": {
+            "row_1": {
+              "label": "Produk",
+              "url": "/id/shop"
+            },
+            "row_2": {
+              "label": "Cerita Kami",
+              "url": "/id/our-story"
+            },
+            "row_3": {
+              "label": "Berita & Kabar Terbaru",
+              "url": "/id/blog"
+            },
+            "row_4": {
+              "label": "Bahan-bahan",
+              "url": "/id/ingredients-glossary"
+            }
+          },
+          "phone": "+62 804 140 1123",
+          "searchLabel": "Cari",
+          "searchURL": "/id/search",
+          "skipLabel": "Langsung ke konten",
+          "socialLabel": "Media Sosial",
+          "socialLinks": {
+            "row_1": {
+              "label": "Instagram",
+              "url": "https://www.instagram.com/kahfeveryday"
+            },
+            "row_2": {
+              "label": "YouTube",
+              "url": "https://www.youtube.com/@kahfeveryday"
+            }
+          },
+          "title": "Kahf"
+        }
+      },
+      "design": {
+        "id": "kahf",
+        "settings": {
+          "announcement": "Your everyday journey. Backed by expertise.",
+          "announcementLabel": "Explore Kahf",
+          "announcementURL": "/shop",
+          "closeLabel": "Close",
+          "concerns": [
+            {
+              "_rowId": "row_1",
+              "label": "Acne Prone Skin",
+              "url": "/skin-concern/acne-prone-skin"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "Oily Skin",
+              "url": "/skin-concern/oily-skin"
+            }
+          ],
+          "concernsLabel": "Skin Concerns",
+          "contactLabel": "Contact Us",
+          "copyright": "© Kahf 2026. Kahf is a part of Paragon Technology and Innovation.",
+          "description": "Your everyday journey. Backed by expertise.",
+          "email": "info@kahfeveryday.com",
+          "footerLinks": [
+            {
+              "_rowId": "row_1",
+              "label": "Our Story",
+              "url": "/our-story"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "News & Updates",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row_3",
+              "label": "Ingredients",
+              "url": "/ingredients-glossary"
+            }
+          ],
+          "homeURL": "/",
+          "menuLabel": "Menu",
+          "navigation": [
+            {
+              "_rowId": "row_1",
+              "label": "Shop",
+              "url": "/shop"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "Our Story",
+              "url": "/our-story"
+            },
+            {
+              "_rowId": "row_3",
+              "label": "News & Updates",
+              "url": "/blog"
+            },
+            {
+              "_rowId": "row_4",
+              "label": "Ingredients",
+              "url": "/ingredients-glossary"
+            }
+          ],
+          "overlayHeader": true,
+          "phone": "+62 804 140 1123",
+          "searchLabel": "Search",
+          "searchURL": "/search",
+          "skipLabel": "Skip to content",
+          "socialLabel": "Social Media",
+          "socialLinks": [
+            {
+              "_rowId": "row_1",
+              "label": "Instagram",
+              "url": "https://www.instagram.com/kahfeveryday"
+            },
+            {
+              "_rowId": "row_2",
+              "label": "YouTube",
+              "url": "https://www.youtube.com/@kahfeveryday"
+            }
+          ],
+          "title": "Kahf"
+        },
+        "version": 1
+      },
+      "id": "layout_kahf_shop",
+      "name": "Kahf · overlay header"
+    }
+  ]
+}

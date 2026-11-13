@@ -1,0 +1,89 @@
+{
+  "type": "kahf-article",
+  "version": 1,
+  "label": "Kahf · Article detail",
+  "theme": "Kahf",
+  "kind": "generic",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "metadata",
+      "label": "Metadata",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "body",
+      "label": "Body",
+      "type": "richtext",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "contentLanguage",
+      "label": "Content language",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "author",
+      "label": "Author",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "backLabel",
+      "label": "Back label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "backURL",
+      "label": "Back URL",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "shareLabel",
+      "label": "Share label",
+      "type": "text",
+      "localized": true
+    }
+  ],
+  "defaults": {
+    "title": "Title",
+    "category": "",
+    "metadata": "",
+    "image": null,
+    "body": "Write your story.",
+    "contentLanguage": "",
+    "author": "",
+    "backLabel": "",
+    "backURL": "",
+    "shareLabel": ""
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "collectionId": "collection_kahf_products",
+  "formatVersion": 1,
+  "id": "entry_kahf_deodorant",
+  "slug": "kahf-extra-dry-antiperspirant-deodorant",
+  "values": {
+    "background": {
+      "alt": "",
+      "mediaId": "media_kahf_00538a3c20"
+    },
+    "benefits": [
+      {
+        "_rowId": "row_1",
+        "description": "",
+        "title": "Comfortable Protection for 72 Hours"
+      },
+      {
+        "_rowId": "row_2",
+        "description": "",
+        "title": "Remove Body Odor"
+      },
+      {
+        "_rowId": "row_3",
+        "description": "",
+        "title": "Quick Dry"
+      }
+    ],
+    "body": "",
+    "category": "Body Care",
+    "gallery": [
+      {
+        "_rowId": "row_1",
+        "image": {
+          "alt": "Kahf Extra Dry Antiperspirant Deodorant — 2",
+          "mediaId": "media_kahf_f5f450ca0b"
+        }
+      },
+      {
+        "_rowId": "row_2",
+        "image": {
+          "alt": "Kahf Extra Dry Antiperspirant Deodorant — 3",
+          "mediaId": "media_kahf_6995661899"
+        }
+      }
+    ],
+    "image": {
+      "alt": "Kahf Extra Dry Antiperspirant Deodorant",
+      "mediaId": "media_kahf_dbb2d2564d"
+    },
+    "ingredients": "Aqua, Aluminum Chlorohydrate, Steareth-2, Propylene Glycol, PPG-15 Stearyl Ether, Steareth-21, Dimethicone, Caprylic/Capric Triglyceride, Allantoin, Glycyrrhiza Glabra (Licorice) Root Extract, Salvia Officinalis (Sage) Leaf Extract, Glycerin, Magnesium Aspartate, Zinc Gluconate, Zinc PCA, Copper Gluconate, Butylene Glycol, Fragrance, Phenoxyethanol, Chlorphenesin, Cetylpyridinium Chloride, Menthol, BHT.",
+    "marketplaces": [
+      {
+        "_rowId": "row_1",
+        "title": "Tokopedia",
+        "url": "https://tk.tokopedia.com/ZShMndMEh/"
+      },
+      {
+        "_rowId": "row_2",
+        "title": "Shopee",
+        "url": "https://shopee.co.id/universal-link/product/326487418/24861303683?smtt=9&utm_source=website&utm_medium=seller&utm_campaign=s326487418_SS_ID_WEBS_Deo-Dry&utm_content=&deep_and_web=1"
+      },
+      {
+        "_rowId": "row_3",
+        "title": "Lazada",
+        "url": "https://www.lazada.co.id/products/pdp-i7975290026.html?spm=a2o4j.store_product.list.1.25d9d447i6vLGM"
+      },
+      {
+        "_rowId": "row_4",
+        "title": "Tiktok Shop",
+        "url": "https://www.tiktok.com/view/product/1729986648457185528"
+      }
+    ],
+    "metadata": "45ml",
+    "order": 2,
+    "size": "45ml",
+    "summary": "Men’s roll-on deodorant that prevents 3 types of sweat, irritation-free, and keeps you fresh all day",
+    "title": "Kahf Extra Dry Antiperspirant Deodorant",
+    "usage": "Use deodorant on clean and dry skin"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "type": "kahf-product",
+  "version": 1,
+  "label": "Kahf · Product detail",
+  "theme": "Kahf",
+  "kind": "generic",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "gallery",
+      "label": "Gallery",
+      "type": "list",
+      "fields": [
+        {
+          "key": "image",
+          "label": "Image",
+          "type": "media"
+        }
+      ]
+    },
+    {
+      "key": "size",
+      "label": "Size",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "usage",
+      "label": "Usage",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "ingredients",
+      "label": "Ingredients",
+      "type": "richtext",
+      "localized": true
+    },
+    {
+      "key": "benefits",
+      "label": "Benefits",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "localized": true,
+          "multiline": true
+        }
+      ]
+    },
+    {
+      "key": "marketplaces",
+      "label": "Marketplaces",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "url",
+          "label": "Url",
+          "type": "url"
+        }
+      ]
+    },
+    {
+      "key": "body",
+      "label": "Body",
+      "type": "richtext",
+      "localized": true
+    },
+    {
+      "key": "shopLabel",
+      "label": "Shop label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "shopURL",
+      "label": "Shop URL",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "buyLabel",
+      "label": "Buy label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "usageLabel",
+      "label": "Usage label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "ingredientsLabel",
+      "label": "Ingredients label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "marketplaceLabel",
+      "label": "Marketplace label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "closeLabel",
+      "label": "Close label",
+      "type": "text",
+      "localized": true
+    }
+  ],
+  "defaults": {
+    "title": "Title",
+    "category": "",
+    "summary": "",
+    "image": null,
+    "gallery": [],
+    "size": "",
+    "usage": "",
+    "ingredients": "",
+    "benefits": [],
+    "marketplaces": [],
+    "body": "",
+    "shopLabel": "",
+    "shopURL": "",
+    "buyLabel": "",
+    "usageLabel": "",
+    "ingredientsLabel": "",
+    "marketplaceLabel": "",
+    "closeLabel": ""
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "blocks": [
+    {
+      "bindings": {
+        "benefits": "benefits",
+        "image": "image",
+        "questions": "questions",
+        "summary": "summary",
+        "title": "title"
+      },
+      "id": "kahf_block_5",
+      "props": {
+        "backLabel": "Back to Ingredients",
+        "backURL": "/ingredients-glossary",
+        "benefits": [],
+        "benefitsHeading": "Why Hydrobalance Deserves a Spot in Your Routine",
+        "faqHeading": "Common Questions",
+        "image": null,
+        "questions": [],
+        "summary": "",
+        "title": "Title"
+      },
+      "type": "kahf-ingredient",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_5": {
+          "backLabel": "Kembali ke Bahan-bahan",
+          "backURL": "/id/ingredients-glossary",
+          "benefitsHeading": "Mengapa Hydrobalance Layak Ada dalam Rutinitasmu",
+          "faqHeading": "Pertanyaan Umum"
+        }
+      }
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_ingredient_template",
+  "kind": "generic",
+  "layoutId": "layout_kahf",
+  "title": "Ingredient"
+}

@@ -1,0 +1,96 @@
+{
+  "blocks": [
+    {
+      "bindings": {
+        "benefits": "benefits",
+        "body": "body",
+        "category": "category",
+        "gallery": "gallery",
+        "image": "image",
+        "ingredients": "ingredients",
+        "marketplaces": "marketplaces",
+        "size": "size",
+        "summary": "summary",
+        "title": "title",
+        "usage": "usage"
+      },
+      "id": "kahf_block_1",
+      "props": {
+        "benefits": [],
+        "body": "",
+        "buyLabel": "Buy Now",
+        "category": "",
+        "closeLabel": "Close",
+        "gallery": [],
+        "image": null,
+        "ingredients": "",
+        "ingredientsLabel": "Ingredients",
+        "marketplaceLabel": "Choose a marketplace",
+        "marketplaces": [],
+        "shopLabel": "Shop",
+        "shopURL": "/shop",
+        "size": "",
+        "summary": "",
+        "title": "Title",
+        "usage": "",
+        "usageLabel": "How to use it"
+      },
+      "type": "kahf-product",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_2",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_products",
+        "contentLanguageField": "",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": false,
+        "heading": "Recommended for Your Routine",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "products"
+      },
+      "type": "kahf-listing-generic",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_1": {
+          "buyLabel": "Beli Sekarang",
+          "closeLabel": "Tutup",
+          "ingredientsLabel": "Bahan-bahan",
+          "marketplaceLabel": "Pilih tempat belanja",
+          "shopLabel": "Produk",
+          "shopURL": "/id/shop",
+          "usageLabel": "Cara Pemakaian"
+        },
+        "kahf_block_2": {
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Rekomendasi untuk Rutinitasmu",
+          "searchLabel": "Cari"
+        }
+      }
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_product_template",
+  "kind": "generic",
+  "layoutId": "layout_kahf",
+  "title": "Product"
+}

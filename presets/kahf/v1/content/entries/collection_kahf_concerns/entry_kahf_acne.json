@@ -1,0 +1,105 @@
+{
+  "collectionId": "collection_kahf_concerns",
+  "copies": {
+    "id": {
+      "steps": {
+        "row_1": {
+          "description": "Face wash pria untuk kulit berminyak & berjerawat, lembapkan dan angkat minyak berlebih.",
+          "eyebrow": "Mengurangi minyak berlebih serta membantu mengurangi dan mencegah jerawat",
+          "image": {
+            "alt": "Kahf Oil and Acne Care Face Wash"
+          },
+          "step": "Bersihkan",
+          "title": "Kahf Oil and Acne Care Face Wash"
+        },
+        "row_2": {
+          "description": "Face spray pria gel-to-mist, segarkan, hidrasi, kontrol minyak & redakan kemerahan kulit.",
+          "eyebrow": "Tetap Sejuk. Tetap Segar",
+          "image": {
+            "alt": "Kahf Face Spray All-in-One and Power Toning"
+          },
+          "step": "Hidrasi",
+          "title": "Kahf Face Spray All-in-One and Power Toning"
+        },
+        "row_3": {
+          "description": "Serum pria atasi kusam & tekstur kulit, khusus untuk kulit wajah pria.",
+          "eyebrow": "Untuk Kulit Lebih Halus dan Cerah",
+          "image": {
+            "alt": "Kahf Face Serum Brightening and Texture Refining"
+          },
+          "step": "Rawat",
+          "title": "Kahf Face Serum Brightening and Texture Refining"
+        },
+        "row_4": {
+          "description": "Pelembap & sunscreen pria SPF30, ringan, lembap, lindungi dari sinar UV, polusi & blue light.",
+          "eyebrow": "Hidrasi ringan dan perlindungan untuk kulitmu",
+          "image": {
+            "alt": "Kahf Triple+ Protection Sunscreen Moisturizer"
+          },
+          "step": "Lindungi",
+          "title": "Kahf Triple+ Protection Sunscreen Moisturizer"
+        }
+      },
+      "summary": "Mengatasi jerawat tak mudah. Kami hadir dengan solusi tepat berbasis riset dan keahlian, bantu Anda capai kulit sehat dan terbaik",
+      "title": "Kulit Berjerawat"
+    }
+  },
+  "formatVersion": 1,
+  "id": "entry_kahf_acne",
+  "slug": "acne-prone-skin",
+  "values": {
+    "image": {
+      "alt": "",
+      "mediaId": "media_kahf_76d1606cea"
+    },
+    "order": 1,
+    "steps": [
+      {
+        "_rowId": "row_1",
+        "description": "Men’s face wash for oily and acne-prone skin, hydrates while removing excess oil.",
+        "eyebrow": "Reduces excess oil and helps reduce and prevent acne",
+        "image": {
+          "alt": "Kahf Oil and Acne Care Face Wash",
+          "mediaId": "media_kahf_405be3578a"
+        },
+        "step": "Cleanse",
+        "title": "Kahf Oil and Acne Care Face Wash"
+      },
+      {
+        "_rowId": "row_2",
+        "description": "Men’s gel-to-mist face spray to refresh, hydrate, control oil, and soothe redness.",
+        "eyebrow": "Stay Cool. Stay Fresh",
+        "image": {
+          "alt": "Kahf Face Spray All-in-One and Power Toning",
+          "mediaId": "media_kahf_74c7e3e8ad"
+        },
+        "step": "Hydrate",
+        "title": "Kahf Face Spray All-in-One and Power Toning"
+      },
+      {
+        "_rowId": "row_3",
+        "description": "Men’s serum that targets dullness and uneven texture, formulated especially for men’s facial skin.",
+        "eyebrow": "For Smoother, Brighter Skin",
+        "image": {
+          "alt": "Kahf Face Serum Brightening and Texture Refining",
+          "mediaId": "media_kahf_108ca00b40"
+        },
+        "step": "Treat",
+        "title": "Kahf Face Serum Brightening and Texture Refining"
+      },
+      {
+        "_rowId": "row_4",
+        "description": "Men’s SPF30 moisturizer & sunscreen, hydrates and protects from UV, pollution & blue light.",
+        "eyebrow": "Lightweight hydration and protection for your skin",
+        "image": {
+          "alt": "Kahf Triple+ Protection Sunscreen Moisturizer",
+          "mediaId": "media_kahf_6780d8163a"
+        },
+        "step": "Protect",
+        "title": "Kahf Triple+ Protection Sunscreen Moisturizer"
+      }
+    ],
+    "summary": "We get it fighting acne isn’t easy. Kahf offers research-backed solutions to help you achieve your best skin, every step of the way",
+    "title": "Acne Prone Skin"
+  }
+}

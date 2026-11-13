@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Water">
+<path id="Vector 42" d="M53.3931 29C51.8386 26.6511 50.5816 24.6626 50.0004 23.5C47.6671 27.1667 42.1004 35.8 38.5004 41C35.8661 44.8051 34.2488 50.6573 37 56C38.9485 59.7839 43.3378 64 50.0004 64C57.3754 64 62.4479 58.8908 64.0011 54C64.8947 51.1861 64.649 48.423 63.905 46" stroke="var(--stroke-0, #2D2926)" stroke-width="2" stroke-linejoin="round"/>
+<path id="Vector 44" d="M33.3208 59C29.8868 59.8696 24.0004 61.9697 24 64.2174C23.9995 66.8261 33.3208 71 49.9998 71C66.6788 71 76 67.2297 76 64.2174C76 62.1304 70.1132 59.5217 66.6792 59" stroke="var(--stroke-0, #2D2926)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector 45" d="M29.0296 53C24.7902 54.0435 15 57.1739 15 63.4348C15 71.2609 29.0296 77 49.755 77C70.4804 77 85 71.7826 85 63.4348C85 59.2609 74.7479 54.0435 70.4809 53" stroke="var(--stroke-0, #2D2926)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle id="Ellipse 54" cx="63.5" cy="34.5" r="11.5" stroke="var(--stroke-0, #2D2926)" stroke-width="2"/>
+<path id="Vector 43" d="M63.5 27.5V34.5H68" stroke="var(--stroke-0, #2D2926)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

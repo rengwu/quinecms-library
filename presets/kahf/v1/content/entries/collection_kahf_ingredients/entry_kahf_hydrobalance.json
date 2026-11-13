@@ -1,0 +1,101 @@
+{
+  "collectionId": "collection_kahf_ingredients",
+  "copies": {
+    "id": {
+      "benefits": {
+        "row_1": {
+          "description": "Hydrobalance™ bekerja seperti magnet kelembapan: menarik air ke dalam kulit dan membantu menguncinya, menjaga wajah tetap terhidrasi sepanjang hari, bahkan di lingkungan kering atau lembap.",
+          "title": "Hidrasi Mendalam dan Tahan Lama"
+        },
+        "row_2": {
+          "description": "Dengan meningkatkan hidrasi, Hydrobalance memperkuat lapisan pelindung alami kulit, membantu kulit menghadapi polusi, paparan matahari, dan tekanan sehari-hari.",
+          "title": "Memperkuat Lapisan Pelindung Kulit"
+        },
+        "row_3": {
+          "description": "Penggunaan teratur membantu menghaluskan bagian yang kasar dan tidak merata, sehingga kulit terasa lebih lembut dan tampak lebih segar dari hari ke hari.",
+          "title": "Memperbaiki Tekstur Kulit Seiring Waktu"
+        }
+      },
+      "image": {
+        "alt": "Hydrobalance"
+      },
+      "questions": {
+        "row_1": {
+          "answer": "Hydrobalance™ adalah kompleks pelembap yang memberikan hidrasi tahan lama dan meningkatkan retensi air, menggunakan humektan dan bahan penenang untuk menjaga kulit tetap segar, halus, dan seimbang sepanjang hari.",
+          "title": "Apa manfaat Hydrobalance?"
+        },
+        "row_2": {
+          "answer": "Produk yang mengandung Hydrobalance dapat digunakan setiap hari sebagai bagian dari rutinitas pagi dan malam. Mulailah sekali sehari dan tingkatkan penggunaan secara bertahap saat kulit beradaptasi.",
+          "title": "Seberapa sering saya harus menggunakan produk dengan Hydrobalance?"
+        },
+        "row_3": {
+          "answer": "Hydrobalance umumnya cocok untuk sebagian besar jenis kulit. Namun, kami menyarankan uji tempel terlebih dahulu dan berkonsultasi dengan dokter kulit untuk saran yang sesuai.",
+          "title": "Apakah Hydrobalance cocok untuk semua jenis kulit?"
+        }
+      },
+      "summary": "Hydrobalance™ adalah kompleks pelembap yang memberikan hidrasi tahan lama dan meningkatkan retensi air, menggunakan humektan dan bahan penenang untuk menjaga kulit tetap segar, halus, dan seimbang sepanjang hari.",
+      "title": "Hydrobalance"
+    }
+  },
+  "formatVersion": 1,
+  "id": "entry_kahf_hydrobalance",
+  "slug": "hydrobalance-1",
+  "values": {
+    "benefits": [
+      {
+        "_rowId": "row_1",
+        "description": "Hydrobalance™ works like a moisture magnet, it pulls water into the skin and helps lock it in, keeping your face hydrated all day, even in dry or humid environments.",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_d8b34f48e8"
+        },
+        "title": "Deep, Long-Lasting Hydration",
+        "url": ""
+      },
+      {
+        "_rowId": "row_2",
+        "description": "By boosting hydration levels, it reinforces your skin's natural barrier, helping it better defend against pollution, sun exposure, and daily stressors.",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_a5db4ba7c2"
+        },
+        "title": "Strengthens the Skin Barrier",
+        "url": ""
+      },
+      {
+        "_rowId": "row_3",
+        "description": "Regular use helps smooth out roughness and uneven patches, making your skin feel softer and look more refreshed day by day.",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_2511588996"
+        },
+        "title": "Improves Skin Texture Over Time",
+        "url": ""
+      }
+    ],
+    "image": {
+      "alt": "Hydrobalance",
+      "mediaId": "media_kahf_0b483e2a4c"
+    },
+    "order": 1,
+    "questions": [
+      {
+        "_rowId": "row_1",
+        "answer": "Hydrobalance™ is a moisturizing complex that delivers long-lasting hydration and boosts water retention, using humectants and soothing agents to keep skin fresh, smooth, and balanced all day.",
+        "title": "What are the benefits of Hydrobalance?"
+      },
+      {
+        "_rowId": "row_2",
+        "answer": "You can use products containing Hydrobalance daily as part of your morning and evening routine. Start with once daily and gradually increase usage as your skin adjusts.",
+        "title": "How often should I use products with Hydrobalance?"
+      },
+      {
+        "_rowId": "row_3",
+        "answer": "Hydrobalance is generally suitable for most skin types. However, we recommend doing a patch test first and consulting with a dermatologist for personalized advice.",
+        "title": "Is Hydrobalance suitable for all skin types?"
+      }
+    ],
+    "summary": "Hydrobalance™ is a moisturizing complex that delivers long-lasting hydration and boosts water retention, using humectants and soothing agents to keep skin fresh, smooth, and balanced all day.",
+    "title": "Hydrobalance"
+  }
+}

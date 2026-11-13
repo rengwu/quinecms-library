@@ -1,0 +1,80 @@
+{
+  "blocks": [
+    {
+      "bindings": {
+        "author": "author",
+        "body": "body",
+        "category": "category",
+        "contentLanguage": "contentLanguage",
+        "image": "image",
+        "metadata": "metadata",
+        "title": "title"
+      },
+      "id": "kahf_block_3",
+      "props": {
+        "author": "",
+        "backLabel": "Back to News & Updates",
+        "backURL": "/blog",
+        "body": "Write your story.",
+        "category": "",
+        "contentLanguage": "",
+        "image": null,
+        "metadata": "",
+        "shareLabel": "Copy article link",
+        "title": "Title"
+      },
+      "type": "kahf-article",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_4",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_articles",
+        "contentLanguageField": "contentLanguage",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": false,
+        "heading": "Move with Kahf",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "articles"
+      },
+      "type": "kahf-listing-generic",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_3": {
+          "backLabel": "Kembali ke Berita",
+          "backURL": "/id/blog",
+          "shareLabel": "Salin tautan artikel"
+        },
+        "kahf_block_4": {
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Bergerak Bersama Kahf",
+          "searchLabel": "Cari"
+        }
+      }
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_article_template",
+  "kind": "generic",
+  "layoutId": "layout_kahf",
+  "title": "Article"
+}

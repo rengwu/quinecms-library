@@ -1,0 +1,61 @@
+{
+  "collectionId": "collection_kahf_concerns",
+  "formatVersion": 1,
+  "id": "entry_kahf_oily",
+  "slug": "oily-skin",
+  "values": {
+    "image": {
+      "alt": "",
+      "mediaId": "media_kahf_12f229fbdf"
+    },
+    "order": 2,
+    "steps": [
+      {
+        "_rowId": "row_1",
+        "description": "Men’s face wash for oily and acne-prone skin, hydrates while removing excess oil.",
+        "eyebrow": "Reduces excess oil and helps reduce and prevent acne",
+        "image": {
+          "alt": "Kahf Oil and Acne Care Face Wash",
+          "mediaId": "media_kahf_405be3578a"
+        },
+        "step": "Cleanse",
+        "title": "Kahf Oil and Acne Care Face Wash"
+      },
+      {
+        "_rowId": "row_2",
+        "description": "Men’s gel-to-mist face spray to refresh, hydrate, control oil, and soothe redness.",
+        "eyebrow": "Stay Cool. Stay Fresh",
+        "image": {
+          "alt": "Kahf Face Spray All-in-One and Power Toning",
+          "mediaId": "media_kahf_74c7e3e8ad"
+        },
+        "step": "Hydrate",
+        "title": "Kahf Face Spray All-in-One and Power Toning"
+      },
+      {
+        "_rowId": "row_3",
+        "description": "Men’s serum that targets dullness and uneven texture, formulated especially for men’s facial skin.",
+        "eyebrow": "For Smoother, Brighter Skin",
+        "image": {
+          "alt": "Kahf Face Serum Brightening and Texture Refining",
+          "mediaId": "media_kahf_108ca00b40"
+        },
+        "step": "Treat",
+        "title": "Kahf Face Serum Brightening and Texture Refining"
+      },
+      {
+        "_rowId": "row_4",
+        "description": "Men’s SPF30 moisturizer & sunscreen, hydrates and protects from UV, pollution & blue light.",
+        "eyebrow": "Lightweight hydration and protection for your skin",
+        "image": {
+          "alt": "Kahf Triple+ Protection Sunscreen Moisturizer",
+          "mediaId": "media_kahf_6780d8163a"
+        },
+        "step": "Protect",
+        "title": "Kahf Triple+ Protection Sunscreen Moisturizer"
+      }
+    ],
+    "summary": "Excess oil is annoying—greasy skin, blotting nonstop, midday shine. Kahf helps control sebum, refresh skin, and keep you clean without drying it out",
+    "title": "Oily Skin"
+  }
+}

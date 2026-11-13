@@ -46,12 +46,23 @@
     "src/blocks/tessera-article-generic/v1",
     "src/blocks/tessera-listing/v1",
     "src/blocks/tessera-updates/v1",
-    "src/blocks/tessera-changelog/v1"
+    "src/blocks/tessera-changelog/v1",
+    "src/blocks/kahf-hero/v1",
+    "src/blocks/kahf-split/v1",
+    "src/blocks/kahf-cards/v1",
+    "src/blocks/kahf-listing/v1",
+    "src/blocks/kahf-product/v1",
+    "src/blocks/kahf-article/v1",
+    "src/blocks/kahf-ingredient/v1",
+    "src/blocks/kahf-concern/v1",
+    "src/blocks/kahf-search/v1",
+    "src/blocks/kahf-listing-generic/v1"
   ],
   "layouts": [
     "src/site-layouts/archline/v1",
     "src/site-layouts/intr/v1",
-    "src/site-layouts/tessera/v1"
+    "src/site-layouts/tessera/v1",
+    "src/site-layouts/kahf/v1"
   ],
   "public": "public"
 }

@@ -1,0 +1,260 @@
+{
+  "blocks": [
+    {
+      "id": "kahf_block_22",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "description": "Kahf was born from the belief that self-care is more than skin deep — it’s about confidence, balance, and purpose. Inspired by the spirit of nature and the drive of modern men, Kahf creates daily essentials that go beyond grooming.",
+        "eyebrow": "",
+        "heading": "Not Just a Routine, Kahf is a Journey",
+        "headingLevel": "h1",
+        "image": {
+          "alt": "",
+          "mediaId": "media_kahf_8c6096814b"
+        },
+        "mobileImage": null,
+        "mobileVideo": null,
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "secondaryLabel": "",
+        "secondaryURL": "",
+        "variant": "story",
+        "video": null
+      },
+      "type": "kahf-hero",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_23",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "description": "Kahf strives to be the leading men's self-care brand, empowering confidence and inspiring positive impact every day. We craft innovative self-care products rooted in natural ingredients and expert formulations, encouraging men to embrace daily rituals that nurture personal well-being and strengthen their communities. With a steadfast commitment to sustainability, we integrate eco-conscious practices into everything we do — because true self-care goes beyond the individual, shaping a better world for all.",
+        "eyebrow": "Our Vision & Mission",
+        "heading": "We Put Forward Confidence and Inspire Positive Impact.",
+        "image": {
+          "alt": "Our vision and mission",
+          "mediaId": "media_kahf_dd7339ee21"
+        },
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "variant": "reverse",
+        "video": null
+      },
+      "type": "kahf-split",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_24",
+      "props": {
+        "actionLabel": "Discover More",
+        "actionURL": "/ingredients-glossary/hydrobalance-1",
+        "description": "Innovation is at the heart of Kahf — blending modern technology and natural ingredients to deliver solutions that work as hard as you do.",
+        "eyebrow": "Our Innovations",
+        "heading": "Innovations that drives our products",
+        "image": {
+          "alt": "Hydrobalance",
+          "mediaId": "media_kahf_0b483e2a4c"
+        },
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "variant": "reverse",
+        "video": null
+      },
+      "type": "kahf-split",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_25",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "description": "Born from ParagonCorp’s legacy of innovation, Kahf strives to be the leader in male grooming products, continuously finding new innovative ways to push the boundaries",
+        "eyebrow": "",
+        "heading": "Part of ParagonCorp",
+        "headingLevel": "h2",
+        "image": null,
+        "mobileImage": null,
+        "mobileVideo": null,
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "secondaryLabel": "",
+        "secondaryURL": "",
+        "variant": "plain",
+        "video": null
+      },
+      "type": "kahf-hero",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_26",
+      "props": {
+        "description": "",
+        "eyebrow": "",
+        "heading": "Kahf's Innovative Partnerships",
+        "items": [
+          {
+            "_rowId": "row_1",
+            "description": "March 23, 2025",
+            "image": {
+              "alt": "",
+              "mediaId": "media_kahf_6ef4ccbe64"
+            },
+            "title": "Smart mosque isn’t just a concept anymore, Kahf and Masjid Nusantara made it real.",
+            "url": ""
+          },
+          {
+            "_rowId": "row_2",
+            "description": "March 23, 2025",
+            "image": {
+              "alt": "",
+              "mediaId": "media_kahf_339b8e1a37"
+            },
+            "title": "No time for a trim? Kahf’s Barberpods bring grooming to the fast lane.",
+            "url": ""
+          },
+          {
+            "_rowId": "row_3",
+            "description": "March 23, 2025",
+            "image": {
+              "alt": "",
+              "mediaId": "media_kahf_79247218ab"
+            },
+            "title": "London felt a little warmer this Ramadan thanks to Kahf and open iftar vibes.",
+            "url": ""
+          },
+          {
+            "_rowId": "row_4",
+            "description": "March 23, 2025",
+            "image": {
+              "alt": "",
+              "mediaId": "media_kahf_b241e1e6e6"
+            },
+            "title": "Kunto Aji and Armand Maulana dropped a Ramadan anthem with soul, powered by Kahf.",
+            "url": ""
+          }
+        ],
+        "variant": "partnerships"
+      },
+      "type": "kahf-cards",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_27",
+      "props": {
+        "description": "",
+        "eyebrow": "Our Values",
+        "heading": "More than a brand, Kahf is a movement.",
+        "items": [
+          {
+            "_rowId": "row_1",
+            "description": "",
+            "image": {
+              "alt": "Kahf x Othman Special Collaboration",
+              "mediaId": "media_kahf_09fac6a3ab"
+            },
+            "title": "Kahf x Othman Special Collaboration",
+            "url": ""
+          },
+          {
+            "_rowId": "row_2",
+            "description": "",
+            "image": {
+              "alt": "Raim Laode on the stage of Pejuang BerKahf Talks",
+              "mediaId": "media_kahf_bdaa1041b2"
+            },
+            "title": "Raim Laode on the stage of Pejuang BerKahf Talks",
+            "url": ""
+          },
+          {
+            "_rowId": "row_3",
+            "description": "",
+            "image": {
+              "alt": "Ministry of Trade visited Kahf The Discovery Hub",
+              "mediaId": "media_kahf_295e091d9c"
+            },
+            "title": "Ministry of Trade visited Kahf The Discovery Hub",
+            "url": ""
+          },
+          {
+            "_rowId": "row_4",
+            "description": "",
+            "image": {
+              "alt": "Kahf Brotherhood Run Training Camp",
+              "mediaId": "media_kahf_f2ba3884de"
+            },
+            "title": "Kahf Brotherhood Run Training Camp",
+            "url": ""
+          },
+          {
+            "_rowId": "row_5",
+            "description": "",
+            "image": {
+              "alt": "Kahforward 2024",
+              "mediaId": "media_kahf_811d33eb2a"
+            },
+            "title": "Kahforward 2024",
+            "url": ""
+          }
+        ],
+        "variant": "gallery"
+      },
+      "type": "kahf-cards",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_28",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "description": "Collaborating with environmental groups to plant trees and promote sustainable practices.",
+        "eyebrow": "Giving Back with Kahf",
+        "heading": "Kahf Green Trails",
+        "image": {
+          "alt": "Kahf Green Trails",
+          "mediaId": "media_kahf_01adda4a62"
+        },
+        "pauseLabel": "Pause video",
+        "playLabel": "Play video",
+        "variant": "light",
+        "video": null
+      },
+      "type": "kahf-split",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_29",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_articles",
+        "contentLanguageField": "contentLanguage",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": false,
+        "heading": "The Latest from Kahf",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "articles"
+      },
+      "type": "kahf-listing",
+      "version": 1
+    }
+  ],
+  "formatVersion": 1,
+  "id": "page_kahf_story",
+  "kind": "static",
+  "layoutId": "layout_kahf",
+  "path": "/our-story",
+  "title": "Our Story"
+}

@@ -1,0 +1,288 @@
+{
+  "id": "kahf",
+  "version": 1,
+  "label": "Kahf",
+  "description": "Nature-led personal care: editorial landings, products and routines.",
+  "activation": "load",
+  "component": "View.tsx",
+  "headComponent": "Head.tsx",
+  "settingsComponent": "Settings.tsx",
+  "policy": "policy.ts",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "announcement",
+      "label": "Announcement",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "announcementLabel",
+      "label": "Announcementlabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "announcementURL",
+      "label": "Announcementurl",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "homeURL",
+      "label": "Homeurl",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "searchURL",
+      "label": "Searchurl",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "searchLabel",
+      "label": "Searchlabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "menuLabel",
+      "label": "Menulabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "closeLabel",
+      "label": "Closelabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "navigation",
+      "label": "Navigation",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "concerns",
+      "label": "Concerns",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "concernsLabel",
+      "label": "Concernslabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "footerLinks",
+      "label": "Footerlinks",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "contactLabel",
+      "label": "Contactlabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "phone",
+      "label": "Phone",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "email",
+      "label": "Email",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "socialLabel",
+      "label": "Sociallabel",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "socialLinks",
+      "label": "Sociallinks",
+      "type": "list",
+      "fields": [
+        {
+          "key": "label",
+          "label": "Label",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true,
+          "required": true
+        }
+      ]
+    },
+    {
+      "key": "copyright",
+      "label": "Copyright",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "skipLabel",
+      "label": "Skip navigation label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "overlayHeader",
+      "label": "Place header over the first section",
+      "type": "toggle"
+    }
+  ],
+  "defaults": {
+    "title": "Kahf",
+    "description": "Your everyday journey. Backed by expertise.",
+    "announcement": "Your everyday journey. Backed by expertise.",
+    "announcementLabel": "Explore Kahf",
+    "announcementURL": "/shop",
+    "homeURL": "/",
+    "searchURL": "/search",
+    "searchLabel": "Search",
+    "menuLabel": "Menu",
+    "closeLabel": "Close",
+    "navigation": [
+      {
+        "_rowId": "row_1",
+        "label": "Shop",
+        "url": "/shop"
+      },
+      {
+        "_rowId": "row_2",
+        "label": "Our Story",
+        "url": "/our-story"
+      },
+      {
+        "_rowId": "row_3",
+        "label": "News & Updates",
+        "url": "/blog"
+      },
+      {
+        "_rowId": "row_4",
+        "label": "Ingredients",
+        "url": "/ingredients-glossary"
+      }
+    ],
+    "concerns": [
+      {
+        "_rowId": "row_1",
+        "label": "Acne Prone Skin",
+        "url": "/skin-concern/acne-prone-skin"
+      },
+      {
+        "_rowId": "row_2",
+        "label": "Oily Skin",
+        "url": "/skin-concern/oily-skin"
+      }
+    ],
+    "concernsLabel": "Skin Concerns",
+    "footerLinks": [
+      {
+        "_rowId": "row_1",
+        "label": "Our Story",
+        "url": "/our-story"
+      },
+      {
+        "_rowId": "row_2",
+        "label": "News & Updates",
+        "url": "/blog"
+      },
+      {
+        "_rowId": "row_3",
+        "label": "Ingredients",
+        "url": "/ingredients-glossary"
+      }
+    ],
+    "contactLabel": "Contact Us",
+    "phone": "+62 804 140 1123",
+    "email": "info@kahfeveryday.com",
+    "socialLabel": "Social Media",
+    "socialLinks": [
+      {
+        "_rowId": "row_1",
+        "label": "Instagram",
+        "url": "https://www.instagram.com/kahfeveryday"
+      },
+      {
+        "_rowId": "row_2",
+        "label": "YouTube",
+        "url": "https://www.youtube.com/@kahfeveryday"
+      }
+    ],
+    "copyright": "© Kahf 2026. Kahf is a part of Paragon Technology and Innovation.",
+    "skipLabel": "Skip to content",
+    "overlayHeader": false
+  }
+}

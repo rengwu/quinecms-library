@@ -1,0 +1,98 @@
+{
+  "type": "kahf-cards",
+  "version": 1,
+  "label": "Kahf · Owned cards",
+  "theme": "Kahf",
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "variant",
+      "label": "Variant",
+      "type": "select",
+      "options": [
+        {
+          "value": "categories",
+          "label": "Categories"
+        },
+        {
+          "value": "partnerships",
+          "label": "Partnerships"
+        },
+        {
+          "value": "benefits",
+          "label": "Benefits"
+        },
+        {
+          "value": "gallery",
+          "label": "Gallery"
+        }
+      ]
+    },
+    {
+      "key": "items",
+      "label": "Items",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true,
+          "required": true
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "localized": true,
+          "multiline": true
+        },
+        {
+          "key": "image",
+          "label": "Image",
+          "type": "media"
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "eyebrow": "",
+    "heading": "Your next section",
+    "description": "",
+    "variant": "categories",
+    "items": []
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

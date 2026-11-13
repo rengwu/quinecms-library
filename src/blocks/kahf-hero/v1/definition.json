@@ -1,0 +1,155 @@
+{
+  "type": "kahf-hero",
+  "version": 1,
+  "label": "Kahf \u00b7 Hero",
+  "theme": "Kahf",
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "eyebrow",
+      "label": "Eyebrow",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "headingLevel",
+      "label": "Heading level",
+      "type": "select",
+      "options": [
+        {
+          "value": "h1",
+          "label": "Page heading"
+        },
+        {
+          "value": "h2",
+          "label": "Section heading"
+        }
+      ]
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "mobileImage",
+      "label": "Mobile image",
+      "type": "media"
+    },
+    {
+      "key": "video",
+      "label": "Video",
+      "type": "media"
+    },
+    {
+      "key": "mobileVideo",
+      "label": "Mobile video",
+      "type": "media"
+    },
+    {
+      "key": "variant",
+      "label": "Variant",
+      "type": "select",
+      "options": [
+        {
+          "value": "home",
+          "label": "Home"
+        },
+        {
+          "value": "banner",
+          "label": "Banner"
+        },
+        {
+          "value": "concern",
+          "label": "Concern"
+        },
+        {
+          "value": "plain",
+          "label": "Plain"
+        },
+        {
+          "value": "story",
+          "label": "Story"
+        },
+        {
+          "value": "shop",
+          "label": "Shop"
+        }
+      ]
+    },
+    {
+      "key": "actionLabel",
+      "label": "Button label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "actionURL",
+      "label": "Button link",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "secondaryLabel",
+      "label": "Second button label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "secondaryURL",
+      "label": "Second button link",
+      "type": "url",
+      "localized": true
+    },
+    {
+      "key": "playLabel",
+      "label": "Play video label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "pauseLabel",
+      "label": "Pause video label",
+      "type": "text",
+      "localized": true
+    }
+  ],
+  "defaults": {
+    "eyebrow": "",
+    "heading": "Your next section",
+    "description": "",
+    "image": null,
+    "mobileImage": null,
+    "video": null,
+    "mobileVideo": null,
+    "variant": "home",
+    "actionLabel": "",
+    "actionURL": "",
+    "secondaryLabel": "",
+    "secondaryURL": "",
+    "playLabel": "Play video",
+    "pauseLabel": "Pause video",
+    "headingLevel": "h1"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

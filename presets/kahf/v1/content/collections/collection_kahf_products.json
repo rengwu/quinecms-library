@@ -1,0 +1,136 @@
+{
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "localized": true,
+      "required": true,
+      "type": "text"
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "localized": true,
+      "multiline": true,
+      "type": "text"
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "gallery",
+      "label": "Gallery",
+      "of": {
+        "fields": [
+          {
+            "key": "image",
+            "label": "Image",
+            "type": "media"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    {
+      "key": "size",
+      "label": "Size",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "usage",
+      "label": "Usage",
+      "localized": true,
+      "multiline": true,
+      "type": "text"
+    },
+    {
+      "key": "ingredients",
+      "label": "Ingredients",
+      "localized": true,
+      "type": "richtext"
+    },
+    {
+      "key": "benefits",
+      "label": "Benefits",
+      "of": {
+        "fields": [
+          {
+            "key": "title",
+            "label": "Title",
+            "localized": true,
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "label": "Description",
+            "localized": true,
+            "multiline": true,
+            "type": "text"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    {
+      "key": "marketplaces",
+      "label": "Marketplaces",
+      "of": {
+        "fields": [
+          {
+            "key": "title",
+            "label": "Title",
+            "localized": true,
+            "type": "text"
+          },
+          {
+            "key": "url",
+            "label": "Url",
+            "type": "url"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    {
+      "key": "body",
+      "label": "Body",
+      "localized": true,
+      "type": "richtext"
+    },
+    {
+      "key": "metadata",
+      "label": "Metadata",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "order",
+      "label": "Order",
+      "type": "number"
+    },
+    {
+      "key": "background",
+      "label": "Featured background",
+      "type": "media"
+    }
+  ],
+  "formatVersion": 1,
+  "genericPageId": "page_kahf_product_template",
+  "id": "collection_kahf_products",
+  "mode": "many",
+  "name": "Products",
+  "path": "/product",
+  "titleField": "title"
+}

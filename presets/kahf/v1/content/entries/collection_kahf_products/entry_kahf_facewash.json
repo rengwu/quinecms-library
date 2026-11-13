@@ -1,0 +1,132 @@
+{
+  "collectionId": "collection_kahf_products",
+  "copies": {
+    "id": {
+      "benefits": {
+        "row_1": {
+          "title": "Memberi energi selama 6 jam"
+        },
+        "row_2": {
+          "title": "Sensasi dingin"
+        },
+        "row_3": {
+          "title": "Mencerahkan kulit"
+        }
+      },
+      "body": "## Cocok Digunakan Bersama\n\nKahf Advancing Beard and Hair Serum",
+      "category": "Perawatan Wajah",
+      "gallery": {
+        "row_1": {
+          "image": {
+            "alt": "Kahf Skin Energizing and Brightening Face Wash — 2"
+          }
+        },
+        "row_2": {
+          "image": {
+            "alt": "Kahf Skin Energizing and Brightening Face Wash — 3"
+          }
+        }
+      },
+      "image": {
+        "alt": "Kahf Skin Energizing and Brightening Face Wash"
+      },
+      "ingredients": "Aqua, Glycerin, Myristic Acid, Potassium Hydroxide, Stearic Acid, Butylene Glycol, Lauric Acid, Glyceryl Stearate, PEG-3 Distearate, Decyl Glucoside, Phenoxyethanol, Saccharide Isomerate, Potassium Cocoyl Glycinate, Kaolin, Niacinamide, Fragrance, Menthol, Potassium Cocoate, Allantoin, Disodium EDTA, Hydroxypropyl Methylcellulose, Ethylhexylglycerin, Menthyl Lactate, PEG-40 Hydrogenated Castor Oil, PPG-26-Buteth-26, Propylene Glycol, Citric Acid, Mentha Viridis (Spearmint) Leaf Extract, Sodium Citrate, Citrus Grandis (Grapefruit) Fruit Extract.",
+      "marketplaces": {
+        "row_1": {
+          "title": "Tokopedia"
+        },
+        "row_2": {
+          "title": "Shopee"
+        },
+        "row_3": {
+          "title": "Lazada"
+        },
+        "row_4": {
+          "title": "Tiktok Shop"
+        }
+      },
+      "metadata": "50 & 100ml",
+      "size": "50 & 100ml",
+      "summary": "Face wash pria untuk kulit segar, cerah, lembap, dan bebas minyak hingga 12 jam.",
+      "title": "Kahf Skin Energizing and Brightening Face Wash",
+      "usage": "Gunakan pada wajah basah. Pijat dengan jari dan hindari area mata. Bilas hingga bersih."
+    }
+  },
+  "formatVersion": 1,
+  "id": "entry_kahf_facewash",
+  "slug": "kahf-skin-energizing-and-brightening-face-wash",
+  "values": {
+    "background": {
+      "alt": "",
+      "mediaId": "media_kahf_e11c463b87"
+    },
+    "benefits": [
+      {
+        "_rowId": "row_1",
+        "description": "",
+        "title": "Energize for 6 hours"
+      },
+      {
+        "_rowId": "row_2",
+        "description": "",
+        "title": "Cooling sensation"
+      },
+      {
+        "_rowId": "row_3",
+        "description": "",
+        "title": "Brightens skin"
+      }
+    ],
+    "body": "## Works Well With\n\nKahf Advancing Beard and Hair Serum",
+    "category": "Face Care",
+    "gallery": [
+      {
+        "_rowId": "row_1",
+        "image": {
+          "alt": "Kahf Skin Energizing and Brightening Face Wash — 2",
+          "mediaId": "media_kahf_b3e31e530f"
+        }
+      },
+      {
+        "_rowId": "row_2",
+        "image": {
+          "alt": "Kahf Skin Energizing and Brightening Face Wash — 3",
+          "mediaId": "media_kahf_9226bfb6ae"
+        }
+      }
+    ],
+    "image": {
+      "alt": "Kahf Skin Energizing and Brightening Face Wash",
+      "mediaId": "media_kahf_1524cf3fab"
+    },
+    "ingredients": "Aqua, Glycerin, Myristic Acid, Potassium Hydroxide, Stearic Acid, Butylene Glycol, Lauric Acid, Glyceryl Stearate, PEG-3 Distearate, Decyl Glucoside, Phenoxyethanol, Saccharide Isomerate, Potassium Cocoyl Glycinate, Kaolin, Niacinamide, Fragrance, Menthol, Potassium Cocoate, Allantoin, Disodium EDTA, Hydroxypropyl Methylcellulose, Ethylhexylglycerin, Menthyl Lactate, PEG-40 Hydrogenated Castor Oil, PPG-26-Buteth-26, Propylene Glycol, Citric Acid, Mentha Viridis (Spearmint) Leaf Extract, Sodium Citrate, Citrus Grandis (Grapefruit) Fruit Extract.",
+    "marketplaces": [
+      {
+        "_rowId": "row_1",
+        "title": "Tokopedia",
+        "url": "https://tk.tokopedia.com/ZShMndxbJ/"
+      },
+      {
+        "_rowId": "row_2",
+        "title": "Shopee",
+        "url": "https://shopee.co.id/universal-link/product/326487418/5358717104?smtt=9&utm_source=website&utm_medium=seller&utm_campaign=s326487418_SS_ID_WEBS_FW-Bright&utm_content=&deep_and_web=1"
+      },
+      {
+        "_rowId": "row_3",
+        "title": "Lazada",
+        "url": "https://www.lazada.co.id/products/pdp-i3772810896.html?spm=a2o4j.store_product.list.26.25d9d447i6vLGM"
+      },
+      {
+        "_rowId": "row_4",
+        "title": "Tiktok Shop",
+        "url": "https://www.tiktok.com/view/product/1729386649968870648"
+      }
+    ],
+    "metadata": "50 & 100ml",
+    "order": 1,
+    "size": "50 & 100ml",
+    "summary": "Men’s face wash for fresh, bright, hydrated skin and oil-free for up to 12 hours.",
+    "title": "Kahf Skin Energizing and Brightening Face Wash",
+    "usage": "Use on a wet face. Massage with your fingers and avoid the eye area. Rinse thoroughly."
+  }
+}

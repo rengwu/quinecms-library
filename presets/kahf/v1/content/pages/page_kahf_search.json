@@ -1,0 +1,83 @@
+{
+  "blocks": [
+    {
+      "id": "kahf_block_30",
+      "props": {
+        "emptyLabel": "No results found.",
+        "heading": "Here's What We Found for You",
+        "hint": "Start typing to find products, stories, ingredients and skin concerns.",
+        "pages": [
+          {
+            "_rowId": "row_1",
+            "title": "Home",
+            "url": "/"
+          },
+          {
+            "_rowId": "row_2",
+            "title": "Shop",
+            "url": "/shop"
+          },
+          {
+            "_rowId": "row_3",
+            "title": "Our Story",
+            "url": "/our-story"
+          },
+          {
+            "_rowId": "row_4",
+            "title": "News & Updates",
+            "url": "/blog"
+          },
+          {
+            "_rowId": "row_5",
+            "title": "Ingredients",
+            "url": "/ingredients-glossary"
+          }
+        ],
+        "searchLabel": "Search"
+      },
+      "type": "kahf-search",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_30": {
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Ini yang Kami Temukan untukmu",
+          "hint": "Ketik untuk menemukan produk, cerita, bahan, dan masalah kulit.",
+          "pages": {
+            "row_1": {
+              "title": "Beranda",
+              "url": "/id"
+            },
+            "row_2": {
+              "title": "Produk",
+              "url": "/id/shop"
+            },
+            "row_3": {
+              "title": "Cerita Kami",
+              "url": "/id/our-story"
+            },
+            "row_4": {
+              "title": "Berita & Kabar Terbaru",
+              "url": "/id/blog"
+            },
+            "row_5": {
+              "title": "Bahan-bahan",
+              "url": "/id/ingredients-glossary"
+            }
+          },
+          "searchLabel": "Cari"
+        }
+      },
+      "title": "Cari"
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_search",
+  "kind": "static",
+  "layoutId": "layout_kahf",
+  "path": "/search",
+  "title": "Search"
+}

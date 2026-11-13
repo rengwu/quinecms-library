@@ -1,0 +1,67 @@
+{
+  "type": "kahf-search",
+  "version": 1,
+  "label": "Kahf · Site search",
+  "theme": "Kahf",
+  "kind": "static",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "heading",
+      "label": "Heading",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "searchLabel",
+      "label": "Search label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "emptyLabel",
+      "label": "Empty label",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "hint",
+      "label": "Hint",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "pages",
+      "label": "Page links",
+      "type": "list",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "url",
+          "label": "Link",
+          "type": "url",
+          "localized": true
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "heading": "Your next section",
+    "searchLabel": "",
+    "emptyLabel": "",
+    "hint": "",
+    "pages": []
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "localized": true,
+      "required": true,
+      "type": "text"
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "metadata",
+      "label": "Metadata",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "body",
+      "label": "Body",
+      "localized": true,
+      "required": true,
+      "type": "richtext"
+    },
+    {
+      "key": "contentLanguage",
+      "label": "Contentlanguage",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "author",
+      "label": "Author",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "order",
+      "label": "Order",
+      "type": "number"
+    }
+  ],
+  "formatVersion": 1,
+  "genericPageId": "page_kahf_article_template",
+  "id": "collection_kahf_articles",
+  "mode": "many",
+  "name": "Articles",
+  "path": "/blog",
+  "titleField": "title"
+}

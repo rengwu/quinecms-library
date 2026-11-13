@@ -15,10 +15,11 @@
     "quinecms": "^0.3.0"
   },
   "devDependencies": {
-    "quinecms": "git+https://github.com/rengwu/quinecms.git#bb86887655f048c520e1d0cdfcd715f5c72d9864",
+    "quinecms": "link:../quinecms",
     "vitest": "5.0.3",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "jsdom": "30.1.2"
   },
   "scripts": {
     "test": "node scripts/prepare-tests.mjs && vitest run"

@@ -1,0 +1,70 @@
+{
+  "blocks": [
+    {
+      "bindings": {
+        "image": "image",
+        "steps": "steps",
+        "summary": "summary",
+        "title": "title"
+      },
+      "id": "kahf_block_6",
+      "props": {
+        "image": null,
+        "routineHeading": "Your Ultimate Acne Care Routine",
+        "steps": [],
+        "summary": "",
+        "title": "Title"
+      },
+      "type": "kahf-concern",
+      "version": 1
+    },
+    {
+      "id": "kahf_block_7",
+      "props": {
+        "actionLabel": "",
+        "actionURL": "",
+        "allLabel": "All",
+        "cardLabel": "Discover More",
+        "categoryField": "category",
+        "collection": "collection_kahf_concerns",
+        "contentLanguageField": "",
+        "description": "",
+        "emptyLabel": "No results found.",
+        "eyebrow": "",
+        "filter": false,
+        "heading": "Discover More Targeted Skin Solutions",
+        "imageField": "image",
+        "limit": 0,
+        "metadataField": "metadata",
+        "orderField": "order",
+        "searchLabel": "Search",
+        "summaryField": "summary",
+        "titleField": "title",
+        "variant": "concerns"
+      },
+      "type": "kahf-listing-generic",
+      "version": 1
+    }
+  ],
+  "copies": {
+    "id": {
+      "blocks": {
+        "kahf_block_6": {
+          "routineHeading": "Rutinitas Perawatan Kulit Berjerawat"
+        },
+        "kahf_block_7": {
+          "allLabel": "Semua",
+          "cardLabel": "Lihat Selengkapnya",
+          "emptyLabel": "Tidak ada hasil.",
+          "heading": "Temukan Solusi Kulit Lainnya",
+          "searchLabel": "Cari"
+        }
+      }
+    }
+  },
+  "formatVersion": 1,
+  "id": "page_kahf_concern_template",
+  "kind": "generic",
+  "layoutId": "layout_kahf",
+  "title": "Concern"
+}

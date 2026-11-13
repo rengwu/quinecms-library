@@ -1,0 +1,104 @@
+{
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "localized": true,
+      "required": true,
+      "type": "text"
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "localized": true,
+      "multiline": true,
+      "type": "text"
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "benefits",
+      "label": "Benefits",
+      "of": {
+        "fields": [
+          {
+            "key": "title",
+            "label": "Title",
+            "localized": true,
+            "required": true,
+            "type": "text"
+          },
+          {
+            "key": "description",
+            "label": "Description",
+            "localized": true,
+            "multiline": true,
+            "type": "text"
+          },
+          {
+            "key": "image",
+            "label": "Image",
+            "type": "media"
+          },
+          {
+            "key": "url",
+            "label": "Link",
+            "localized": true,
+            "type": "url"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    {
+      "key": "questions",
+      "label": "Questions",
+      "of": {
+        "fields": [
+          {
+            "key": "title",
+            "label": "Title",
+            "localized": true,
+            "type": "text"
+          },
+          {
+            "key": "answer",
+            "label": "Answer",
+            "localized": true,
+            "type": "richtext"
+          }
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    {
+      "key": "metadata",
+      "label": "Metadata",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "category",
+      "label": "Category",
+      "localized": true,
+      "type": "text"
+    },
+    {
+      "key": "order",
+      "label": "Order",
+      "type": "number"
+    }
+  ],
+  "formatVersion": 1,
+  "genericPageId": "page_kahf_ingredient_template",
+  "id": "collection_kahf_ingredients",
+  "mode": "many",
+  "name": "Ingredients",
+  "path": "/ingredients-glossary",
+  "titleField": "title"
+}

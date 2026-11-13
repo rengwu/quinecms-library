@@ -1,0 +1,9 @@
+{
+  "libraries": [
+    "quinecms-library"
+  ],
+  "initialLayout": {
+    "id": "kahf",
+    "version": 1
+  }
+}

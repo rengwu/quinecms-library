@@ -1,0 +1,85 @@
+{
+  "type": "kahf-concern",
+  "version": 1,
+  "label": "Kahf · Concern detail",
+  "theme": "Kahf",
+  "kind": "generic",
+  "framework": "react",
+  "activation": "load",
+  "component": "View.tsx",
+  "fields": [
+    {
+      "key": "title",
+      "label": "Title",
+      "type": "text",
+      "localized": true,
+      "required": true
+    },
+    {
+      "key": "summary",
+      "label": "Summary",
+      "type": "text",
+      "localized": true,
+      "multiline": true
+    },
+    {
+      "key": "image",
+      "label": "Image",
+      "type": "media"
+    },
+    {
+      "key": "routineHeading",
+      "label": "Routine heading",
+      "type": "text",
+      "localized": true
+    },
+    {
+      "key": "steps",
+      "label": "Steps",
+      "type": "list",
+      "fields": [
+        {
+          "key": "step",
+          "label": "Step",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "title",
+          "label": "Title",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "description",
+          "label": "Description",
+          "type": "text",
+          "localized": true,
+          "multiline": true
+        },
+        {
+          "key": "eyebrow",
+          "label": "Eyebrow",
+          "type": "text",
+          "localized": true
+        },
+        {
+          "key": "image",
+          "label": "Image",
+          "type": "media"
+        }
+      ]
+    }
+  ],
+  "defaults": {
+    "title": "Title",
+    "summary": "",
+    "image": null,
+    "routineHeading": "",
+    "steps": []
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}
